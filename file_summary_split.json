@@ -1,0 +1,17 @@
+{
+  "generated": "2025-07-17T08:33:31.094789",
+  "split_files": {
+    "kcsc_high_quality_part1.json": {
+      "size_mb": 108.28,
+      "documents": 658
+    },
+    "kcsc_high_quality_part2.json": {
+      "size_mb": 115.39,
+      "documents": 658
+    },
+    "kcsc_high_quality_part3.json": {
+      "size_mb": 112.4,
+      "documents": 659
+    }
+  }
+}

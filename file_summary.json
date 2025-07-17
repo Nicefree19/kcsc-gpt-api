@@ -1,0 +1,35 @@
+{
+  "generated": "2025-07-17T08:32:07.841875",
+  "total_files": 7,
+  "files": {
+    "kcsc_structure.json": {
+      "size_mb": 22.9,
+      "documents": 150
+    },
+    "kcsc_civil.json": {
+      "size_mb": 50.24,
+      "documents": 376
+    },
+    "kcsc_building.json": {
+      "size_mb": 61.53,
+      "documents": 656
+    },
+    "kcsc_facility.json": {
+      "size_mb": 33.89,
+      "documents": 344
+    },
+    "kcsc_excs.json": {
+      "size_mb": 37.54,
+      "documents": 656
+    },
+    "kcsc_high_quality.json": {
+      "size_mb": 336.07,
+      "documents": 1975
+    },
+    "search_index.json": {
+      "size_mb": 1.16,
+      "documents": "index"
+    }
+  },
+  "total_size_mb": 543.3299999999999
+}
