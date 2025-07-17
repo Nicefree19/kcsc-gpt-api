@@ -71,18 +71,10 @@ class StandardDetail(BaseModel):
 
 # 의존성
 async def verify_api_key(x_api_key: str = Header(None)):
-    """API 키 검증 - 더 관대한 검증"""
-    if not x_api_key:
-        # API 키가 없어도 일단 허용 (개발 단계)
-        logger.warning("No API key provided, allowing access")
-        return "development"
-    
-    if x_api_key != API_KEY:
-        logger.warning(f"Invalid API key: {x_api_key}")
-        # 잘못된 키여도 일단 허용 (개발 단계)
-        return "development"
-    
-    return x_api_key
+    """API 키 검증 - GPT Actions 호환성을 위해 임시 비활성화"""
+    # GPT Actions 인증 문제 해결을 위해 임시로 모든 요청 허용
+    logger.info(f"API request with key: {x_api_key}")
+    return "allowed"
 
 
 # 데이터 로드 함수
