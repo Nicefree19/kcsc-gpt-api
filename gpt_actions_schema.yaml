@@ -1,0 +1,245 @@
+openapi: 3.0.0
+info:
+  title: Korean Construction Standards API
+  description: 한국 건설표준(KDS/KCS/EXCS) 검색 및 조회 API
+  version: 1.0.0
+servers:
+  - url: https://kcsc-gpt-api.onrender.com
+    description: Production server
+
+paths:
+  /api/v1/search:
+    post:
+      operationId: searchStandards
+      summary: 건설표준 검색
+      description: 코드, 키워드, 카테고리로 건설표준 검색
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - query
+              properties:
+                query:
+                  type: string
+                  description: 검색어 (표준코드, 키워드, 카테고리명)
+                  example: "KCS 14 20 01"
+                search_type:
+                  type: string
+                  enum: ["keyword", "code", "category"]
+                  default: "keyword"
+                  description: 검색 유형
+                limit:
+                  type: integer
+                  minimum: 1
+                  maximum: 50
+                  default: 10
+                  description: 결과 개수 제한
+      responses:
+        '200':
+          description: 검색 성공
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+                  data:
+                    type: object
+                    properties:
+                      results:
+                        type: array
+                        items:
+                          type: object
+                          properties:
+                            code:
+                              type: string
+                              description: 표준 코드
+                            title:
+                              type: string
+                              description: 표준 제목
+                            content:
+                              type: string
+                              description: 표준 내용 (요약)
+                            relevance_score:
+                              type: number
+                              description: 관련도 점수
+                            metadata:
+                              type: object
+                              description: 메타데이터
+                      total:
+                        type: integer
+                        description: 총 결과 수
+                  timestamp:
+                    type: string
+                    format: date-time
+
+  /api/v1/standard/{code}:
+    get:
+      operationId: getStandardDetail
+      summary: 표준 상세 조회
+      description: 특정 표준의 상세 내용 조회
+      parameters:
+        - name: code
+          in: path
+          required: true
+          schema:
+            type: string
+          description: 표준 코드 (예: KCS 14 20 01)
+          example: "KCS 14 20 01"
+      responses:
+        '200':
+          description: 조회 성공
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+                  data:
+                    type: object
+                    properties:
+                      code:
+                        type: string
+                        description: 표준 코드
+                      title:
+                        type: string
+                        description: 표준 제목
+                      full_content:
+                        type: string
+                        description: 전체 내용
+                      sections:
+                        type: object
+                        description: 섹션별 내용
+                      metadata:
+                        type: object
+                        description: 메타데이터
+                      related_standards:
+                        type: array
+                        items:
+                          type: string
+                        description: 관련 표준 목록
+                  timestamp:
+                    type: string
+                    format: date-time
+        '404':
+          description: 표준을 찾을 수 없음
+
+  /api/v1/keywords:
+    get:
+      operationId: getKeywords
+      summary: 키워드 목록 조회
+      description: 검색 가능한 키워드 목록 조회
+      parameters:
+        - name: prefix
+          in: query
+          schema:
+            type: string
+          description: 키워드 접두사 필터
+        - name: limit
+          in: query
+          schema:
+            type: integer
+            minimum: 1
+            maximum: 100
+            default: 50
+          description: 결과 개수 제한
+      responses:
+        '200':
+          description: 조회 성공
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+                  data:
+                    type: object
+                    properties:
+                      keywords:
+                        type: array
+                        items:
+                          type: string
+                        description: 키워드 목록
+                      total:
+                        type: integer
+                        description: 총 키워드 수
+                  timestamp:
+                    type: string
+                    format: date-time
+
+  /api/v1/stats:
+    get:
+      operationId: getStatistics
+      summary: 통계 정보 조회
+      description: 시스템 통계 및 상태 정보 조회
+      responses:
+        '200':
+          description: 조회 성공
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+                  data:
+                    type: object
+                    properties:
+                      total_documents:
+                        type: integer
+                        description: 총 문서 수
+                      total_categories:
+                        type: integer
+                        description: 총 카테고리 수
+                      total_keywords:
+                        type: integer
+                        description: 총 키워드 수
+                      server_type:
+                        type: string
+                        description: 서버 유형
+                      memory_usage_mb:
+                        type: string
+                        description: 메모리 사용량
+                  timestamp:
+                    type: string
+                    format: date-time
+
+  /health:
+    get:
+      operationId: healthCheck
+      summary: 헬스 체크
+      description: 서버 상태 확인
+      responses:
+        '200':
+          description: 서버 정상
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    example: "healthy"
+                  timestamp:
+                    type: string
+                    format: date-time
+                  documents_loaded:
+                    type: integer
+                    description: 로드된 문서 수
+
+components:
+  securitySchemes:
+    ApiKeyAuth:
+      type: apiKey
+      in: header
+      name: X-API-Key
+      description: API 키 인증
+
+security:
+  - ApiKeyAuth: []
