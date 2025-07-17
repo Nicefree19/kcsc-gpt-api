@@ -1,0 +1,38 @@
+{
+  "id": "KDS 41 80 10",
+  "title": "알루미늄구조 설계기준",
+  "metadata": {
+    "quality_score": 80,
+    "keywords": [
+      "압축강도",
+      "인장강도",
+      "전단강도",
+      "휨강도",
+      "볼트",
+      "용접"
+    ],
+    "references": [
+      "KDS"
+    ],
+    "equations": 162,
+    "tables": 69
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_41_80_10_section_scope.json"
+    },
+    {
+      "section": "quality",
+      "file": "KDS_41_80_10_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_41_80_10_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_41_80_10_part1.json"
+    }
+  ]
+}

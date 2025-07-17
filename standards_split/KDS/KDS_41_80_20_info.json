@@ -1,0 +1,46 @@
+{
+  "id": "KDS 41 80 20",
+  "title": "유리구조 설계기준",
+  "metadata": {
+    "quality_score": 100,
+    "keywords": [
+      "압축강도",
+      "인장강도",
+      "콘크리트",
+      "볼트",
+      "단열",
+      "내화"
+    ],
+    "references": [
+      "KDS"
+    ],
+    "equations": 26,
+    "tables": 15
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_41_80_20_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KDS_41_80_20_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KDS_41_80_20_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KDS_41_80_20_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_41_80_20_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_41_80_20_part1.json"
+    }
+  ]
+}

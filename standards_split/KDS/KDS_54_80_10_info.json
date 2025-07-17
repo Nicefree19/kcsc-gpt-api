@@ -1,0 +1,43 @@
+{
+  "id": "KDS 54 80 10",
+  "title": "댐 부속 수리구조물(22.08)",
+  "metadata": {
+    "quality_score": 80,
+    "keywords": [
+      "공기량",
+      "콘크리트",
+      "방수"
+    ],
+    "references": [
+      "KDS"
+    ],
+    "equations": 2,
+    "tables": 0
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_54_80_10_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KDS_54_80_10_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KDS_54_80_10_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KDS_54_80_10_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_54_80_10_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_54_80_10_part1.json"
+    }
+  ]
+}

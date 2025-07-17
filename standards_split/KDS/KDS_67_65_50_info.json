@@ -1,0 +1,42 @@
+{
+  "id": "KDS 67 65 50",
+  "title": "해면간척 환경보전 및 부대시설_수정",
+  "metadata": {
+    "quality_score": 90,
+    "keywords": [
+      "골재",
+      "양생"
+    ],
+    "references": [
+      "KDS"
+    ],
+    "equations": 0,
+    "tables": 3
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_67_65_50_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KDS_67_65_50_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KDS_67_65_50_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KDS_67_65_50_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_67_65_50_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_67_65_50_part1.json"
+    }
+  ]
+}

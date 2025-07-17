@@ -1,0 +1,46 @@
+{
+  "id": "KCS 67 15 20",
+  "title": "KCS 67 15 20 취입보 공통공사_수정",
+  "metadata": {
+    "quality_score": 80,
+    "keywords": [
+      "철근",
+      "콘크리트",
+      "시멘트",
+      "골재",
+      "거푸집",
+      "단열"
+    ],
+    "references": [
+      "KCS"
+    ],
+    "equations": 1,
+    "tables": 0
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KCS_67_15_20_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KCS_67_15_20_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KCS_67_15_20_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KCS_67_15_20_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KCS_67_15_20_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KCS_67_15_20_part1.json"
+    }
+  ]
+}

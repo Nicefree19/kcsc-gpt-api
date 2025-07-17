@@ -1,0 +1,49 @@
+{
+  "id": "KCS 27 25 00",
+  "title": "KCS 27 25 00 터널 TBM 공사(개정전문 최종)_수정",
+  "metadata": {
+    "quality_score": 90,
+    "keywords": [
+      "압축강도",
+      "인장강도",
+      "시멘트",
+      "배합",
+      "동바리",
+      "볼트",
+      "용접",
+      "도장",
+      "방수"
+    ],
+    "references": [
+      "KCS"
+    ],
+    "equations": 0,
+    "tables": 3
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KCS_27_25_00_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KCS_27_25_00_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KCS_27_25_00_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KCS_27_25_00_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KCS_27_25_00_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KCS_27_25_00_part1.json"
+    }
+  ]
+}

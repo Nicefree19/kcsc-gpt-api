@@ -1,0 +1,50 @@
+{
+  "id": "KDS 21 30 00",
+  "title": "가설흙막이 설계기준(2024)",
+  "metadata": {
+    "quality_score": 100,
+    "keywords": [
+      "압축강도",
+      "전단강도",
+      "철근",
+      "콘크리트",
+      "시멘트",
+      "배합",
+      "앵커",
+      "볼트",
+      "용접"
+    ],
+    "references": [
+      "KCS",
+      "KDS"
+    ],
+    "equations": 49,
+    "tables": 20
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_21_30_00_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KDS_21_30_00_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KDS_21_30_00_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KDS_21_30_00_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_21_30_00_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_21_30_00_part1.json"
+    }
+  ]
+}

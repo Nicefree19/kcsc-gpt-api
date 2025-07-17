@@ -1,0 +1,44 @@
+{
+  "id": "EXCS 27 50 20",
+  "title": "터널종합방재설비(부대시설편)",
+  "metadata": {
+    "quality_score": 90,
+    "keywords": [
+      "콘크리트",
+      "방수",
+      "내화",
+      "품질시험"
+    ],
+    "references": [
+      "EXCS"
+    ],
+    "equations": 3,
+    "tables": 7
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "EXCS_27_50_20_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "EXCS_27_50_20_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "EXCS_27_50_20_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "EXCS_27_50_20_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "EXCS_27_50_20_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "EXCS_27_50_20_part1.json"
+    }
+  ]
+}

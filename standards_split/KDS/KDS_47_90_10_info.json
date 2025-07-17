@@ -1,0 +1,39 @@
+{
+  "id": "KDS 47 90 10",
+  "title": "철도시설 설치 및 유지관리기준(24.12)",
+  "metadata": {
+    "quality_score": 80,
+    "keywords": [
+      "도장",
+      "방수",
+      "내화"
+    ],
+    "references": [
+      "KDS"
+    ],
+    "equations": 0,
+    "tables": 5
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_47_90_10_section_scope.json"
+    },
+    {
+      "section": "construction",
+      "file": "KDS_47_90_10_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KDS_47_90_10_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_47_90_10_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_47_90_10_part1.json"
+    }
+  ]
+}

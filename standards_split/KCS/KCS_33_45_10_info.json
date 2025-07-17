@@ -1,0 +1,48 @@
+{
+  "id": "KCS 33 45 10",
+  "title": "KCS 33 45 10 가스공급 배관 설비공사",
+  "metadata": {
+    "quality_score": 80,
+    "keywords": [
+      "철근",
+      "콘크리트",
+      "배합",
+      "앵커",
+      "볼트",
+      "용접",
+      "도장",
+      "단열"
+    ],
+    "references": [
+      "KCS"
+    ],
+    "equations": 0,
+    "tables": 0
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KCS_33_45_10_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KCS_33_45_10_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KCS_33_45_10_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KCS_33_45_10_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KCS_33_45_10_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KCS_33_45_10_part1.json"
+    }
+  ]
+}

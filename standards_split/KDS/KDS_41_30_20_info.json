@@ -1,0 +1,52 @@
+{
+  "id": "KDS 41 30 20",
+  "title": "건축물 강합성구조 설계기준",
+  "metadata": {
+    "quality_score": 100,
+    "keywords": [
+      "압축강도",
+      "인장강도",
+      "전단강도",
+      "휨강도",
+      "철근",
+      "콘크리트",
+      "동바리",
+      "앵커",
+      "볼트",
+      "용접",
+      "도장",
+      "내진"
+    ],
+    "references": [
+      "KDS"
+    ],
+    "equations": 124,
+    "tables": 23
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_41_30_20_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KDS_41_30_20_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KDS_41_30_20_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KDS_41_30_20_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_41_30_20_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_41_30_20_part1.json"
+    }
+  ]
+}

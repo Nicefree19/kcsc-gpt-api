@@ -1,0 +1,55 @@
+{
+  "id": "KCS 61 50 05",
+  "title": "KCS 61 50 05 건축공사_수정",
+  "metadata": {
+    "quality_score": 90,
+    "keywords": [
+      "압축강도",
+      "인장강도",
+      "슬럼프",
+      "철근",
+      "콘크리트",
+      "시멘트",
+      "골재",
+      "배합",
+      "양생",
+      "거푸집",
+      "볼트",
+      "도장",
+      "방수",
+      "단열",
+      "내화"
+    ],
+    "references": [
+      "KCS"
+    ],
+    "equations": 0,
+    "tables": 3
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KCS_61_50_05_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KCS_61_50_05_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KCS_61_50_05_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KCS_61_50_05_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KCS_61_50_05_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KCS_61_50_05_part1.json"
+    }
+  ]
+}

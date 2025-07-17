@@ -1,0 +1,47 @@
+{
+  "id": "KDS 27 25 00",
+  "title": "TBM 터널_수정",
+  "metadata": {
+    "quality_score": 80,
+    "keywords": [
+      "압축강도",
+      "인장강도",
+      "시멘트",
+      "골재",
+      "동바리",
+      "방수",
+      "내진"
+    ],
+    "references": [
+      "KDS"
+    ],
+    "equations": 0,
+    "tables": 0
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_27_25_00_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KDS_27_25_00_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KDS_27_25_00_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KDS_27_25_00_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_27_25_00_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_27_25_00_part1.json"
+    }
+  ]
+}

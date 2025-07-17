@@ -1,0 +1,46 @@
+{
+  "id": "KDS 24 10 12",
+  "title": "교량설계 일반사항(케이블교량)_수정",
+  "metadata": {
+    "quality_score": 100,
+    "keywords": [
+      "철근",
+      "콘크리트",
+      "앵커",
+      "도장",
+      "방수",
+      "안전계수"
+    ],
+    "references": [
+      "KDS"
+    ],
+    "equations": 25,
+    "tables": 22
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_24_10_12_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KDS_24_10_12_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KDS_24_10_12_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KDS_24_10_12_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_24_10_12_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_24_10_12_part1.json"
+    }
+  ]
+}

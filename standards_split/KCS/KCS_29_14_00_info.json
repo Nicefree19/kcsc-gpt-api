@@ -1,0 +1,53 @@
+{
+  "id": "KCS 29 14 00",
+  "title": "KCS 29 14 00 공동구 구조물 공사_210512_수정",
+  "metadata": {
+    "quality_score": 90,
+    "keywords": [
+      "압축강도",
+      "슬럼프",
+      "철근",
+      "콘크리트",
+      "골재",
+      "배합",
+      "양생",
+      "거푸집",
+      "동바리",
+      "방수",
+      "내화",
+      "품질시험"
+    ],
+    "references": [
+      "KCS",
+      "KDS"
+    ],
+    "equations": 0,
+    "tables": 22
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KCS_29_14_00_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KCS_29_14_00_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KCS_29_14_00_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KCS_29_14_00_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KCS_29_14_00_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KCS_29_14_00_part1.json"
+    }
+  ]
+}

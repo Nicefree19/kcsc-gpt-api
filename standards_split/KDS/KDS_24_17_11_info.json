@@ -1,0 +1,47 @@
+{
+  "id": "KDS 24 17 11",
+  "title": "교량내진설계기준(한계상태설계법)_2022_수정",
+  "metadata": {
+    "quality_score": 100,
+    "keywords": [
+      "압축강도",
+      "전단강도",
+      "휨강도",
+      "철근",
+      "콘크리트",
+      "용접",
+      "내진"
+    ],
+    "references": [
+      "KDS"
+    ],
+    "equations": 126,
+    "tables": 32
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_24_17_11_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KDS_24_17_11_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KDS_24_17_11_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KDS_24_17_11_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_24_17_11_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_24_17_11_part1.json"
+    }
+  ]
+}

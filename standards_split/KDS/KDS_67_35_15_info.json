@@ -1,0 +1,41 @@
+{
+  "id": "KDS 67 35 15",
+  "title": "농도조사_수정",
+  "metadata": {
+    "quality_score": 100,
+    "keywords": [
+      "콘크리트"
+    ],
+    "references": [
+      "KDS"
+    ],
+    "equations": 10,
+    "tables": 20
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_67_35_15_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KDS_67_35_15_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KDS_67_35_15_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KDS_67_35_15_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_67_35_15_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_67_35_15_part1.json"
+    }
+  ]
+}

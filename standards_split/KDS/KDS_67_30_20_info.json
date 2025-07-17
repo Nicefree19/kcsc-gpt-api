@@ -1,0 +1,38 @@
+{
+  "id": "KDS 67 30 20",
+  "title": "양배수장 펌프 설계",
+  "metadata": {
+    "quality_score": 90,
+    "keywords": [
+      "공기량",
+      "안전계수"
+    ],
+    "references": [
+      "KDS"
+    ],
+    "equations": 97,
+    "tables": 12
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_67_30_20_section_scope.json"
+    },
+    {
+      "section": "construction",
+      "file": "KDS_67_30_20_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KDS_67_30_20_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_67_30_20_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_67_30_20_part1.json"
+    }
+  ]
+}

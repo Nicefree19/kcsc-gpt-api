@@ -1,0 +1,48 @@
+{
+  "id": "KCS 61 20 20",
+  "title": "KCS 61 20 20 터파기 지보공_수정",
+  "metadata": {
+    "quality_score": 80,
+    "keywords": [
+      "철근",
+      "콘크리트",
+      "시멘트",
+      "골재",
+      "양생",
+      "앵커",
+      "볼트",
+      "용접"
+    ],
+    "references": [
+      "KCS"
+    ],
+    "equations": 5,
+    "tables": 1
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KCS_61_20_20_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KCS_61_20_20_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KCS_61_20_20_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KCS_61_20_20_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KCS_61_20_20_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KCS_61_20_20_part1.json"
+    }
+  ]
+}

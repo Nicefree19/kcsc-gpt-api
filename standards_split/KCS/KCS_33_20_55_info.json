@@ -1,0 +1,47 @@
+{
+  "id": "KCS 33 20 55",
+  "title": "KCS 33 20 55 생활폐기물 소각시설 보조설비공사",
+  "metadata": {
+    "quality_score": 80,
+    "keywords": [
+      "콘크리트",
+      "배합",
+      "볼트",
+      "용접",
+      "방수",
+      "내화",
+      "안전계수"
+    ],
+    "references": [
+      "KCS"
+    ],
+    "equations": 0,
+    "tables": 0
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KCS_33_20_55_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KCS_33_20_55_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KCS_33_20_55_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KCS_33_20_55_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KCS_33_20_55_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KCS_33_20_55_part1.json"
+    }
+  ]
+}

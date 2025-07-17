@@ -1,0 +1,48 @@
+{
+  "id": "EXCS 31 65 10",
+  "title": "간선 및 배선설비공사(부대시설편)",
+  "metadata": {
+    "quality_score": 90,
+    "keywords": [
+      "철근",
+      "콘크리트",
+      "볼트",
+      "도장",
+      "방수",
+      "단열",
+      "내화"
+    ],
+    "references": [
+      "KCS",
+      "EXCS"
+    ],
+    "equations": 0,
+    "tables": 6
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "EXCS_31_65_10_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "EXCS_31_65_10_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "EXCS_31_65_10_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "EXCS_31_65_10_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "EXCS_31_65_10_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "EXCS_31_65_10_part1.json"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "KDS 24 14 42",
+  "title": "교량 케이블구조 설계기준_수정",
+  "metadata": {
+    "quality_score": 100,
+    "keywords": [
+      "인장강도",
+      "앵커",
+      "볼트",
+      "용접",
+      "방수"
+    ],
+    "references": [
+      "KDS"
+    ],
+    "equations": 33,
+    "tables": 14
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_24_14_42_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KDS_24_14_42_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KDS_24_14_42_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KDS_24_14_42_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_24_14_42_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_24_14_42_part1.json"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "id": "KCS 34 50 20",
+  "title": "KCS 34 50 20 옥외시설물",
+  "metadata": {
+    "quality_score": 80,
+    "keywords": [
+      "철근",
+      "콘크리트",
+      "시멘트",
+      "배합",
+      "양생",
+      "앵커",
+      "볼트",
+      "용접",
+      "도장",
+      "품질시험"
+    ],
+    "references": [
+      "KCS",
+      "KDS"
+    ],
+    "equations": 0,
+    "tables": 0
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KCS_34_50_20_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KCS_34_50_20_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KCS_34_50_20_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KCS_34_50_20_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KCS_34_50_20_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KCS_34_50_20_part1.json"
+    }
+  ]
+}

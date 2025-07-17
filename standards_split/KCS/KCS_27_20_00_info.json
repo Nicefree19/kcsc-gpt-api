@@ -1,0 +1,45 @@
+{
+  "id": "KCS 27 20 00",
+  "title": "KCS 27 20 00 터널 굴착 공사(개정전문 최종)_수정",
+  "metadata": {
+    "quality_score": 90,
+    "keywords": [
+      "철근",
+      "콘크리트",
+      "동바리",
+      "볼트",
+      "방수"
+    ],
+    "references": [
+      "KCS"
+    ],
+    "equations": 0,
+    "tables": 6
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KCS_27_20_00_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KCS_27_20_00_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KCS_27_20_00_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KCS_27_20_00_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KCS_27_20_00_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KCS_27_20_00_part1.json"
+    }
+  ]
+}

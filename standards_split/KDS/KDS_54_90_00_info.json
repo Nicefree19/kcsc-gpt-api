@@ -1,0 +1,47 @@
+{
+  "id": "KDS 54 90 00",
+  "title": "소규모댐(22.08)",
+  "metadata": {
+    "quality_score": 100,
+    "keywords": [
+      "철근",
+      "콘크리트",
+      "배합",
+      "거푸집",
+      "앵커",
+      "방수",
+      "내진"
+    ],
+    "references": [
+      "KDS"
+    ],
+    "equations": 7,
+    "tables": 15
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_54_90_00_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KDS_54_90_00_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KDS_54_90_00_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KDS_54_90_00_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_54_90_00_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_54_90_00_part1.json"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "id": "EXCS 41 10 10",
+  "title": "건축공사일반(부대시설편)",
+  "metadata": {
+    "quality_score": 80,
+    "keywords": [
+      "압축강도",
+      "인장강도",
+      "슬럼프",
+      "공기량",
+      "철근",
+      "콘크리트",
+      "시멘트",
+      "골재",
+      "배합",
+      "양생",
+      "거푸집",
+      "볼트",
+      "용접",
+      "도장",
+      "방수"
+    ],
+    "references": [
+      "EXCS"
+    ],
+    "equations": 1,
+    "tables": 5
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "EXCS_41_10_10_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "EXCS_41_10_10_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "EXCS_41_10_10_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "EXCS_41_10_10_section_quality.json"
+    },
+    {
+      "part": 1,
+      "file": "EXCS_41_10_10_part1.json"
+    }
+  ]
+}

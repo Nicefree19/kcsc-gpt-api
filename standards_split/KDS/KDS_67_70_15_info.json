@@ -1,0 +1,37 @@
+{
+  "id": "KDS 67 70 15",
+  "title": "농지보전 조사_수정",
+  "metadata": {
+    "quality_score": 90,
+    "keywords": [
+      "콘크리트"
+    ],
+    "references": [
+      "KDS"
+    ],
+    "equations": 7,
+    "tables": 38
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_67_70_15_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KDS_67_70_15_section_materials.json"
+    },
+    {
+      "section": "quality",
+      "file": "KDS_67_70_15_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_67_70_15_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_67_70_15_part1.json"
+    }
+  ]
+}

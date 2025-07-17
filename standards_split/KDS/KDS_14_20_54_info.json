@@ -1,0 +1,50 @@
+{
+  "id": "KDS 14 20 54",
+  "title": "콘크리트용 앵커 설계기준_수정",
+  "metadata": {
+    "quality_score": 100,
+    "keywords": [
+      "압축강도",
+      "인장강도",
+      "전단강도",
+      "철근",
+      "콘크리트",
+      "골재",
+      "앵커",
+      "볼트",
+      "용접",
+      "내진"
+    ],
+    "references": [
+      "KDS"
+    ],
+    "equations": 103,
+    "tables": 7
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_14_20_54_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KDS_14_20_54_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KDS_14_20_54_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KDS_14_20_54_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_14_20_54_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_14_20_54_part1.json"
+    }
+  ]
+}

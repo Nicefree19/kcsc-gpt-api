@@ -1,0 +1,45 @@
+{
+  "id": "KCS 24 31 10",
+  "title": "KCS 24 31 10 용접(한계상태설계법)_수정",
+  "metadata": {
+    "quality_score": 100,
+    "keywords": [
+      "인장강도",
+      "콘크리트",
+      "볼트",
+      "용접"
+    ],
+    "references": [
+      "KCS",
+      "KDS"
+    ],
+    "equations": 647,
+    "tables": 60
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KCS_24_31_10_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KCS_24_31_10_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KCS_24_31_10_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KCS_24_31_10_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KCS_24_31_10_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KCS_24_31_10_part1.json"
+    }
+  ]
+}

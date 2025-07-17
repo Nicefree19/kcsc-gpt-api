@@ -1,0 +1,48 @@
+{
+  "id": "KCS 32 25 10",
+  "title": "KCS 32 25 10 간선 및 배선설비공사",
+  "metadata": {
+    "quality_score": 80,
+    "keywords": [
+      "인장강도",
+      "콘크리트",
+      "볼트",
+      "도장",
+      "방수",
+      "내진",
+      "내화"
+    ],
+    "references": [
+      "KCS",
+      "KDS"
+    ],
+    "equations": 2,
+    "tables": 2
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KCS_32_25_10_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KCS_32_25_10_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KCS_32_25_10_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KCS_32_25_10_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KCS_32_25_10_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KCS_32_25_10_part1.json"
+    }
+  ]
+}

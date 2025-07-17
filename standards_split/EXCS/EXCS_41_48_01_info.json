@@ -1,0 +1,54 @@
+{
+  "id": "EXCS 41 48 01",
+  "title": "타일공사(부대시설편)",
+  "metadata": {
+    "quality_score": 90,
+    "keywords": [
+      "압축강도",
+      "인장강도",
+      "휨강도",
+      "콘크리트",
+      "시멘트",
+      "배합",
+      "양생",
+      "앵커",
+      "볼트",
+      "용접",
+      "도장",
+      "방수",
+      "품질시험"
+    ],
+    "references": [
+      "KCS",
+      "EXCS"
+    ],
+    "equations": 0,
+    "tables": 5
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "EXCS_41_48_01_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "EXCS_41_48_01_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "EXCS_41_48_01_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "EXCS_41_48_01_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "EXCS_41_48_01_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "EXCS_41_48_01_part1.json"
+    }
+  ]
+}

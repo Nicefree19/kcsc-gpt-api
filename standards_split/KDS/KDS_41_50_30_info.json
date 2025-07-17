@@ -1,0 +1,45 @@
+{
+  "id": "KDS 41 50 30",
+  "title": "목구조 접합부의 설계",
+  "metadata": {
+    "quality_score": 100,
+    "keywords": [
+      "콘크리트",
+      "볼트",
+      "도장",
+      "내진",
+      "내화"
+    ],
+    "references": [
+      "KDS"
+    ],
+    "equations": 104,
+    "tables": 135
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_41_50_30_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KDS_41_50_30_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KDS_41_50_30_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KDS_41_50_30_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_41_50_30_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_41_50_30_part1.json"
+    }
+  ]
+}

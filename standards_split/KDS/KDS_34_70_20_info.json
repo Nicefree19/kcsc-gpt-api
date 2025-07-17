@@ -1,0 +1,43 @@
+{
+  "id": "KDS 34 70 20",
+  "title": "생태못 및 인공습지",
+  "metadata": {
+    "quality_score": 90,
+    "keywords": [
+      "콘크리트",
+      "방수"
+    ],
+    "references": [
+      "KCS",
+      "KDS"
+    ],
+    "equations": 4,
+    "tables": 13
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_34_70_20_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KDS_34_70_20_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KDS_34_70_20_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KDS_34_70_20_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_34_70_20_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_34_70_20_part1.json"
+    }
+  ]
+}

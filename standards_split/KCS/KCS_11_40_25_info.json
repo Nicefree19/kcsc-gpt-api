@@ -1,0 +1,51 @@
+{
+  "id": "KCS 11 40 25",
+  "title": "KCS 11 40 25 노면배수_수정",
+  "metadata": {
+    "quality_score": 100,
+    "keywords": [
+      "슬럼프",
+      "공기량",
+      "철근",
+      "콘크리트",
+      "시멘트",
+      "골재",
+      "배합",
+      "양생",
+      "거푸집",
+      "동바리",
+      "품질시험"
+    ],
+    "references": [
+      "KCS"
+    ],
+    "equations": 7,
+    "tables": 18
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KCS_11_40_25_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KCS_11_40_25_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KCS_11_40_25_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KCS_11_40_25_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KCS_11_40_25_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KCS_11_40_25_part1.json"
+    }
+  ]
+}

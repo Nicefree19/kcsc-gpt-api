@@ -1,0 +1,39 @@
+{
+  "id": "KDS 47 30 20",
+  "title": "전철전원 설비_수정",
+  "metadata": {
+    "quality_score": 65,
+    "keywords": [
+      "용접",
+      "도장",
+      "내진"
+    ],
+    "references": [
+      "KDS"
+    ],
+    "equations": 0,
+    "tables": 0
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_47_30_20_section_scope.json"
+    },
+    {
+      "section": "construction",
+      "file": "KDS_47_30_20_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KDS_47_30_20_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_47_30_20_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_47_30_20_part1.json"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "id": "KCS 67 65 20",
+  "title": "KCS 67 65 20 해면간척 배수갑문 공사_수정",
+  "metadata": {
+    "quality_score": 90,
+    "keywords": [
+      "공기량",
+      "철근",
+      "콘크리트",
+      "시멘트",
+      "골재",
+      "배합",
+      "양생",
+      "거푸집",
+      "동바리",
+      "볼트",
+      "용접",
+      "도장"
+    ],
+    "references": [
+      "KCS"
+    ],
+    "equations": 0,
+    "tables": 8
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KCS_67_65_20_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KCS_67_65_20_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KCS_67_65_20_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KCS_67_65_20_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KCS_67_65_20_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KCS_67_65_20_part1.json"
+    }
+  ]
+}

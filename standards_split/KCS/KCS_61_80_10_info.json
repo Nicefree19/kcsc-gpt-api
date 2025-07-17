@@ -1,0 +1,48 @@
+{
+  "id": "KCS 61 80 10",
+  "title": "KCS 61 80 10 하수도 전체 보수공법_수정",
+  "metadata": {
+    "quality_score": 100,
+    "keywords": [
+      "인장강도",
+      "휨강도",
+      "시멘트",
+      "배합",
+      "양생",
+      "방수",
+      "내화",
+      "안전계수"
+    ],
+    "references": [
+      "KCS"
+    ],
+    "equations": 11,
+    "tables": 7
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KCS_61_80_10_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KCS_61_80_10_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KCS_61_80_10_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KCS_61_80_10_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KCS_61_80_10_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KCS_61_80_10_part1.json"
+    }
+  ]
+}

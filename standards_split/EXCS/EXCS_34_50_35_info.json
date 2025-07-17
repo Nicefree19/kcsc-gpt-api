@@ -1,0 +1,50 @@
+{
+  "id": "EXCS 34 50 35",
+  "title": "수경시설(부대시설편)",
+  "metadata": {
+    "quality_score": 80,
+    "keywords": [
+      "철근",
+      "콘크리트",
+      "시멘트",
+      "골재",
+      "거푸집",
+      "볼트",
+      "용접",
+      "방수",
+      "품질시험"
+    ],
+    "references": [
+      "KCS",
+      "EXCS"
+    ],
+    "equations": 0,
+    "tables": 0
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "EXCS_34_50_35_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "EXCS_34_50_35_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "EXCS_34_50_35_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "EXCS_34_50_35_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "EXCS_34_50_35_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "EXCS_34_50_35_part1.json"
+    }
+  ]
+}

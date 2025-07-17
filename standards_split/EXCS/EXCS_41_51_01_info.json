@@ -1,0 +1,52 @@
+{
+  "id": "EXCS 41 51 01",
+  "title": "수장공사 일반(부대시설편)",
+  "metadata": {
+    "quality_score": 90,
+    "keywords": [
+      "철근",
+      "콘크리트",
+      "시멘트",
+      "배합",
+      "양생",
+      "볼트",
+      "용접",
+      "방수",
+      "단열",
+      "내화",
+      "품질시험"
+    ],
+    "references": [
+      "KCS",
+      "EXCS"
+    ],
+    "equations": 0,
+    "tables": 8
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "EXCS_41_51_01_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "EXCS_41_51_01_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "EXCS_41_51_01_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "EXCS_41_51_01_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "EXCS_41_51_01_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "EXCS_41_51_01_part1.json"
+    }
+  ]
+}

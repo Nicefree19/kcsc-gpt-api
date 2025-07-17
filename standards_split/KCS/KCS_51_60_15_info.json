@@ -1,0 +1,47 @@
+{
+  "id": "KCS 51 60 15",
+  "title": "KCS 51 60 15 하천 수제_수정",
+  "metadata": {
+    "quality_score": 80,
+    "keywords": [
+      "인장강도",
+      "휨강도",
+      "철근",
+      "콘크리트",
+      "거푸집",
+      "볼트"
+    ],
+    "references": [
+      "KCS",
+      "KDS"
+    ],
+    "equations": 0,
+    "tables": 0
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KCS_51_60_15_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KCS_51_60_15_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KCS_51_60_15_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KCS_51_60_15_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KCS_51_60_15_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KCS_51_60_15_part1.json"
+    }
+  ]
+}

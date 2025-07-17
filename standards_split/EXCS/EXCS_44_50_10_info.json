@@ -1,0 +1,47 @@
+{
+  "id": "EXCS 44 50 10",
+  "title": "아스팔트 콘크리트 포장공사(전문)",
+  "metadata": {
+    "quality_score": 100,
+    "keywords": [
+      "인장강도",
+      "콘크리트",
+      "골재",
+      "배합",
+      "양생",
+      "품질시험"
+    ],
+    "references": [
+      "KCS",
+      "EXCS"
+    ],
+    "equations": 11,
+    "tables": 73
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "EXCS_44_50_10_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "EXCS_44_50_10_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "EXCS_44_50_10_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "EXCS_44_50_10_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "EXCS_44_50_10_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "EXCS_44_50_10_part1.json"
+    }
+  ]
+}

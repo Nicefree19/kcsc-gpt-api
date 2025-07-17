@@ -1,0 +1,44 @@
+{
+  "id": "KDS 57 65 00",
+  "title": "상수도 배수시설 설계기준",
+  "metadata": {
+    "quality_score": 80,
+    "keywords": [
+      "철근",
+      "콘크리트",
+      "시멘트",
+      "도장",
+      "방수",
+      "단열",
+      "내진",
+      "내화"
+    ],
+    "references": [
+      "KDS"
+    ],
+    "equations": 0,
+    "tables": 5
+  },
+  "parts": [
+    {
+      "section": "materials",
+      "file": "KDS_57_65_00_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KDS_57_65_00_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KDS_57_65_00_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_57_65_00_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_57_65_00_part1.json"
+    }
+  ]
+}

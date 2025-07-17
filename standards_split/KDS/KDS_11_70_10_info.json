@@ -1,0 +1,45 @@
+{
+  "id": "KDS 11 70 10",
+  "title": "비탈면 보호공법(2020.8)_수정",
+  "metadata": {
+    "quality_score": 85,
+    "keywords": [
+      "압축강도",
+      "철근",
+      "콘크리트",
+      "배합",
+      "양생"
+    ],
+    "references": [
+      "KDS"
+    ],
+    "equations": 0,
+    "tables": 3
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_11_70_10_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KDS_11_70_10_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KDS_11_70_10_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KDS_11_70_10_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_11_70_10_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_11_70_10_part1.json"
+    }
+  ]
+}

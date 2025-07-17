@@ -1,0 +1,50 @@
+{
+  "id": "KCS 34 60 05",
+  "title": "KCS 34 60 05 조경포장공통",
+  "metadata": {
+    "quality_score": 90,
+    "keywords": [
+      "압축강도",
+      "철근",
+      "콘크리트",
+      "시멘트",
+      "골재",
+      "배합",
+      "양생",
+      "거푸집",
+      "용접",
+      "품질시험"
+    ],
+    "references": [
+      "KCS"
+    ],
+    "equations": 0,
+    "tables": 3
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KCS_34_60_05_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KCS_34_60_05_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KCS_34_60_05_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KCS_34_60_05_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KCS_34_60_05_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KCS_34_60_05_part1.json"
+    }
+  ]
+}

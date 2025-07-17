@@ -1,0 +1,48 @@
+{
+  "id": "KDS 42 30 00",
+  "title": "소규모건축 강구조",
+  "metadata": {
+    "quality_score": 100,
+    "keywords": [
+      "인장강도",
+      "철근",
+      "콘크리트",
+      "거푸집",
+      "앵커",
+      "볼트",
+      "용접",
+      "도장"
+    ],
+    "references": [
+      "KDS"
+    ],
+    "equations": 11,
+    "tables": 78
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_42_30_00_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KDS_42_30_00_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KDS_42_30_00_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KDS_42_30_00_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_42_30_00_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_42_30_00_part1.json"
+    }
+  ]
+}

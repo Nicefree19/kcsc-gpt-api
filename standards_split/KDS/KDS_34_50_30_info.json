@@ -1,0 +1,42 @@
+{
+  "id": "KDS 34 50 30",
+  "title": "운동 및 체력단련시설",
+  "metadata": {
+    "quality_score": 90,
+    "keywords": [
+      "콘크리트",
+      "도장"
+    ],
+    "references": [
+      "KDS"
+    ],
+    "equations": 0,
+    "tables": 11
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_34_50_30_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KDS_34_50_30_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KDS_34_50_30_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KDS_34_50_30_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_34_50_30_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_34_50_30_part1.json"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "EXCS 41 56 03",
+  "title": "한식기와(부대시설편)",
+  "metadata": {
+    "quality_score": 80,
+    "keywords": [
+      "콘크리트",
+      "시멘트",
+      "배합",
+      "양생",
+      "도장",
+      "방수"
+    ],
+    "references": [
+      "KCS",
+      "EXCS"
+    ],
+    "equations": 0,
+    "tables": 8
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "EXCS_41_56_03_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "EXCS_41_56_03_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "EXCS_41_56_03_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "EXCS_41_56_03_section_quality.json"
+    },
+    {
+      "part": 1,
+      "file": "EXCS_41_56_03_part1.json"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "id": "KCS 41 35 01",
+  "title": "KCS 41 35 01 석공사 일반_수정",
+  "metadata": {
+    "quality_score": 90,
+    "keywords": [
+      "압축강도",
+      "시멘트",
+      "배합",
+      "양생",
+      "앵커",
+      "볼트",
+      "용접",
+      "방수"
+    ],
+    "references": [
+      "KCS",
+      "KDS"
+    ],
+    "equations": 0,
+    "tables": 31
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KCS_41_35_01_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KCS_41_35_01_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KCS_41_35_01_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KCS_41_35_01_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KCS_41_35_01_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KCS_41_35_01_part1.json"
+    }
+  ]
+}

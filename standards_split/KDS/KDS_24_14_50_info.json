@@ -1,0 +1,55 @@
+{
+  "id": "KDS 24 14 50",
+  "title": "교량하부구조 설계기준(일반설계법)_수정",
+  "metadata": {
+    "quality_score": 100,
+    "keywords": [
+      "압축강도",
+      "전단강도",
+      "슬럼프",
+      "철근",
+      "콘크리트",
+      "시멘트",
+      "골재",
+      "배합",
+      "양생",
+      "앵커",
+      "볼트",
+      "용접",
+      "도장",
+      "내진"
+    ],
+    "references": [
+      "KCS",
+      "KDS"
+    ],
+    "equations": 20,
+    "tables": 28
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_24_14_50_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KDS_24_14_50_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KDS_24_14_50_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KDS_24_14_50_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_24_14_50_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_24_14_50_part1.json"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": "KDS 67 25 25",
+  "title": "농업용 관수로 수리 설계_수정",
+  "metadata": {
+    "quality_score": 80,
+    "keywords": [
+      "콘크리트",
+      "방수"
+    ],
+    "references": [
+      "KDS"
+    ],
+    "equations": 0,
+    "tables": 6
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_67_25_25_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KDS_67_25_25_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KDS_67_25_25_section_construction.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_67_25_25_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_67_25_25_part1.json"
+    }
+  ]
+}

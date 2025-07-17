@@ -1,0 +1,40 @@
+{
+  "id": "KDS 14 31 15",
+  "title": "강구조 골조의 안정성 설계기준(하중저항계수설계법)",
+  "metadata": {
+    "quality_score": 90,
+    "keywords": [
+      "압축강도",
+      "휨강도",
+      "볼트",
+      "용접"
+    ],
+    "references": [
+      "KDS"
+    ],
+    "equations": 32,
+    "tables": 8
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_14_31_15_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KDS_14_31_15_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KDS_14_31_15_section_construction.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_14_31_15_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_14_31_15_part1.json"
+    }
+  ]
+}

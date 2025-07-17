@@ -1,0 +1,51 @@
+{
+  "id": "EXCS 31 70 30",
+  "title": "도로 및 터널조명설비공사(부대시설편)",
+  "metadata": {
+    "quality_score": 90,
+    "keywords": [
+      "인장강도",
+      "콘크리트",
+      "앵커",
+      "볼트",
+      "용접",
+      "도장",
+      "방수",
+      "내진",
+      "품질시험"
+    ],
+    "references": [
+      "KCS",
+      "KDS",
+      "EXCS"
+    ],
+    "equations": 0,
+    "tables": 3
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "EXCS_31_70_30_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "EXCS_31_70_30_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "EXCS_31_70_30_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "EXCS_31_70_30_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "EXCS_31_70_30_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "EXCS_31_70_30_part1.json"
+    }
+  ]
+}

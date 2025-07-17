@@ -1,0 +1,55 @@
+{
+  "id": "KCS 33 35 15",
+  "title": "KCS 33 35 15 열수송시설공사",
+  "metadata": {
+    "quality_score": 80,
+    "keywords": [
+      "인장강도",
+      "철근",
+      "콘크리트",
+      "시멘트",
+      "골재",
+      "양생",
+      "거푸집",
+      "동바리",
+      "앵커",
+      "볼트",
+      "용접",
+      "도장",
+      "방수",
+      "단열",
+      "내화"
+    ],
+    "references": [
+      "KCS"
+    ],
+    "equations": 1,
+    "tables": 0
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KCS_33_35_15_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KCS_33_35_15_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KCS_33_35_15_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KCS_33_35_15_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KCS_33_35_15_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KCS_33_35_15_part1.json"
+    }
+  ]
+}

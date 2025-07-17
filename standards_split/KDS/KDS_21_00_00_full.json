@@ -1,0 +1,27 @@
+{
+  "id": "KDS 21 00 00",
+  "title": "가설설계기준_수정",
+  "category": "터널",
+  "content": {
+    "full": "**표준코드**: KDS 21 00 00 **문서 제목**: 건설기준 연혁 **변환일시**: 2025-07-09 16:45:59 **첨부 이미지**: 1개 KDS 21 00 00 설계기준 Korean Design Standard 가시설물 설계기준 KDS 21 00 00 : 2022 가설설계기준 . 2022년 2월 23일 개정 http://www.kcsc.re.kr 가시설물 설계기준 체계 KDS 21 10 00 가시설물 설계 일반사항 `22.02 KDS 21 30 00 가설흙막이 설계기준 `22.02 KDS 21 45 00 가설교량 및 노면 복공 설계기준 `22.02 KDS 21 50 00 거푸집 및 동바리 설계기준 `22.02 KDS 21 60 00 비계 및 안전시설물 설계기준 `22.02",
+    "sections": {
+      "scope": "",
+      "materials": "",
+      "construction": "",
+      "quality": "",
+      "safety": ""
+    }
+  },
+  "metadata": {
+    "quality_score": 10,
+    "keywords": [
+      "거푸집",
+      "동바리"
+    ],
+    "references": [
+      "KDS"
+    ],
+    "equations": 0,
+    "tables": 0
+  }
+}

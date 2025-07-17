@@ -1,0 +1,46 @@
+{
+  "id": "EXCS 41 56 07",
+  "title": "금속판 지붕(부대시설편)",
+  "metadata": {
+    "quality_score": 90,
+    "keywords": [
+      "콘크리트",
+      "볼트",
+      "용접",
+      "도장",
+      "방수"
+    ],
+    "references": [
+      "KCS",
+      "EXCS"
+    ],
+    "equations": 0,
+    "tables": 13
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "EXCS_41_56_07_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "EXCS_41_56_07_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "EXCS_41_56_07_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "EXCS_41_56_07_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "EXCS_41_56_07_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "EXCS_41_56_07_part1.json"
+    }
+  ]
+}

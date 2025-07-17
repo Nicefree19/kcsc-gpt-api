@@ -1,0 +1,45 @@
+{
+  "id": "EXCS 41 46 06",
+  "title": "석고플라스터 바름(부대시설편)",
+  "metadata": {
+    "quality_score": 80,
+    "keywords": [
+      "콘크리트",
+      "시멘트",
+      "골재",
+      "배합",
+      "양생",
+      "도장",
+      "방수",
+      "단열"
+    ],
+    "references": [
+      "KCS",
+      "EXCS"
+    ],
+    "equations": 0,
+    "tables": 8
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "EXCS_41_46_06_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "EXCS_41_46_06_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "EXCS_41_46_06_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "EXCS_41_46_06_section_quality.json"
+    },
+    {
+      "part": 1,
+      "file": "EXCS_41_46_06_part1.json"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "id": "KCS 14 31 40",
+  "title": "KCS 14 31 40 도장",
+  "metadata": {
+    "quality_score": 90,
+    "keywords": [
+      "콘크리트",
+      "시멘트",
+      "배합",
+      "양생",
+      "볼트",
+      "용접",
+      "도장",
+      "내화",
+      "품질시험"
+    ],
+    "references": [
+      "KCS"
+    ],
+    "equations": 3,
+    "tables": 154
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KCS_14_31_40_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KCS_14_31_40_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KCS_14_31_40_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KCS_14_31_40_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KCS_14_31_40_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KCS_14_31_40_part1.json"
+    }
+  ]
+}

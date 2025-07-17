@@ -1,0 +1,51 @@
+{
+  "id": "KDS 44 90 00",
+  "title": "도로암거구조설계기준_수정",
+  "metadata": {
+    "quality_score": 100,
+    "keywords": [
+      "압축강도",
+      "인장강도",
+      "전단강도",
+      "철근",
+      "콘크리트",
+      "시멘트",
+      "골재",
+      "거푸집",
+      "방수",
+      "내진"
+    ],
+    "references": [
+      "KCS",
+      "KDS"
+    ],
+    "equations": 41,
+    "tables": 30
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_44_90_00_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KDS_44_90_00_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KDS_44_90_00_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KDS_44_90_00_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_44_90_00_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_44_90_00_part1.json"
+    }
+  ]
+}

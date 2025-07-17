@@ -1,0 +1,49 @@
+{
+  "id": "KDS 44 30 00",
+  "title": "도로토공",
+  "metadata": {
+    "quality_score": 100,
+    "keywords": [
+      "압축강도",
+      "인장강도",
+      "콘크리트",
+      "시멘트",
+      "골재",
+      "양생",
+      "단열",
+      "품질시험"
+    ],
+    "references": [
+      "KCS",
+      "KDS"
+    ],
+    "equations": 18,
+    "tables": 28
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_44_30_00_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KDS_44_30_00_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KDS_44_30_00_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KDS_44_30_00_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_44_30_00_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_44_30_00_part1.json"
+    }
+  ]
+}

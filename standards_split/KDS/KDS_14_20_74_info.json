@@ -1,0 +1,46 @@
+{
+  "id": "KDS 14 20 74",
+  "title": "기타 콘크리트구조 설계기준_수정",
+  "metadata": {
+    "quality_score": 100,
+    "keywords": [
+      "압축강도",
+      "철근",
+      "콘크리트",
+      "동바리",
+      "앵커",
+      "내진"
+    ],
+    "references": [
+      "KDS"
+    ],
+    "equations": 8,
+    "tables": 3
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_14_20_74_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KDS_14_20_74_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KDS_14_20_74_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KDS_14_20_74_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_14_20_74_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_14_20_74_part1.json"
+    }
+  ]
+}

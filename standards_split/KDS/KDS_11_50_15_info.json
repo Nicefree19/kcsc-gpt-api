@@ -1,0 +1,45 @@
+{
+  "id": "KDS 11 50 15",
+  "title": "깊은기초 설계기준(일반설계법)_수정",
+  "metadata": {
+    "quality_score": 80,
+    "keywords": [
+      "철근",
+      "콘크리트",
+      "시멘트",
+      "앵커",
+      "내진"
+    ],
+    "references": [
+      "KDS"
+    ],
+    "equations": 0,
+    "tables": 0
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_11_50_15_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KDS_11_50_15_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KDS_11_50_15_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KDS_11_50_15_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_11_50_15_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_11_50_15_part1.json"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "KDS 14 31 80",
+  "title": "합성구조 부재 설계기준(하중저항계수설계법)",
+  "metadata": {
+    "quality_score": 90,
+    "keywords": [
+      "압축강도",
+      "인장강도",
+      "전단강도",
+      "휨강도",
+      "철근",
+      "콘크리트",
+      "동바리",
+      "앵커",
+      "용접",
+      "도장",
+      "단열",
+      "내진"
+    ],
+    "references": [
+      "KDS"
+    ],
+    "equations": 110,
+    "tables": 23
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_14_31_80_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KDS_14_31_80_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KDS_14_31_80_section_construction.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_14_31_80_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_14_31_80_part1.json"
+    }
+  ]
+}

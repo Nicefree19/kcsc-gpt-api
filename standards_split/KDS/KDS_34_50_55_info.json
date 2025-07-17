@@ -1,0 +1,41 @@
+{
+  "id": "KDS 34 50 55",
+  "title": "조경관리시설",
+  "metadata": {
+    "quality_score": 80,
+    "keywords": [
+      "콘크리트"
+    ],
+    "references": [
+      "KDS"
+    ],
+    "equations": 0,
+    "tables": 1
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_34_50_55_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KDS_34_50_55_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KDS_34_50_55_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KDS_34_50_55_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_34_50_55_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_34_50_55_part1.json"
+    }
+  ]
+}

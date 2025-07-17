@@ -1,0 +1,51 @@
+{
+  "id": "KCS 61 80 15",
+  "title": "KCS 61 80 15 하수도 부분 보강공법_수정",
+  "metadata": {
+    "quality_score": 80,
+    "keywords": [
+      "압축강도",
+      "인장강도",
+      "휨강도",
+      "철근",
+      "콘크리트",
+      "시멘트",
+      "골재",
+      "배합",
+      "거푸집",
+      "방수",
+      "내화"
+    ],
+    "references": [
+      "KCS"
+    ],
+    "equations": 0,
+    "tables": 2
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KCS_61_80_15_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KCS_61_80_15_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KCS_61_80_15_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KCS_61_80_15_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KCS_61_80_15_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KCS_61_80_15_part1.json"
+    }
+  ]
+}

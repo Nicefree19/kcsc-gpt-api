@@ -1,0 +1,44 @@
+{
+  "id": "EXCS 31 20 15",
+  "title": "배관설비공사(부대시설편)",
+  "metadata": {
+    "quality_score": 80,
+    "keywords": [
+      "용접",
+      "방수",
+      "내화"
+    ],
+    "references": [
+      "KCS",
+      "EXCS"
+    ],
+    "equations": 0,
+    "tables": 1
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "EXCS_31_20_15_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "EXCS_31_20_15_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "EXCS_31_20_15_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "EXCS_31_20_15_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "EXCS_31_20_15_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "EXCS_31_20_15_part1.json"
+    }
+  ]
+}

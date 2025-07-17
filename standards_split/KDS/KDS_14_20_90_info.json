@@ -1,0 +1,44 @@
+{
+  "id": "KDS 14 20 90",
+  "title": "기존 콘크리트구조물의 안전성 평가기준_수정",
+  "metadata": {
+    "quality_score": 80,
+    "keywords": [
+      "압축강도",
+      "인장강도",
+      "철근",
+      "콘크리트",
+      "배합",
+      "앵커",
+      "용접",
+      "내진"
+    ],
+    "references": [
+      "KDS"
+    ],
+    "equations": 19,
+    "tables": 0
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_14_20_90_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KDS_14_20_90_section_materials.json"
+    },
+    {
+      "section": "quality",
+      "file": "KDS_14_20_90_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_14_20_90_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_14_20_90_part1.json"
+    }
+  ]
+}

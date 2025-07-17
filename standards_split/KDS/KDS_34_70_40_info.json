@@ -1,0 +1,39 @@
+{
+  "id": "KDS 34 70 40",
+  "title": "생태통로",
+  "metadata": {
+    "quality_score": 80,
+    "keywords": [
+      "철근",
+      "콘크리트"
+    ],
+    "references": [
+      "KCS",
+      "KDS"
+    ],
+    "equations": 1,
+    "tables": 9
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_34_70_40_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KDS_34_70_40_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KDS_34_70_40_section_construction.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_34_70_40_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_34_70_40_part1.json"
+    }
+  ]
+}

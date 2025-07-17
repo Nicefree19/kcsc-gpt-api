@@ -1,0 +1,50 @@
+{
+  "id": "KDS 14 31 25",
+  "title": "강구조 연결 설계기준(하중저항계수설계법)",
+  "metadata": {
+    "quality_score": 100,
+    "keywords": [
+      "압축강도",
+      "인장강도",
+      "전단강도",
+      "휨강도",
+      "콘크리트",
+      "앵커",
+      "볼트",
+      "용접",
+      "도장"
+    ],
+    "references": [
+      "KCS",
+      "KDS"
+    ],
+    "equations": 321,
+    "tables": 45
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_14_31_25_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KDS_14_31_25_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KDS_14_31_25_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KDS_14_31_25_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_14_31_25_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_14_31_25_part1.json"
+    }
+  ]
+}

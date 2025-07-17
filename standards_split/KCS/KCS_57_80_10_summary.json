@@ -1,0 +1,23 @@
+{
+  "id": "KCS 57 80 10",
+  "title": "KCS 57 80 10 상수도공사 펌프설비_수정",
+  "metadata": {
+    "quality_score": 80,
+    "keywords": [],
+    "category": "기타"
+  },
+  "preview": "**문서 제목**: 목 차 **변환일시**: 2025-07-09 16:45:48 **첨부 이미지**: 1개 KCS 57 00 00 표준시방서 Korean Construction Specification 상수도공사 KCS 57 80 10 : 2017 상수도공사 펌프설비 2017년 8월 23일 개정 http://www.kcsc.re.kr 목 차 KCS 57 80 10 상수도공사 펌프설비 1 1. 일반사항 1 2. 자재 2 3. 시공 9 KCS 57 80 10 상수도공사 펌프설비 1. 일반사항 1.1 적용범위 이 시방서는 상수도공사의 시공에 있어 별도 명시되어 있는 경우를 제외하고 펌프와 부대설비에 적용한다. 1.2 참고기준 KS B 1511 : 철강재 관플랜지의 기본치수 KS B 1557 : 그리드형 플렉시블 축이음 KS B 6301 : 원심펌프, 사류펌프 및 축류펌프의 시험 및 검사방법 KS B 6302 : 펌프토출량 측정방법 KS B 6318 : 양쪽흡입 벌루트 펌프 KS B 6320 : 깊은우물용 수중모터펌프 KS B 6321 : 배수용 수중모터펌프 KS B 6325 : 모형에 의한 펌프 성능시험 방법 KS B 6360 : 펌프의 소음레벨 측정방법 KS B 7501 : 소형 벌루트 펌프 KS C 1502 : 보통소음계 KS C 4202 : 일반용 저압 3상 유도전동기 KS C 4203 : 일반용 고압 3상 유도전동기 KS C 4204 : 일반용 단상 유도전동기 KS D 3706 : 스테인리스 강봉 KS M 6613 : 수도용 고무 ANSI/HI 1.6 American National Standard For Centrifugal Pump Tests ANSI/HI 2.6 American National Standard For Vertical Pump Tests 1.3 용어의 정의 ⑴ 별도의 명시가 없는 한 이 시방서 “KCS 57 10 05 상수도공사 공통사항 1.3 용어의 정의”에 따른다. ⑵ 펌프는 압력의 작용에 의하여 액체 또는 기체를 수송하는 장치로 용도...",
+  "available_sections": [
+    "scope",
+    "materials",
+    "construction",
+    "quality",
+    "safety"
+  ],
+  "statistics": {
+    "total_length": 11638,
+    "sections_count": 5,
+    "has_equations": false,
+    "has_tables": false
+  }
+}

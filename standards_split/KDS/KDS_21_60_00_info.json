@@ -1,0 +1,47 @@
+{
+  "id": "KDS 21 60 00",
+  "title": "비계 및 안전시설물 설계기준(2024)",
+  "metadata": {
+    "quality_score": 100,
+    "keywords": [
+      "철근",
+      "콘크리트",
+      "거푸집",
+      "동바리",
+      "앵커",
+      "용접"
+    ],
+    "references": [
+      "KCS",
+      "KDS"
+    ],
+    "equations": 11,
+    "tables": 22
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_21_60_00_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KDS_21_60_00_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KDS_21_60_00_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KDS_21_60_00_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_21_60_00_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_21_60_00_part1.json"
+    }
+  ]
+}

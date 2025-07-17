@@ -1,0 +1,56 @@
+{
+  "id": "KDS 41 20 10",
+  "title": "건축물 프리캐스트 콘크리트구조 설계기준(제정)",
+  "metadata": {
+    "quality_score": 100,
+    "keywords": [
+      "압축강도",
+      "인장강도",
+      "전단강도",
+      "휨강도",
+      "철근",
+      "콘크리트",
+      "시멘트",
+      "골재",
+      "배합",
+      "양생",
+      "동바리",
+      "앵커",
+      "볼트",
+      "용접",
+      "방수"
+    ],
+    "references": [
+      "KCS",
+      "KDS"
+    ],
+    "equations": 38,
+    "tables": 10
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_41_20_10_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KDS_41_20_10_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KDS_41_20_10_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KDS_41_20_10_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_41_20_10_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_41_20_10_part1.json"
+    }
+  ]
+}

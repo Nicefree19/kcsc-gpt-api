@@ -1,0 +1,41 @@
+{
+  "id": "KDS 12 30 05",
+  "title": "차원 디지털 설계측량",
+  "metadata": {
+    "quality_score": 100,
+    "keywords": [
+      "콘크리트"
+    ],
+    "references": [
+      "KDS"
+    ],
+    "equations": 14,
+    "tables": 80
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_12_30_05_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KDS_12_30_05_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KDS_12_30_05_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KDS_12_30_05_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_12_30_05_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_12_30_05_part1.json"
+    }
+  ]
+}

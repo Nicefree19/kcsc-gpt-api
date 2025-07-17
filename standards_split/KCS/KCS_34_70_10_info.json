@@ -1,0 +1,48 @@
+{
+  "id": "KCS 34 70 10",
+  "title": "KCS 34 70 10 자연친화적 하천조경",
+  "metadata": {
+    "quality_score": 80,
+    "keywords": [
+      "압축강도",
+      "철근",
+      "콘크리트",
+      "골재",
+      "양생",
+      "볼트",
+      "방수"
+    ],
+    "references": [
+      "KCS",
+      "KDS"
+    ],
+    "equations": 0,
+    "tables": 0
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KCS_34_70_10_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KCS_34_70_10_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KCS_34_70_10_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KCS_34_70_10_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KCS_34_70_10_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KCS_34_70_10_part1.json"
+    }
+  ]
+}

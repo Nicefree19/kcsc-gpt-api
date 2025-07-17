@@ -1,0 +1,50 @@
+{
+  "id": "KCS 31 70 15",
+  "title": "KCS 31 70 15 방진설비공사",
+  "metadata": {
+    "quality_score": 80,
+    "keywords": [
+      "인장강도",
+      "철근",
+      "콘크리트",
+      "양생",
+      "앵커",
+      "볼트",
+      "용접",
+      "도장",
+      "단열",
+      "내진"
+    ],
+    "references": [
+      "KCS"
+    ],
+    "equations": 0,
+    "tables": 2
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KCS_31_70_15_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KCS_31_70_15_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KCS_31_70_15_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KCS_31_70_15_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KCS_31_70_15_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KCS_31_70_15_part1.json"
+    }
+  ]
+}

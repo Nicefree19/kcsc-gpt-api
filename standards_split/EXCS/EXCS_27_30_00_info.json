@@ -1,0 +1,56 @@
+{
+  "id": "EXCS 27 30 00",
+  "title": "터널지보재(전문)",
+  "metadata": {
+    "quality_score": 100,
+    "keywords": [
+      "압축강도",
+      "인장강도",
+      "전단강도",
+      "휨강도",
+      "슬럼프",
+      "철근",
+      "콘크리트",
+      "시멘트",
+      "골재",
+      "배합",
+      "양생",
+      "거푸집",
+      "볼트",
+      "용접",
+      "품질시험"
+    ],
+    "references": [
+      "KCS",
+      "EXCS"
+    ],
+    "equations": 8,
+    "tables": 27
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "EXCS_27_30_00_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "EXCS_27_30_00_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "EXCS_27_30_00_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "EXCS_27_30_00_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "EXCS_27_30_00_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "EXCS_27_30_00_part1.json"
+    }
+  ]
+}

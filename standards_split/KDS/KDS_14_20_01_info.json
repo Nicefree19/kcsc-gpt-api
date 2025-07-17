@@ -1,0 +1,56 @@
+{
+  "id": "KDS 14 20 01",
+  "title": "콘크리트구조 설계(강도설계법) 일반사항_수정",
+  "metadata": {
+    "quality_score": 100,
+    "keywords": [
+      "압축강도",
+      "인장강도",
+      "전단강도",
+      "휨강도",
+      "슬럼프",
+      "공기량",
+      "철근",
+      "콘크리트",
+      "시멘트",
+      "골재",
+      "배합",
+      "양생",
+      "거푸집",
+      "앵커",
+      "볼트"
+    ],
+    "references": [
+      "KCS",
+      "KDS"
+    ],
+    "equations": 30,
+    "tables": 6
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_14_20_01_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KDS_14_20_01_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KDS_14_20_01_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KDS_14_20_01_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_14_20_01_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_14_20_01_part1.json"
+    }
+  ]
+}

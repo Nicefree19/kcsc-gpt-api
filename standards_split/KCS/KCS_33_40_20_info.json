@@ -1,0 +1,44 @@
+{
+  "id": "KCS 33 40 20",
+  "title": "KCS 33 40 20 송유관 공사",
+  "metadata": {
+    "quality_score": 90,
+    "keywords": [
+      "앵커",
+      "볼트",
+      "용접",
+      "도장"
+    ],
+    "references": [
+      "KCS"
+    ],
+    "equations": 0,
+    "tables": 8
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KCS_33_40_20_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KCS_33_40_20_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KCS_33_40_20_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KCS_33_40_20_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KCS_33_40_20_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KCS_33_40_20_part1.json"
+    }
+  ]
+}

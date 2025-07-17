@@ -1,0 +1,164 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Korean Construction Standards API",
+    "description": "한국 건설표준 검색 API",
+    "version": "2.0.0"
+  },
+  "servers": [
+    {
+      "url": "https://kcsc-gpt-api.onrender.com",
+      "description": "Production Server"
+    }
+  ],
+  "paths": {
+    "/api/v1/search": {
+      "post": {
+        "summary": "표준 검색",
+        "operationId": "searchStandards",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": ["query"],
+                "properties": {
+                  "query": {
+                    "type": "string",
+                    "description": "검색어"
+                  },
+                  "search_type": {
+                    "type": "string",
+                    "enum": ["keyword", "code", "category"],
+                    "default": "keyword"
+                  },
+                  "limit": {
+                    "type": "integer",
+                    "default": 10,
+                    "minimum": 1,
+                    "maximum": 50
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "검색 결과",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "ApiKeyAuth": []
+          }
+        ]
+      }
+    },
+    "/api/v1/standard/{code}": {
+      "get": {
+        "summary": "표준 상세 조회",
+        "operationId": "getStandardDetail",
+        "parameters": [
+          {
+            "name": "code",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "표준 코드 (예: KCS 14 20 01)"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "표준 상세 정보"
+          }
+        },
+        "security": [
+          {
+            "ApiKeyAuth": []
+          }
+        ]
+      }
+    },
+    "/api/v1/standard/{code}/summary": {
+      "get": {
+        "summary": "표준 요약 조회",
+        "operationId": "getStandardSummary",
+        "parameters": [
+          {
+            "name": "code",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "표준 요약 정보"
+          }
+        },
+        "security": [
+          {
+            "ApiKeyAuth": []
+          }
+        ]
+      }
+    },
+    "/api/v1/standard/{code}/section/{section}": {
+      "get": {
+        "summary": "표준 섹션 조회",
+        "operationId": "getStandardSection",
+        "parameters": [
+          {
+            "name": "code",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "section",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "섹션명 (general, materials, construction, quality)"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "섹션 내용"
+          }
+        },
+        "security": [
+          {
+            "ApiKeyAuth": []
+          }
+        ]
+      }
+    }
+  },
+  "components": {
+    "securitySchemes": {
+      "ApiKeyAuth": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "X-API-Key"
+      }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "id": "KDS 14 20 70",
+  "title": "콘크리트 슬래브와 기초판 설계기준_수정",
+  "metadata": {
+    "quality_score": 90,
+    "keywords": [
+      "압축강도",
+      "전단강도",
+      "휨강도",
+      "철근",
+      "콘크리트",
+      "앵커",
+      "볼트",
+      "내진"
+    ],
+    "references": [
+      "KDS"
+    ],
+    "equations": 22,
+    "tables": 32
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_14_20_70_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KDS_14_20_70_section_materials.json"
+    },
+    {
+      "section": "quality",
+      "file": "KDS_14_20_70_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_14_20_70_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_14_20_70_part1.json"
+    }
+  ]
+}

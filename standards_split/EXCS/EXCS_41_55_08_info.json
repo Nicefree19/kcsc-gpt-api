@@ -1,0 +1,52 @@
+{
+  "id": "EXCS 41 55 08",
+  "title": "문공사(부대시설편)",
+  "metadata": {
+    "quality_score": 90,
+    "keywords": [
+      "철근",
+      "콘크리트",
+      "양생",
+      "앵커",
+      "볼트",
+      "용접",
+      "도장",
+      "방수",
+      "단열",
+      "내화",
+      "품질시험"
+    ],
+    "references": [
+      "KCS",
+      "EXCS"
+    ],
+    "equations": 0,
+    "tables": 16
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "EXCS_41_55_08_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "EXCS_41_55_08_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "EXCS_41_55_08_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "EXCS_41_55_08_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "EXCS_41_55_08_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "EXCS_41_55_08_part1.json"
+    }
+  ]
+}

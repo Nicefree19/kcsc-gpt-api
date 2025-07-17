@@ -1,0 +1,54 @@
+{
+  "id": "EXCS 14 20 14",
+  "title": "철근공사(부대시설편)",
+  "metadata": {
+    "quality_score": 90,
+    "keywords": [
+      "인장강도",
+      "전단강도",
+      "철근",
+      "콘크리트",
+      "시멘트",
+      "골재",
+      "거푸집",
+      "동바리",
+      "용접",
+      "도장",
+      "방수",
+      "품질시험"
+    ],
+    "references": [
+      "KCS",
+      "KDS",
+      "EXCS"
+    ],
+    "equations": 0,
+    "tables": 7
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "EXCS_14_20_14_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "EXCS_14_20_14_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "EXCS_14_20_14_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "EXCS_14_20_14_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "EXCS_14_20_14_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "EXCS_14_20_14_part1.json"
+    }
+  ]
+}

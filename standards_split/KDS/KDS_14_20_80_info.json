@@ -1,0 +1,42 @@
+{
+  "id": "KDS 14 20 80",
+  "title": "콘크리트 내진설계기준_수정",
+  "metadata": {
+    "quality_score": 70,
+    "keywords": [
+      "압축강도",
+      "인장강도",
+      "전단강도",
+      "휨강도",
+      "철근",
+      "콘크리트",
+      "골재",
+      "앵커",
+      "용접",
+      "내진"
+    ],
+    "references": [
+      "KDS"
+    ],
+    "equations": 39,
+    "tables": 0
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_14_20_80_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KDS_14_20_80_section_materials.json"
+    },
+    {
+      "section": "quality",
+      "file": "KDS_14_20_80_section_quality.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_14_20_80_part1.json"
+    }
+  ]
+}

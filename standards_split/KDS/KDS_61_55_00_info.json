@@ -1,0 +1,43 @@
+{
+  "id": "KDS 61 55 00",
+  "title": "찌꺼기(슬러지)처리시설 설계기준(19.11)",
+  "metadata": {
+    "quality_score": 80,
+    "keywords": [
+      "공기량",
+      "철근",
+      "콘크리트",
+      "양생",
+      "방수",
+      "단열",
+      "내화"
+    ],
+    "references": [
+      "KDS"
+    ],
+    "equations": 14,
+    "tables": 0
+  },
+  "parts": [
+    {
+      "section": "materials",
+      "file": "KDS_61_55_00_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KDS_61_55_00_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KDS_61_55_00_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_61_55_00_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_61_55_00_part1.json"
+    }
+  ]
+}

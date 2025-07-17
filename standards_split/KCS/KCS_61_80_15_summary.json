@@ -1,0 +1,23 @@
+{
+  "id": "KCS 61 80 15",
+  "title": "KCS 61 80 15 하수도 부분 보강공법_수정",
+  "metadata": {
+    "quality_score": 80,
+    "keywords": [],
+    "category": "수자원"
+  },
+  "preview": "**변환일시**: 2025-07-09 16:45:50 **첨부 이미지**: 1개 KCS 61 00 00 표준시방서 Korean Construction Specification 하수관로 공사 KCS 61 80 15 : 2017 하수도 부분 보강공법 2017년 10월 27일 개정 http://www.kcsc.re.kr KCS 61 80 15 하수도부분,보강공법 1. 일반사항 1.1 적용범위 이 시방서는 하수관의 부분 보수공과 맨홀 보수공에 대해 적용한다. 1.2 주요내용 1.2.1 세정 및 검사 1.2.2 관로의 지장물 1.2.3 물돌리기 1.2.4 고감도 에폭시 충진공법 1.2.5 보강라이닝공법 1.2.6 지수제 충진공법 1.3 참조규격 다음 규격은 이 절에 명시되어 있는 범위 내에서 이 절의 일부를 구성하고 있는 것으로 본다. 1.3.1 한국산업 표준(KS표준) (1) KS D 4301 회주철품 (2) KS F 2242 유리섬유 강화 플라스틱의 휨 시험방법 (3) KS M 3008 경질 플라스틱의 굴곡성 측정 방법 (4) KS M 3734 접착제의 인장 전단 접착강도 시험방법 1.3.2 미국재료시험학회(ASTM) (1) ASTM C 267 Standard Test Methods for Chemical Resistance of Mortars, Grouts, and Monolithic Sufacings and Polymer Concretes (모르타르, 그라우트, 중공초석 표면 및 폴리머 콘크리트의 내화학성 시험) (2) ASCE Manuals and Reports on Engineering Practice No.62 “Existing Sewer Evaluation & Rehabilitation”, 1994 (3) NASSCO “Specification Guidelines”, 1994 (4) ASTM F 1216-93 “Standard Practice for Rehabilitation of Existing Pipelines and Conduits by the In...",
+  "available_sections": [
+    "scope",
+    "materials",
+    "construction",
+    "quality",
+    "safety"
+  ],
+  "statistics": {
+    "total_length": 14338,
+    "sections_count": 5,
+    "has_equations": false,
+    "has_tables": false
+  }
+}

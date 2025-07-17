@@ -1,0 +1,50 @@
+{
+  "id": "KDS 14 20 50",
+  "title": "콘크리트구조 철근상세 설계기준_수정",
+  "metadata": {
+    "quality_score": 90,
+    "keywords": [
+      "압축강도",
+      "철근",
+      "콘크리트",
+      "골재",
+      "거푸집",
+      "앵커",
+      "볼트",
+      "용접",
+      "내진",
+      "내화"
+    ],
+    "references": [
+      "KDS"
+    ],
+    "equations": 1,
+    "tables": 8
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_14_20_50_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KDS_14_20_50_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KDS_14_20_50_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KDS_14_20_50_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_14_20_50_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_14_20_50_part1.json"
+    }
+  ]
+}

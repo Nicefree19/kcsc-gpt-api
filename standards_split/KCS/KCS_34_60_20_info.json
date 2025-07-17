@@ -1,0 +1,45 @@
+{
+  "id": "KCS 34 60 20",
+  "title": "KCS 34 60 20 조경일체형포장",
+  "metadata": {
+    "quality_score": 80,
+    "keywords": [
+      "콘크리트",
+      "시멘트",
+      "골재",
+      "배합",
+      "양생"
+    ],
+    "references": [
+      "KCS"
+    ],
+    "equations": 0,
+    "tables": 0
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KCS_34_60_20_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KCS_34_60_20_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KCS_34_60_20_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KCS_34_60_20_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KCS_34_60_20_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KCS_34_60_20_part1.json"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "id": "KCS 57 10 15",
+  "title": "KCS 57 10 15 상수도 기타공사_수정",
+  "metadata": {
+    "quality_score": 80,
+    "keywords": [
+      "철근",
+      "콘크리트",
+      "시멘트",
+      "양생",
+      "거푸집",
+      "동바리",
+      "도장",
+      "방수",
+      "단열",
+      "내화"
+    ],
+    "references": [
+      "KCS"
+    ],
+    "equations": 0,
+    "tables": 0
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KCS_57_10_15_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KCS_57_10_15_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KCS_57_10_15_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KCS_57_10_15_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KCS_57_10_15_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KCS_57_10_15_part1.json"
+    }
+  ]
+}

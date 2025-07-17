@@ -1,0 +1,42 @@
+{
+  "id": "KDS 67 10 40",
+  "title": "농업용 댐 가배수공 설계 2023.12.28",
+  "metadata": {
+    "quality_score": 80,
+    "keywords": [
+      "철근",
+      "콘크리트",
+      "동바리",
+      "방수",
+      "내진"
+    ],
+    "references": [
+      "KCS",
+      "KDS"
+    ],
+    "equations": 1,
+    "tables": 3
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_67_10_40_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KDS_67_10_40_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KDS_67_10_40_section_construction.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_67_10_40_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_67_10_40_part1.json"
+    }
+  ]
+}

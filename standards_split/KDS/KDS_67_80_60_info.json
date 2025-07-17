@@ -1,0 +1,48 @@
+{
+  "id": "KDS 67 80 60",
+  "title": "농업 수질 및 환경 양배수장 설계_수정",
+  "metadata": {
+    "quality_score": 90,
+    "keywords": [
+      "압축강도",
+      "철근",
+      "콘크리트",
+      "도장",
+      "방수",
+      "단열",
+      "내진",
+      "품질시험"
+    ],
+    "references": [
+      "KDS"
+    ],
+    "equations": 0,
+    "tables": 3
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_67_80_60_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KDS_67_80_60_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KDS_67_80_60_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KDS_67_80_60_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_67_80_60_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_67_80_60_part1.json"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "KDS 24 14 31",
+  "title": "강교 설계기준(한계상태설계법)_수정",
+  "metadata": {
+    "quality_score": 100,
+    "keywords": [
+      "인장강도",
+      "휨강도",
+      "철근",
+      "콘크리트",
+      "거푸집",
+      "볼트",
+      "용접",
+      "내진"
+    ],
+    "references": [
+      "KDS"
+    ],
+    "equations": 75,
+    "tables": 8
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_24_14_31_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KDS_24_14_31_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KDS_24_14_31_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KDS_24_14_31_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_24_14_31_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_24_14_31_part1.json"
+    }
+  ]
+}

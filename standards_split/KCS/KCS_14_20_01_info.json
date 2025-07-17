@@ -1,0 +1,53 @@
+{
+  "id": "KCS 14 20 01",
+  "title": "KCS 14 20 01 콘크리트공사_일반사항_수정",
+  "metadata": {
+    "quality_score": 90,
+    "keywords": [
+      "압축강도",
+      "슬럼프",
+      "공기량",
+      "철근",
+      "콘크리트",
+      "시멘트",
+      "골재",
+      "배합",
+      "양생",
+      "거푸집",
+      "동바리",
+      "용접",
+      "품질시험"
+    ],
+    "references": [
+      "KCS"
+    ],
+    "equations": 3,
+    "tables": 13
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KCS_14_20_01_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KCS_14_20_01_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KCS_14_20_01_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KCS_14_20_01_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KCS_14_20_01_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KCS_14_20_01_part1.json"
+    }
+  ]
+}

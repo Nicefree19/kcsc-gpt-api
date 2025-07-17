@@ -1,0 +1,48 @@
+{
+  "id": "EXCS 41 49 02",
+  "title": "금속 현장제작품 공사(부대시설편)",
+  "metadata": {
+    "quality_score": 90,
+    "keywords": [
+      "콘크리트",
+      "시멘트",
+      "앵커",
+      "볼트",
+      "용접",
+      "도장",
+      "방수"
+    ],
+    "references": [
+      "KCS",
+      "EXCS"
+    ],
+    "equations": 0,
+    "tables": 4
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "EXCS_41_49_02_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "EXCS_41_49_02_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "EXCS_41_49_02_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "EXCS_41_49_02_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "EXCS_41_49_02_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "EXCS_41_49_02_part1.json"
+    }
+  ]
+}

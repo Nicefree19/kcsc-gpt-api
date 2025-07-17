@@ -1,0 +1,50 @@
+{
+  "id": "KCS 67 20 50",
+  "title": "KCS 67 20 50 용배수로 수로터널 공사_수정",
+  "metadata": {
+    "quality_score": 90,
+    "keywords": [
+      "철근",
+      "콘크리트",
+      "시멘트",
+      "골재",
+      "배합",
+      "양생",
+      "거푸집",
+      "동바리",
+      "볼트",
+      "방수"
+    ],
+    "references": [
+      "KCS"
+    ],
+    "equations": 10,
+    "tables": 0
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KCS_67_20_50_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KCS_67_20_50_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KCS_67_20_50_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KCS_67_20_50_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KCS_67_20_50_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KCS_67_20_50_part1.json"
+    }
+  ]
+}

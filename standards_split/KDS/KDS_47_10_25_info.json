@@ -1,0 +1,48 @@
+{
+  "id": "KDS 47 10 25",
+  "title": "흙구조물_수정",
+  "metadata": {
+    "quality_score": 100,
+    "keywords": [
+      "압축강도",
+      "전단강도",
+      "철근",
+      "콘크리트",
+      "시멘트",
+      "골재",
+      "방수",
+      "내진"
+    ],
+    "references": [
+      "KDS"
+    ],
+    "equations": 37,
+    "tables": 99
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_47_10_25_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KDS_47_10_25_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KDS_47_10_25_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KDS_47_10_25_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_47_10_25_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_47_10_25_part1.json"
+    }
+  ]
+}

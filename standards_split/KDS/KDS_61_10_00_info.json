@@ -1,0 +1,39 @@
+{
+  "id": "KDS 61 10 00",
+  "title": "하수도설계 일반사항(전문)",
+  "metadata": {
+    "quality_score": 70,
+    "keywords": [],
+    "references": [
+      "KDS"
+    ],
+    "equations": 0,
+    "tables": 0
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_61_10_00_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KDS_61_10_00_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KDS_61_10_00_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KDS_61_10_00_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_61_10_00_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_61_10_00_part1.json"
+    }
+  ]
+}

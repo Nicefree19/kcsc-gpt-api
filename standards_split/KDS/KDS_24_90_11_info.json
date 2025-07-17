@@ -1,0 +1,55 @@
+{
+  "id": "KDS 24 90 11",
+  "title": "교량 기타시설설계기준 (한계상태설계법)_수정",
+  "metadata": {
+    "quality_score": 100,
+    "keywords": [
+      "압축강도",
+      "인장강도",
+      "전단강도",
+      "철근",
+      "콘크리트",
+      "배합",
+      "앵커",
+      "볼트",
+      "용접",
+      "도장",
+      "방수",
+      "내진",
+      "품질시험",
+      "안전계수"
+    ],
+    "references": [
+      "KCS",
+      "KDS"
+    ],
+    "equations": 380,
+    "tables": 91
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_24_90_11_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KDS_24_90_11_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KDS_24_90_11_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KDS_24_90_11_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_24_90_11_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_24_90_11_part1.json"
+    }
+  ]
+}

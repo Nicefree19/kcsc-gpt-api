@@ -1,0 +1,52 @@
+{
+  "id": "KCS 41 34 09",
+  "title": "KCS 41 34 09 ALC블록공사_수정",
+  "metadata": {
+    "quality_score": 90,
+    "keywords": [
+      "압축강도",
+      "전단강도",
+      "철근",
+      "콘크리트",
+      "시멘트",
+      "배합",
+      "양생",
+      "앵커",
+      "볼트",
+      "도장",
+      "방수",
+      "내화"
+    ],
+    "references": [
+      "KCS"
+    ],
+    "equations": 0,
+    "tables": 10
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KCS_41_34_09_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KCS_41_34_09_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KCS_41_34_09_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KCS_41_34_09_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KCS_41_34_09_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KCS_41_34_09_part1.json"
+    }
+  ]
+}

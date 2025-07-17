@@ -1,0 +1,45 @@
+{
+  "id": "KCS 41 33 03",
+  "title": "KCS 41 33 03 경골목공사_수정",
+  "metadata": {
+    "quality_score": 90,
+    "keywords": [
+      "앵커",
+      "볼트",
+      "방수",
+      "단열"
+    ],
+    "references": [
+      "KCS",
+      "KDS"
+    ],
+    "equations": 0,
+    "tables": 38
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KCS_41_33_03_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KCS_41_33_03_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KCS_41_33_03_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KCS_41_33_03_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KCS_41_33_03_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KCS_41_33_03_part1.json"
+    }
+  ]
+}

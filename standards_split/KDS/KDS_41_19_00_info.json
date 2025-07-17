@@ -1,0 +1,56 @@
+{
+  "id": "KDS 41 19 00",
+  "title": "건축물 기초구조 설계기준",
+  "metadata": {
+    "quality_score": 100,
+    "keywords": [
+      "압축강도",
+      "인장강도",
+      "전단강도",
+      "휨강도",
+      "슬럼프",
+      "철근",
+      "콘크리트",
+      "시멘트",
+      "골재",
+      "배합",
+      "거푸집",
+      "용접",
+      "방수",
+      "내진",
+      "안전계수"
+    ],
+    "references": [
+      "KCS",
+      "KDS"
+    ],
+    "equations": 25,
+    "tables": 31
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_41_19_00_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KDS_41_19_00_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KDS_41_19_00_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KDS_41_19_00_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_41_19_00_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_41_19_00_part1.json"
+    }
+  ]
+}

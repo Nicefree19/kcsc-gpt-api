@@ -1,0 +1,44 @@
+{
+  "id": "KCS 67 65 10",
+  "title": "KCS 67 65 10 해면간척 방조제 공사_수정",
+  "metadata": {
+    "quality_score": 80,
+    "keywords": [
+      "인장강도",
+      "슬럼프",
+      "콘크리트",
+      "골재"
+    ],
+    "references": [
+      "KCS"
+    ],
+    "equations": 0,
+    "tables": 0
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KCS_67_65_10_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KCS_67_65_10_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KCS_67_65_10_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KCS_67_65_10_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KCS_67_65_10_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KCS_67_65_10_part1.json"
+    }
+  ]
+}

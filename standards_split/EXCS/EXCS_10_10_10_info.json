@@ -1,0 +1,44 @@
+{
+  "id": "EXCS 10 10 10",
+  "title": "공무행정요건(전문)",
+  "metadata": {
+    "quality_score": 80,
+    "keywords": [
+      "시멘트",
+      "도장",
+      "품질시험"
+    ],
+    "references": [
+      "KCS",
+      "EXCS"
+    ],
+    "equations": 1,
+    "tables": 2
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "EXCS_10_10_10_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "EXCS_10_10_10_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "EXCS_10_10_10_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "EXCS_10_10_10_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "EXCS_10_10_10_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "EXCS_10_10_10_part1.json"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "id": "KCS 54 20 20",
+  "title": "KCS 54 20 20 댐 여수로(18.08)",
+  "metadata": {
+    "quality_score": 80,
+    "keywords": [
+      "압축강도",
+      "슬럼프",
+      "공기량",
+      "철근",
+      "콘크리트",
+      "시멘트",
+      "골재",
+      "배합",
+      "거푸집",
+      "동바리",
+      "앵커",
+      "용접",
+      "방수",
+      "품질시험"
+    ],
+    "references": [
+      "KCS"
+    ],
+    "equations": 0,
+    "tables": 2
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KCS_54_20_20_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KCS_54_20_20_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KCS_54_20_20_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KCS_54_20_20_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KCS_54_20_20_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KCS_54_20_20_part1.json"
+    }
+  ]
+}

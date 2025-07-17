@@ -1,0 +1,42 @@
+{
+  "id": "KDS 44 60 05",
+  "title": "도로안전시설_수정",
+  "metadata": {
+    "quality_score": 90,
+    "keywords": [
+      "골재",
+      "앵커"
+    ],
+    "references": [
+      "KDS"
+    ],
+    "equations": 1,
+    "tables": 9
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_44_60_05_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KDS_44_60_05_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KDS_44_60_05_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KDS_44_60_05_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_44_60_05_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_44_60_05_part1.json"
+    }
+  ]
+}

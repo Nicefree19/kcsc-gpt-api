@@ -1,0 +1,36 @@
+{
+  "id": "KDS 47 60 00",
+  "title": "철도시스템 인터페이스_수정",
+  "metadata": {
+    "quality_score": 60,
+    "keywords": [
+      "철근",
+      "콘크리트",
+      "용접",
+      "내진"
+    ],
+    "references": [
+      "KDS"
+    ],
+    "equations": 0,
+    "tables": 0
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_47_60_00_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KDS_47_60_00_section_materials.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_47_60_00_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_47_60_00_part1.json"
+    }
+  ]
+}

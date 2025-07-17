@@ -1,0 +1,44 @@
+{
+  "id": "KDS 34 70 30",
+  "title": "비탈면 녹화 및 조경",
+  "metadata": {
+    "quality_score": 90,
+    "keywords": [
+      "배합",
+      "양생",
+      "앵커"
+    ],
+    "references": [
+      "KCS",
+      "KDS"
+    ],
+    "equations": 1,
+    "tables": 6
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_34_70_30_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KDS_34_70_30_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KDS_34_70_30_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KDS_34_70_30_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_34_70_30_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_34_70_30_part1.json"
+    }
+  ]
+}

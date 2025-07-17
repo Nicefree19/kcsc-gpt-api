@@ -1,0 +1,43 @@
+{
+  "id": "KDS 67 80 55",
+  "title": "농업 수질 및 환경 양배수장 조사_수정",
+  "metadata": {
+    "quality_score": 80,
+    "keywords": [
+      "전단강도",
+      "콘크리트",
+      "방수"
+    ],
+    "references": [
+      "KDS"
+    ],
+    "equations": 4,
+    "tables": 0
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_67_80_55_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KDS_67_80_55_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KDS_67_80_55_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KDS_67_80_55_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_67_80_55_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_67_80_55_part1.json"
+    }
+  ]
+}

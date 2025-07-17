@@ -1,0 +1,43 @@
+{
+  "id": "KDS 47 10 15",
+  "title": "철도계획_수정",
+  "metadata": {
+    "quality_score": 100,
+    "keywords": [
+      "콘크리트",
+      "골재",
+      "내진"
+    ],
+    "references": [
+      "KDS"
+    ],
+    "equations": 60,
+    "tables": 43
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_47_10_15_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KDS_47_10_15_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KDS_47_10_15_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KDS_47_10_15_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_47_10_15_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_47_10_15_part1.json"
+    }
+  ]
+}

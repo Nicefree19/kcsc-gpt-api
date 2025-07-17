@@ -1,0 +1,44 @@
+{
+  "id": "EXCS 27 20 00",
+  "title": "터널 굴착(전문)",
+  "metadata": {
+    "quality_score": 90,
+    "keywords": [
+      "철근",
+      "콘크리트",
+      "품질시험"
+    ],
+    "references": [
+      "KCS",
+      "EXCS"
+    ],
+    "equations": 0,
+    "tables": 3
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "EXCS_27_20_00_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "EXCS_27_20_00_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "EXCS_27_20_00_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "EXCS_27_20_00_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "EXCS_27_20_00_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "EXCS_27_20_00_part1.json"
+    }
+  ]
+}

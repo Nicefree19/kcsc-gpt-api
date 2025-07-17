@@ -1,0 +1,50 @@
+{
+  "id": "KCS 14 20 43",
+  "title": "KCS 14 20 43 수중 콘크리트_수정",
+  "metadata": {
+    "quality_score": 90,
+    "keywords": [
+      "압축강도",
+      "슬럼프",
+      "공기량",
+      "철근",
+      "콘크리트",
+      "시멘트",
+      "골재",
+      "배합",
+      "양생",
+      "거푸집"
+    ],
+    "references": [
+      "KCS"
+    ],
+    "equations": 0,
+    "tables": 30
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KCS_14_20_43_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KCS_14_20_43_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KCS_14_20_43_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KCS_14_20_43_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KCS_14_20_43_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KCS_14_20_43_part1.json"
+    }
+  ]
+}

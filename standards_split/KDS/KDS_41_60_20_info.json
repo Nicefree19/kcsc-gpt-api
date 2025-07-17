@@ -1,0 +1,50 @@
+{
+  "id": "KDS 41 60 20",
+  "title": "조적식구조 허용응력설계법",
+  "metadata": {
+    "quality_score": 90,
+    "keywords": [
+      "압축강도",
+      "인장강도",
+      "철근",
+      "콘크리트",
+      "시멘트",
+      "양생",
+      "앵커",
+      "볼트",
+      "용접",
+      "내진"
+    ],
+    "references": [
+      "KDS"
+    ],
+    "equations": 58,
+    "tables": 2
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_41_60_20_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KDS_41_60_20_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KDS_41_60_20_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KDS_41_60_20_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_41_60_20_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_41_60_20_part1.json"
+    }
+  ]
+}

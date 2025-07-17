@@ -1,0 +1,48 @@
+{
+  "id": "KCS 61 80 20",
+  "title": "KCS 61 80 20 기존 암거 보수공법_수정",
+  "metadata": {
+    "quality_score": 80,
+    "keywords": [
+      "철근",
+      "콘크리트",
+      "시멘트",
+      "배합",
+      "양생",
+      "도장",
+      "방수",
+      "내화"
+    ],
+    "references": [
+      "KCS"
+    ],
+    "equations": 0,
+    "tables": 0
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KCS_61_80_20_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KCS_61_80_20_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KCS_61_80_20_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KCS_61_80_20_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KCS_61_80_20_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KCS_61_80_20_part1.json"
+    }
+  ]
+}

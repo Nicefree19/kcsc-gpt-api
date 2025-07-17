@@ -1,0 +1,50 @@
+{
+  "id": "KCS 51 60 25",
+  "title": "KCS 51 60 25 하천 수문_수정",
+  "metadata": {
+    "quality_score": 90,
+    "keywords": [
+      "철근",
+      "콘크리트",
+      "골재",
+      "거푸집",
+      "동바리",
+      "볼트",
+      "용접",
+      "도장",
+      "방수",
+      "품질시험"
+    ],
+    "references": [
+      "KCS"
+    ],
+    "equations": 0,
+    "tables": 3
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KCS_51_60_25_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KCS_51_60_25_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KCS_51_60_25_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KCS_51_60_25_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KCS_51_60_25_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KCS_51_60_25_part1.json"
+    }
+  ]
+}

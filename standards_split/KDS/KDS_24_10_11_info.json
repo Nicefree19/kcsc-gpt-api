@@ -1,0 +1,52 @@
+{
+  "id": "KDS 24 10 11",
+  "title": "교량 설계 일반사항(한계상태설계법)_수정",
+  "metadata": {
+    "quality_score": 100,
+    "keywords": [
+      "철근",
+      "콘크리트",
+      "골재",
+      "거푸집",
+      "동바리",
+      "앵커",
+      "볼트",
+      "용접",
+      "도장",
+      "방수",
+      "내진",
+      "안전계수"
+    ],
+    "references": [
+      "KDS"
+    ],
+    "equations": 411,
+    "tables": 78
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_24_10_11_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KDS_24_10_11_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KDS_24_10_11_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KDS_24_10_11_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_24_10_11_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_24_10_11_part1.json"
+    }
+  ]
+}

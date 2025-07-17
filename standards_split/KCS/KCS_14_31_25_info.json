@@ -1,0 +1,44 @@
+{
+  "id": "KCS 14 31 25",
+  "title": "KCS 14 31 25 볼트 접합 및 핀 연결",
+  "metadata": {
+    "quality_score": 90,
+    "keywords": [
+      "인장강도",
+      "볼트",
+      "용접",
+      "도장"
+    ],
+    "references": [
+      "KCS"
+    ],
+    "equations": 0,
+    "tables": 51
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KCS_14_31_25_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KCS_14_31_25_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KCS_14_31_25_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KCS_14_31_25_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KCS_14_31_25_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KCS_14_31_25_part1.json"
+    }
+  ]
+}

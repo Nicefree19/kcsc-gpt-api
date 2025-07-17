@@ -1,0 +1,47 @@
+{
+  "id": "KCS 54 30 05",
+  "title": "KCS 54 30 05 필댐 축조공(19.01)",
+  "metadata": {
+    "quality_score": 90,
+    "keywords": [
+      "압축강도",
+      "인장강도",
+      "콘크리트",
+      "시멘트",
+      "골재",
+      "방수"
+    ],
+    "references": [
+      "KCS",
+      "KDS"
+    ],
+    "equations": 0,
+    "tables": 8
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KCS_54_30_05_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KCS_54_30_05_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KCS_54_30_05_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KCS_54_30_05_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KCS_54_30_05_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KCS_54_30_05_part1.json"
+    }
+  ]
+}

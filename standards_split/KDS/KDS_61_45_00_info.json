@@ -1,0 +1,39 @@
+{
+  "id": "KDS 61 45 00",
+  "title": "펌프장시설 설계기준(22.11)",
+  "metadata": {
+    "quality_score": 90,
+    "keywords": [
+      "철근",
+      "콘크리트",
+      "방수"
+    ],
+    "references": [
+      "KDS"
+    ],
+    "equations": 6,
+    "tables": 13
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_61_45_00_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KDS_61_45_00_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KDS_61_45_00_section_construction.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_61_45_00_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_61_45_00_part1.json"
+    }
+  ]
+}

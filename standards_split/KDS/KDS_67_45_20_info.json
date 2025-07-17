@@ -1,0 +1,44 @@
+{
+  "id": "KDS 67 45 20",
+  "title": "농지배수 수문설계 2023.12.28",
+  "metadata": {
+    "quality_score": 80,
+    "keywords": [
+      "철근",
+      "콘크리트",
+      "내진",
+      "내화"
+    ],
+    "references": [
+      "KDS"
+    ],
+    "equations": 0,
+    "tables": 0
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_67_45_20_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KDS_67_45_20_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KDS_67_45_20_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KDS_67_45_20_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_67_45_20_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_67_45_20_part1.json"
+    }
+  ]
+}

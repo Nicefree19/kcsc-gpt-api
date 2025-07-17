@@ -1,0 +1,48 @@
+{
+  "id": "KCS 47 20 10",
+  "title": "KCS 47 20 10 궤도공사 일반사항_수정",
+  "metadata": {
+    "quality_score": 90,
+    "keywords": [
+      "압축강도",
+      "철근",
+      "콘크리트",
+      "골재",
+      "볼트",
+      "용접",
+      "도장",
+      "품질시험"
+    ],
+    "references": [
+      "KCS"
+    ],
+    "equations": 1,
+    "tables": 48
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KCS_47_20_10_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KCS_47_20_10_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KCS_47_20_10_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KCS_47_20_10_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KCS_47_20_10_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KCS_47_20_10_part1.json"
+    }
+  ]
+}

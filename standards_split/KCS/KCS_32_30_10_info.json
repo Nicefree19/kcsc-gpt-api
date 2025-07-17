@@ -1,0 +1,47 @@
+{
+  "id": "KCS 32 30 10",
+  "title": "KCS 32 30 10 옥내조명설비공사",
+  "metadata": {
+    "quality_score": 80,
+    "keywords": [
+      "볼트",
+      "용접",
+      "도장",
+      "방수",
+      "단열",
+      "내진"
+    ],
+    "references": [
+      "KCS",
+      "KDS"
+    ],
+    "equations": 0,
+    "tables": 0
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KCS_32_30_10_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KCS_32_30_10_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KCS_32_30_10_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KCS_32_30_10_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KCS_32_30_10_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KCS_32_30_10_part1.json"
+    }
+  ]
+}

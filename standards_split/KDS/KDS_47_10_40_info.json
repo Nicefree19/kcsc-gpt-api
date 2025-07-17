@@ -1,0 +1,47 @@
+{
+  "id": "KDS 47 10 40",
+  "title": "지하구조물_수정",
+  "metadata": {
+    "quality_score": 100,
+    "keywords": [
+      "압축강도",
+      "철근",
+      "콘크리트",
+      "시멘트",
+      "앵커",
+      "방수",
+      "내진"
+    ],
+    "references": [
+      "KDS"
+    ],
+    "equations": 22,
+    "tables": 14
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_47_10_40_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KDS_47_10_40_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KDS_47_10_40_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KDS_47_10_40_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_47_10_40_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_47_10_40_part1.json"
+    }
+  ]
+}

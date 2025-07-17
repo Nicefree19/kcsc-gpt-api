@@ -1,0 +1,41 @@
+{
+  "id": "KDS 41 50 10",
+  "title": "목구조 재료 및 허용응력",
+  "metadata": {
+    "quality_score": 100,
+    "keywords": [
+      "내화"
+    ],
+    "references": [
+      "KDS"
+    ],
+    "equations": 13,
+    "tables": 96
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_41_50_10_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KDS_41_50_10_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KDS_41_50_10_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KDS_41_50_10_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_41_50_10_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_41_50_10_part1.json"
+    }
+  ]
+}

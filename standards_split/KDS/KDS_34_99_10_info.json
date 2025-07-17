@@ -1,0 +1,37 @@
+{
+  "id": "KDS 34 99 10",
+  "title": "식생 관리",
+  "metadata": {
+    "quality_score": 80,
+    "keywords": [
+      "도장"
+    ],
+    "references": [
+      "KDS"
+    ],
+    "equations": 0,
+    "tables": 12
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_34_99_10_section_scope.json"
+    },
+    {
+      "section": "construction",
+      "file": "KDS_34_99_10_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KDS_34_99_10_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_34_99_10_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_34_99_10_part1.json"
+    }
+  ]
+}

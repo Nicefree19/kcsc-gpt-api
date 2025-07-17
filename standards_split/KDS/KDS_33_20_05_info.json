@@ -1,0 +1,49 @@
+{
+  "id": "KDS 33 20 05",
+  "title": "생활폐기물 소각시설 설계 일반사항",
+  "metadata": {
+    "quality_score": 80,
+    "keywords": [
+      "공기량",
+      "철근",
+      "콘크리트",
+      "볼트",
+      "용접",
+      "도장",
+      "단열",
+      "내진",
+      "내화"
+    ],
+    "references": [
+      "KDS"
+    ],
+    "equations": 5,
+    "tables": 1
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_33_20_05_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KDS_33_20_05_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KDS_33_20_05_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KDS_33_20_05_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_33_20_05_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_33_20_05_part1.json"
+    }
+  ]
+}

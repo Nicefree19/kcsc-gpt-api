@@ -1,0 +1,47 @@
+{
+  "id": "KDS 42 60 00",
+  "title": "소규모건축 조적식구조",
+  "metadata": {
+    "quality_score": 100,
+    "keywords": [
+      "압축강도",
+      "인장강도",
+      "철근",
+      "콘크리트",
+      "시멘트",
+      "양생",
+      "용접"
+    ],
+    "references": [
+      "KDS"
+    ],
+    "equations": 32,
+    "tables": 67
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_42_60_00_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KDS_42_60_00_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KDS_42_60_00_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KDS_42_60_00_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_42_60_00_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_42_60_00_part1.json"
+    }
+  ]
+}

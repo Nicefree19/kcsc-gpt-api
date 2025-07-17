@@ -1,0 +1,50 @@
+{
+  "id": "EXCS 41 47 00",
+  "title": "도장공사(부대시설편)",
+  "metadata": {
+    "quality_score": 90,
+    "keywords": [
+      "콘크리트",
+      "시멘트",
+      "배합",
+      "양생",
+      "용접",
+      "도장",
+      "방수",
+      "내화",
+      "품질시험"
+    ],
+    "references": [
+      "KCS",
+      "EXCS"
+    ],
+    "equations": 0,
+    "tables": 55
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "EXCS_41_47_00_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "EXCS_41_47_00_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "EXCS_41_47_00_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "EXCS_41_47_00_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "EXCS_41_47_00_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "EXCS_41_47_00_part1.json"
+    }
+  ]
+}

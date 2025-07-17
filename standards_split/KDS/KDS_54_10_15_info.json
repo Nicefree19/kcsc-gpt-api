@@ -1,0 +1,43 @@
+{
+  "id": "KDS 54 10 15",
+  "title": "댐 설계 계획(22.08)",
+  "metadata": {
+    "quality_score": 90,
+    "keywords": [
+      "콘크리트",
+      "골재",
+      "방수"
+    ],
+    "references": [
+      "KDS"
+    ],
+    "equations": 34,
+    "tables": 0
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_54_10_15_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KDS_54_10_15_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KDS_54_10_15_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KDS_54_10_15_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_54_10_15_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_54_10_15_part1.json"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "KDS 14 31 20",
+  "title": "강구조 피로 및 파단 설계기준(하중저항계수설계법)",
+  "metadata": {
+    "quality_score": 100,
+    "keywords": [
+      "볼트",
+      "용접",
+      "도장"
+    ],
+    "references": [
+      "KDS"
+    ],
+    "equations": 43,
+    "tables": 50
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_14_31_20_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KDS_14_31_20_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KDS_14_31_20_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KDS_14_31_20_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_14_31_20_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_14_31_20_part1.json"
+    }
+  ]
+}

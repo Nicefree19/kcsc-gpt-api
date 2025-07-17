@@ -1,0 +1,42 @@
+{
+  "id": "KDS 12 20 25",
+  "title": "농업기반시설 설계측량",
+  "metadata": {
+    "quality_score": 90,
+    "keywords": [
+      "콘크리트",
+      "방수"
+    ],
+    "references": [
+      "KDS"
+    ],
+    "equations": 0,
+    "tables": 9
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_12_20_25_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KDS_12_20_25_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KDS_12_20_25_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KDS_12_20_25_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_12_20_25_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_12_20_25_part1.json"
+    }
+  ]
+}

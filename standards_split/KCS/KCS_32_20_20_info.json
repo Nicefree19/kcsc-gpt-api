@@ -1,0 +1,47 @@
+{
+  "id": "KCS 32 20 20",
+  "title": "KCS 32 20 20 예비전원설비공사",
+  "metadata": {
+    "quality_score": 80,
+    "keywords": [
+      "콘크리트",
+      "앵커",
+      "볼트",
+      "용접",
+      "도장",
+      "내진"
+    ],
+    "references": [
+      "KCS",
+      "KDS"
+    ],
+    "equations": 0,
+    "tables": 0
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KCS_32_20_20_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KCS_32_20_20_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KCS_32_20_20_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KCS_32_20_20_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KCS_32_20_20_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KCS_32_20_20_part1.json"
+    }
+  ]
+}

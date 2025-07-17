@@ -1,0 +1,48 @@
+{
+  "id": "KCS 27 50 05",
+  "title": "KCS 27 50 05 터널 배수 및 방수 공사(개정전문 최종)_수정",
+  "metadata": {
+    "quality_score": 85,
+    "keywords": [
+      "인장강도",
+      "콘크리트",
+      "양생",
+      "거푸집",
+      "동바리",
+      "볼트",
+      "용접",
+      "방수"
+    ],
+    "references": [
+      "KCS"
+    ],
+    "equations": 0,
+    "tables": 6
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KCS_27_50_05_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KCS_27_50_05_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KCS_27_50_05_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KCS_27_50_05_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KCS_27_50_05_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KCS_27_50_05_part1.json"
+    }
+  ]
+}

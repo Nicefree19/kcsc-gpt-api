@@ -1,0 +1,47 @@
+{
+  "id": "KDS 24 12 22",
+  "title": "교량 설계하중(케이블교량)_수정",
+  "metadata": {
+    "quality_score": 100,
+    "keywords": [
+      "철근",
+      "콘크리트",
+      "시멘트",
+      "앵커",
+      "도장",
+      "방수",
+      "내진"
+    ],
+    "references": [
+      "KDS"
+    ],
+    "equations": 212,
+    "tables": 34
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_24_12_22_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KDS_24_12_22_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KDS_24_12_22_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KDS_24_12_22_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_24_12_22_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_24_12_22_part1.json"
+    }
+  ]
+}

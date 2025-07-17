@@ -1,0 +1,47 @@
+{
+  "id": "KCS 34 50 65",
+  "title": "KCS 34 50 65 조경 급·배수 및 관수",
+  "metadata": {
+    "quality_score": 80,
+    "keywords": [
+      "철근",
+      "콘크리트",
+      "골재",
+      "볼트",
+      "도장",
+      "방수"
+    ],
+    "references": [
+      "KCS",
+      "KDS"
+    ],
+    "equations": 1,
+    "tables": 1
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KCS_34_50_65_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KCS_34_50_65_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KCS_34_50_65_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KCS_34_50_65_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KCS_34_50_65_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KCS_34_50_65_part1.json"
+    }
+  ]
+}

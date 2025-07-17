@@ -1,0 +1,45 @@
+{
+  "id": "KDS 34 50 35",
+  "title": "수경시설",
+  "metadata": {
+    "quality_score": 90,
+    "keywords": [
+      "콘크리트",
+      "볼트",
+      "용접",
+      "도장",
+      "방수"
+    ],
+    "references": [
+      "KDS"
+    ],
+    "equations": 0,
+    "tables": 16
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_34_50_35_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KDS_34_50_35_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KDS_34_50_35_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KDS_34_50_35_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_34_50_35_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_34_50_35_part1.json"
+    }
+  ]
+}

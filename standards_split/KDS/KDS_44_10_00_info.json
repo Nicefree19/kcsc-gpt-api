@@ -1,0 +1,35 @@
+{
+  "id": "KDS 44 10 00",
+  "title": "도로설계 일반사항_수정",
+  "metadata": {
+    "quality_score": 80,
+    "keywords": [],
+    "references": [
+      "KDS"
+    ],
+    "equations": 12,
+    "tables": 27
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_44_10_00_section_scope.json"
+    },
+    {
+      "section": "construction",
+      "file": "KDS_44_10_00_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KDS_44_10_00_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_44_10_00_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_44_10_00_part1.json"
+    }
+  ]
+}

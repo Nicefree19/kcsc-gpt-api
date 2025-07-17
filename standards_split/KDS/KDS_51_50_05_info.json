@@ -1,0 +1,46 @@
+{
+  "id": "KDS 51 50 05",
+  "title": "하천제방_181231_수정",
+  "metadata": {
+    "quality_score": 100,
+    "keywords": [
+      "압축강도",
+      "전단강도",
+      "콘크리트",
+      "골재",
+      "방수",
+      "내진"
+    ],
+    "references": [
+      "KDS"
+    ],
+    "equations": 18,
+    "tables": 12
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_51_50_05_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KDS_51_50_05_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KDS_51_50_05_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KDS_51_50_05_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_51_50_05_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_51_50_05_part1.json"
+    }
+  ]
+}

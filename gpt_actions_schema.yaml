@@ -1,11 +1,11 @@
 openapi: 3.0.0
 info:
   title: Korean Construction Standards API
-  description: 한국 건설표준(KDS/KCS/EXCS) 검색 및 조회 API
+  description: 한국 건설표준(KDS/KCS/EXCS) 검색 및 조회 API - 5,233개 문서 지원
   version: 1.0.0
 servers:
   - url: https://kcsc-gpt-api.onrender.com
-    description: Production server
+    description: Production server (GitHub 연동)
 
 paths:
   /api/v1/search:

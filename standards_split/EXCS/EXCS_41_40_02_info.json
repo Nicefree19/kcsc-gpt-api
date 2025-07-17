@@ -1,0 +1,51 @@
+{
+  "id": "EXCS 41 40 02",
+  "title": "적층 아스팔트 방수공사(부대시설편)",
+  "metadata": {
+    "quality_score": 90,
+    "keywords": [
+      "콘크리트",
+      "시멘트",
+      "배합",
+      "양생",
+      "거푸집",
+      "동바리",
+      "용접",
+      "방수",
+      "단열",
+      "품질시험"
+    ],
+    "references": [
+      "KCS",
+      "EXCS"
+    ],
+    "equations": 2,
+    "tables": 4
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "EXCS_41_40_02_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "EXCS_41_40_02_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "EXCS_41_40_02_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "EXCS_41_40_02_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "EXCS_41_40_02_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "EXCS_41_40_02_part1.json"
+    }
+  ]
+}

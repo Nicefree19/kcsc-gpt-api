@@ -1,0 +1,40 @@
+{
+  "id": "KDS 27 60 00",
+  "title": "터널 환기, 조명, 방재시설(개정전문 최종)_수정",
+  "metadata": {
+    "quality_score": 80,
+    "keywords": [
+      "동바리",
+      "방수",
+      "내진",
+      "내화"
+    ],
+    "references": [
+      "KDS"
+    ],
+    "equations": 2,
+    "tables": 6
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_27_60_00_section_scope.json"
+    },
+    {
+      "section": "construction",
+      "file": "KDS_27_60_00_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KDS_27_60_00_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_27_60_00_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_27_60_00_part1.json"
+    }
+  ]
+}

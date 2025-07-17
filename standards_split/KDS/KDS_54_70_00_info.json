@@ -1,0 +1,44 @@
+{
+  "id": "KDS 54 70 00",
+  "title": "아치댐(22.08)",
+  "metadata": {
+    "quality_score": 100,
+    "keywords": [
+      "압축강도",
+      "콘크리트",
+      "배합",
+      "내진"
+    ],
+    "references": [
+      "KDS"
+    ],
+    "equations": 9,
+    "tables": 3
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_54_70_00_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KDS_54_70_00_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KDS_54_70_00_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KDS_54_70_00_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_54_70_00_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_54_70_00_part1.json"
+    }
+  ]
+}

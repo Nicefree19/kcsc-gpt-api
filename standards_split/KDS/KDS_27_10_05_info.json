@@ -1,0 +1,51 @@
+{
+  "id": "KDS 27 10 05",
+  "title": "터널 설계 개요_수정",
+  "metadata": {
+    "quality_score": 90,
+    "keywords": [
+      "압축강도",
+      "철근",
+      "콘크리트",
+      "시멘트",
+      "동바리",
+      "앵커",
+      "볼트",
+      "방수",
+      "내진",
+      "내화"
+    ],
+    "references": [
+      "KCS",
+      "KDS"
+    ],
+    "equations": 0,
+    "tables": 5
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_27_10_05_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KDS_27_10_05_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KDS_27_10_05_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KDS_27_10_05_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_27_10_05_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_27_10_05_part1.json"
+    }
+  ]
+}

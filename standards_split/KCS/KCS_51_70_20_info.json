@@ -1,0 +1,44 @@
+{
+  "id": "KCS 51 70 20",
+  "title": "KCS 51 70 20 하천 복원공간 및 시설_수정",
+  "metadata": {
+    "quality_score": 80,
+    "keywords": [
+      "콘크리트",
+      "양생",
+      "방수"
+    ],
+    "references": [
+      "KCS",
+      "KDS"
+    ],
+    "equations": 0,
+    "tables": 1
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KCS_51_70_20_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KCS_51_70_20_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KCS_51_70_20_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KCS_51_70_20_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KCS_51_70_20_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KCS_51_70_20_part1.json"
+    }
+  ]
+}

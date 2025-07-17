@@ -1,0 +1,51 @@
+{
+  "id": "KCS 41 85 01",
+  "title": "KCS 41 85 01 해체공사 및 자원 재활용 일반사항_수정",
+  "metadata": {
+    "quality_score": 80,
+    "keywords": [
+      "인장강도",
+      "철근",
+      "콘크리트",
+      "시멘트",
+      "골재",
+      "볼트",
+      "용접",
+      "방수",
+      "단열",
+      "내화",
+      "품질시험"
+    ],
+    "references": [
+      "KCS"
+    ],
+    "equations": 0,
+    "tables": 0
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KCS_41_85_01_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KCS_41_85_01_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KCS_41_85_01_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KCS_41_85_01_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KCS_41_85_01_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KCS_41_85_01_part1.json"
+    }
+  ]
+}

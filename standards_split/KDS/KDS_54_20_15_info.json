@@ -1,0 +1,43 @@
+{
+  "id": "KDS 54 20 15",
+  "title": "댐 여수로(22.08)",
+  "metadata": {
+    "quality_score": 90,
+    "keywords": [
+      "철근",
+      "콘크리트",
+      "방수"
+    ],
+    "references": [
+      "KDS"
+    ],
+    "equations": 26,
+    "tables": 0
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_54_20_15_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KDS_54_20_15_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KDS_54_20_15_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KDS_54_20_15_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_54_20_15_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_54_20_15_part1.json"
+    }
+  ]
+}

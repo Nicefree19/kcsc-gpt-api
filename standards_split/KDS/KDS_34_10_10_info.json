@@ -1,0 +1,52 @@
+{
+  "id": "KDS 34 10 10",
+  "title": "조경설계 일반",
+  "metadata": {
+    "quality_score": 80,
+    "keywords": [
+      "압축강도",
+      "인장강도",
+      "휨강도",
+      "철근",
+      "콘크리트",
+      "시멘트",
+      "골재",
+      "볼트",
+      "용접",
+      "도장",
+      "내진"
+    ],
+    "references": [
+      "KCS",
+      "KDS"
+    ],
+    "equations": 2,
+    "tables": 1
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_34_10_10_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KDS_34_10_10_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KDS_34_10_10_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KDS_34_10_10_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_34_10_10_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_34_10_10_part1.json"
+    }
+  ]
+}

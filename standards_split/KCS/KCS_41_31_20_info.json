@@ -1,0 +1,46 @@
+{
+  "id": "KCS 41 31 20",
+  "title": "KCS 41 31 20 건축물 강구조공사 용접_수정",
+  "metadata": {
+    "quality_score": 100,
+    "keywords": [
+      "인장강도",
+      "철근",
+      "콘크리트",
+      "용접",
+      "도장",
+      "내진"
+    ],
+    "references": [
+      "KCS"
+    ],
+    "equations": 14,
+    "tables": 39
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KCS_41_31_20_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KCS_41_31_20_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KCS_41_31_20_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KCS_41_31_20_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KCS_41_31_20_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KCS_41_31_20_part1.json"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "id": "KCS 41 56 12",
+  "title": "KCS 41 56 12 아스팔트 지붕_수정",
+  "metadata": {
+    "quality_score": 80,
+    "keywords": [
+      "인장강도",
+      "콘크리트",
+      "시멘트",
+      "골재",
+      "양생",
+      "도장",
+      "방수",
+      "단열",
+      "안전계수"
+    ],
+    "references": [
+      "KCS"
+    ],
+    "equations": 0,
+    "tables": 0
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KCS_41_56_12_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KCS_41_56_12_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KCS_41_56_12_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KCS_41_56_12_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KCS_41_56_12_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KCS_41_56_12_part1.json"
+    }
+  ]
+}

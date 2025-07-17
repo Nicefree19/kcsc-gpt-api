@@ -1,0 +1,49 @@
+{
+  "id": "KDS 24 17 12",
+  "title": "교량내진 설계기준(케이블교량)_수정",
+  "metadata": {
+    "quality_score": 100,
+    "keywords": [
+      "압축강도",
+      "인장강도",
+      "전단강도",
+      "휨강도",
+      "철근",
+      "콘크리트",
+      "앵커",
+      "용접",
+      "내진"
+    ],
+    "references": [
+      "KDS"
+    ],
+    "equations": 93,
+    "tables": 9
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_24_17_12_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KDS_24_17_12_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KDS_24_17_12_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KDS_24_17_12_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_24_17_12_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_24_17_12_part1.json"
+    }
+  ]
+}

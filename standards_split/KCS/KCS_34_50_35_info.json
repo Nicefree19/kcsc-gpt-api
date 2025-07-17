@@ -1,0 +1,55 @@
+{
+  "id": "KCS 34 50 35",
+  "title": "KCS 34 50 35 수경시설",
+  "metadata": {
+    "quality_score": 90,
+    "keywords": [
+      "압축강도",
+      "인장강도",
+      "전단강도",
+      "철근",
+      "콘크리트",
+      "시멘트",
+      "양생",
+      "거푸집",
+      "동바리",
+      "볼트",
+      "용접",
+      "도장",
+      "방수",
+      "품질시험"
+    ],
+    "references": [
+      "KCS",
+      "KDS"
+    ],
+    "equations": 0,
+    "tables": 4
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KCS_34_50_35_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KCS_34_50_35_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KCS_34_50_35_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KCS_34_50_35_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KCS_34_50_35_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KCS_34_50_35_part1.json"
+    }
+  ]
+}

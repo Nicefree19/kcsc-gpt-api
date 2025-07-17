@@ -1,0 +1,42 @@
+{
+  "id": "KDS 24 90 10",
+  "title": "교량 기타시설설계기준 (일반설계법)_수정",
+  "metadata": {
+    "quality_score": 90,
+    "keywords": [
+      "철근",
+      "콘크리트",
+      "앵커",
+      "볼트",
+      "방수",
+      "내진"
+    ],
+    "references": [
+      "KDS"
+    ],
+    "equations": 8,
+    "tables": 16
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_24_90_10_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KDS_24_90_10_section_materials.json"
+    },
+    {
+      "section": "quality",
+      "file": "KDS_24_90_10_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_24_90_10_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_24_90_10_part1.json"
+    }
+  ]
+}

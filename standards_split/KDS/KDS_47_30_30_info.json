@@ -1,0 +1,47 @@
+{
+  "id": "KDS 47 30 30",
+  "title": "전차선로_수정",
+  "metadata": {
+    "quality_score": 90,
+    "keywords": [
+      "철근",
+      "콘크리트",
+      "앵커",
+      "볼트",
+      "용접",
+      "도장",
+      "내진"
+    ],
+    "references": [
+      "KDS"
+    ],
+    "equations": 9,
+    "tables": 0
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_47_30_30_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KDS_47_30_30_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KDS_47_30_30_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KDS_47_30_30_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_47_30_30_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_47_30_30_part1.json"
+    }
+  ]
+}

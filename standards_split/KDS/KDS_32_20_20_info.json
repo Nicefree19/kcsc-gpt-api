@@ -1,0 +1,42 @@
+{
+  "id": "KDS 32 20 20",
+  "title": "예비전원설비",
+  "metadata": {
+    "quality_score": 100,
+    "keywords": [
+      "용접",
+      "내진"
+    ],
+    "references": [
+      "KDS"
+    ],
+    "equations": 210,
+    "tables": 3
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_32_20_20_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KDS_32_20_20_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KDS_32_20_20_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KDS_32_20_20_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_32_20_20_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_32_20_20_part1.json"
+    }
+  ]
+}

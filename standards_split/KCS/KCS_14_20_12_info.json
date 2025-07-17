@@ -1,0 +1,54 @@
+{
+  "id": "KCS 14 20 12",
+  "title": "KCS 14 20 12 거푸집 및 동바리",
+  "metadata": {
+    "quality_score": 100,
+    "keywords": [
+      "압축강도",
+      "슬럼프",
+      "철근",
+      "콘크리트",
+      "시멘트",
+      "골재",
+      "배합",
+      "양생",
+      "거푸집",
+      "동바리",
+      "앵커",
+      "볼트",
+      "품질시험"
+    ],
+    "references": [
+      "KCS",
+      "KDS"
+    ],
+    "equations": 6,
+    "tables": 16
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KCS_14_20_12_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KCS_14_20_12_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KCS_14_20_12_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KCS_14_20_12_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KCS_14_20_12_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KCS_14_20_12_part1.json"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "id": "KDS 11 30 05",
+  "title": "연약지반 설계일반_수정",
+  "metadata": {
+    "quality_score": 90,
+    "keywords": [
+      "전단강도",
+      "슬럼프",
+      "콘크리트",
+      "시멘트",
+      "골재",
+      "배합"
+    ],
+    "references": [
+      "KDS"
+    ],
+    "equations": 0,
+    "tables": 7
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_11_30_05_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KDS_11_30_05_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KDS_11_30_05_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KDS_11_30_05_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_11_30_05_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_11_30_05_part1.json"
+    }
+  ]
+}

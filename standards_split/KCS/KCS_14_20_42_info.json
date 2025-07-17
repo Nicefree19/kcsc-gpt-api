@@ -1,0 +1,51 @@
+{
+  "id": "KCS 14 20 42",
+  "title": "KCS 14 20 42 매스 콘크리트_수정",
+  "metadata": {
+    "quality_score": 100,
+    "keywords": [
+      "압축강도",
+      "인장강도",
+      "철근",
+      "콘크리트",
+      "시멘트",
+      "골재",
+      "배합",
+      "양생",
+      "거푸집",
+      "단열"
+    ],
+    "references": [
+      "KCS",
+      "KDS"
+    ],
+    "equations": 12,
+    "tables": 9
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KCS_14_20_42_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KCS_14_20_42_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KCS_14_20_42_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KCS_14_20_42_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KCS_14_20_42_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KCS_14_20_42_part1.json"
+    }
+  ]
+}

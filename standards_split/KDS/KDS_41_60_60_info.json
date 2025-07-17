@@ -1,0 +1,50 @@
+{
+  "id": "KDS 41 60 60",
+  "title": "고온고압증기양생기포콘크리트구조 강도설계법",
+  "metadata": {
+    "quality_score": 90,
+    "keywords": [
+      "압축강도",
+      "인장강도",
+      "전단강도",
+      "휨강도",
+      "철근",
+      "콘크리트",
+      "양생",
+      "앵커",
+      "볼트",
+      "용접"
+    ],
+    "references": [
+      "KDS"
+    ],
+    "equations": 61,
+    "tables": 0
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_41_60_60_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KDS_41_60_60_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KDS_41_60_60_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KDS_41_60_60_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_41_60_60_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_41_60_60_part1.json"
+    }
+  ]
+}

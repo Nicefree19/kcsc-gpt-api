@@ -1,0 +1,48 @@
+{
+  "id": "KCS 41 48 01",
+  "title": "KCS 41 48 01 타일공사_수정",
+  "metadata": {
+    "quality_score": 90,
+    "keywords": [
+      "철근",
+      "콘크리트",
+      "시멘트",
+      "골재",
+      "배합",
+      "거푸집",
+      "앵커",
+      "방수"
+    ],
+    "references": [
+      "KCS"
+    ],
+    "equations": 0,
+    "tables": 14
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KCS_41_48_01_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KCS_41_48_01_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KCS_41_48_01_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KCS_41_48_01_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KCS_41_48_01_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KCS_41_48_01_part1.json"
+    }
+  ]
+}

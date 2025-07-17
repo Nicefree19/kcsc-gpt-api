@@ -1,0 +1,53 @@
+{
+  "id": "KDS 67 20 20",
+  "title": "용배수로 시설 설계_수정",
+  "metadata": {
+    "quality_score": 100,
+    "keywords": [
+      "인장강도",
+      "전단강도",
+      "슬럼프",
+      "철근",
+      "콘크리트",
+      "시멘트",
+      "배합",
+      "거푸집",
+      "동바리",
+      "볼트",
+      "용접",
+      "도장",
+      "방수"
+    ],
+    "references": [
+      "KDS"
+    ],
+    "equations": 409,
+    "tables": 64
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_67_20_20_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KDS_67_20_20_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KDS_67_20_20_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KDS_67_20_20_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_67_20_20_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_67_20_20_part1.json"
+    }
+  ]
+}

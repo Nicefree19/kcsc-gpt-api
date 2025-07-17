@@ -1,0 +1,46 @@
+{
+  "id": "KCS 41 51 03",
+  "title": "KCS 41 51 03 바닥 공사_수정",
+  "metadata": {
+    "quality_score": 90,
+    "keywords": [
+      "콘크리트",
+      "시멘트",
+      "배합",
+      "양생",
+      "도장",
+      "방수"
+    ],
+    "references": [
+      "KCS"
+    ],
+    "equations": 0,
+    "tables": 6
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KCS_41_51_03_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KCS_41_51_03_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KCS_41_51_03_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KCS_41_51_03_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KCS_41_51_03_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KCS_41_51_03_part1.json"
+    }
+  ]
+}

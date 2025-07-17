@@ -1,0 +1,44 @@
+{
+  "id": "KDS 14 20 20",
+  "title": "콘크리트구조 휨 및 압축 설계기준_수정",
+  "metadata": {
+    "quality_score": 90,
+    "keywords": [
+      "압축강도",
+      "인장강도",
+      "전단강도",
+      "휨강도",
+      "철근",
+      "콘크리트",
+      "앵커",
+      "내진"
+    ],
+    "references": [
+      "KDS"
+    ],
+    "equations": 38,
+    "tables": 6
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_14_20_20_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KDS_14_20_20_section_materials.json"
+    },
+    {
+      "section": "quality",
+      "file": "KDS_14_20_20_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_14_20_20_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_14_20_20_part1.json"
+    }
+  ]
+}

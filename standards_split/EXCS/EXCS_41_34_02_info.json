@@ -1,0 +1,56 @@
+{
+  "id": "EXCS 41 34 02",
+  "title": "벽돌공사(부대시설편)",
+  "metadata": {
+    "quality_score": 80,
+    "keywords": [
+      "압축강도",
+      "철근",
+      "콘크리트",
+      "시멘트",
+      "골재",
+      "배합",
+      "양생",
+      "거푸집",
+      "동바리",
+      "앵커",
+      "볼트",
+      "용접",
+      "도장",
+      "방수",
+      "단열"
+    ],
+    "references": [
+      "KCS",
+      "EXCS"
+    ],
+    "equations": 0,
+    "tables": 1
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "EXCS_41_34_02_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "EXCS_41_34_02_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "EXCS_41_34_02_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "EXCS_41_34_02_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "EXCS_41_34_02_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "EXCS_41_34_02_part1.json"
+    }
+  ]
+}

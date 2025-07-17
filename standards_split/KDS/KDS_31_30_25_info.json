@@ -1,0 +1,36 @@
+{
+  "id": "KDS 31 30 25",
+  "title": "배수통기설비_수정",
+  "metadata": {
+    "quality_score": 70,
+    "keywords": [],
+    "references": [
+      "KCS",
+      "KDS"
+    ],
+    "equations": 0,
+    "tables": 51
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_31_30_25_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KDS_31_30_25_section_materials.json"
+    },
+    {
+      "section": "quality",
+      "file": "KDS_31_30_25_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_31_30_25_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_31_30_25_part1.json"
+    }
+  ]
+}

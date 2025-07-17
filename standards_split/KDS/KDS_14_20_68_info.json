@@ -1,0 +1,54 @@
+{
+  "id": "KDS 14 20 68",
+  "title": "유리섬유 강화 폴리머 보강근 콘크리트구조 설계기준(24.12)_수정",
+  "metadata": {
+    "quality_score": 100,
+    "keywords": [
+      "압축강도",
+      "인장강도",
+      "전단강도",
+      "휨강도",
+      "철근",
+      "콘크리트",
+      "골재",
+      "양생",
+      "거푸집",
+      "앵커",
+      "볼트",
+      "단열",
+      "내화"
+    ],
+    "references": [
+      "KCS",
+      "KDS"
+    ],
+    "equations": 87,
+    "tables": 54
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_14_20_68_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KDS_14_20_68_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KDS_14_20_68_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KDS_14_20_68_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_14_20_68_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_14_20_68_part1.json"
+    }
+  ]
+}

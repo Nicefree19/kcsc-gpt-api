@@ -1,0 +1,49 @@
+{
+  "id": "KDS 24 12 20",
+  "title": "교량 설계하중(일반설계법)_수정",
+  "metadata": {
+    "quality_score": 100,
+    "keywords": [
+      "철근",
+      "콘크리트",
+      "골재",
+      "배합",
+      "양생",
+      "앵커",
+      "볼트",
+      "방수",
+      "내진"
+    ],
+    "references": [
+      "KDS"
+    ],
+    "equations": 81,
+    "tables": 39
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_24_12_20_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KDS_24_12_20_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KDS_24_12_20_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KDS_24_12_20_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_24_12_20_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_24_12_20_part1.json"
+    }
+  ]
+}

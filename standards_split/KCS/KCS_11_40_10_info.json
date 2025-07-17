@@ -1,0 +1,47 @@
+{
+  "id": "KCS 11 40 10",
+  "title": "KCS 11 40 10 파형강판 암거_수정",
+  "metadata": {
+    "quality_score": 100,
+    "keywords": [
+      "인장강도",
+      "콘크리트",
+      "시멘트",
+      "골재",
+      "앵커",
+      "볼트",
+      "방수"
+    ],
+    "references": [
+      "KCS"
+    ],
+    "equations": 44,
+    "tables": 14
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KCS_11_40_10_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KCS_11_40_10_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KCS_11_40_10_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KCS_11_40_10_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KCS_11_40_10_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KCS_11_40_10_part1.json"
+    }
+  ]
+}

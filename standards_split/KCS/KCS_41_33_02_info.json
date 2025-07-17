@@ -1,0 +1,45 @@
+{
+  "id": "KCS 41 33 02",
+  "title": "KCS 41 33 02 한옥목공사_수정",
+  "metadata": {
+    "quality_score": 80,
+    "keywords": [
+      "콘크리트",
+      "배합",
+      "동바리",
+      "볼트",
+      "방수"
+    ],
+    "references": [
+      "KCS"
+    ],
+    "equations": 0,
+    "tables": 0
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KCS_41_33_02_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KCS_41_33_02_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KCS_41_33_02_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KCS_41_33_02_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KCS_41_33_02_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KCS_41_33_02_part1.json"
+    }
+  ]
+}

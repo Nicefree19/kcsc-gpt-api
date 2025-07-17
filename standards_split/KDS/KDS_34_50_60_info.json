@@ -1,0 +1,39 @@
+{
+  "id": "KDS 34 50 60",
+  "title": "경관조명시설",
+  "metadata": {
+    "quality_score": 80,
+    "keywords": [
+      "콘크리트",
+      "용접",
+      "방수"
+    ],
+    "references": [
+      "KDS"
+    ],
+    "equations": 0,
+    "tables": 3
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_34_50_60_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KDS_34_50_60_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KDS_34_50_60_section_construction.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_34_50_60_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_34_50_60_part1.json"
+    }
+  ]
+}

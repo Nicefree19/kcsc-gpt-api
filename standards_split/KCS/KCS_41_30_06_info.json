@@ -1,0 +1,53 @@
+{
+  "id": "KCS 41 30 06",
+  "title": "KCS 41 30 06 원자력발전소 콘크리트공사_수정",
+  "metadata": {
+    "quality_score": 90,
+    "keywords": [
+      "압축강도",
+      "철근",
+      "콘크리트",
+      "시멘트",
+      "골재",
+      "배합",
+      "양생",
+      "거푸집",
+      "동바리",
+      "용접",
+      "도장",
+      "방수",
+      "내진"
+    ],
+    "references": [
+      "KCS"
+    ],
+    "equations": 2,
+    "tables": 7
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KCS_41_30_06_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KCS_41_30_06_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KCS_41_30_06_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KCS_41_30_06_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KCS_41_30_06_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KCS_41_30_06_part1.json"
+    }
+  ]
+}

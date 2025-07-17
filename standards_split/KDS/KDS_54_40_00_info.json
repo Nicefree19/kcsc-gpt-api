@@ -1,0 +1,47 @@
+{
+  "id": "KDS 54 40 00",
+  "title": "콘크리트 표면차수벽형 석괴댐(22.08)",
+  "metadata": {
+    "quality_score": 90,
+    "keywords": [
+      "슬럼프",
+      "철근",
+      "콘크리트",
+      "배합",
+      "거푸집",
+      "앵커",
+      "방수"
+    ],
+    "references": [
+      "KDS"
+    ],
+    "equations": 3,
+    "tables": 6
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_54_40_00_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KDS_54_40_00_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KDS_54_40_00_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KDS_54_40_00_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_54_40_00_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_54_40_00_part1.json"
+    }
+  ]
+}

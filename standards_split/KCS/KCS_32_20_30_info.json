@@ -1,0 +1,49 @@
+{
+  "id": "KCS 32 20 30",
+  "title": "KCS 32 20 30 신전원설비공사",
+  "metadata": {
+    "quality_score": 80,
+    "keywords": [
+      "콘크리트",
+      "양생",
+      "앵커",
+      "볼트",
+      "용접",
+      "방수",
+      "단열",
+      "내진"
+    ],
+    "references": [
+      "KCS",
+      "KDS"
+    ],
+    "equations": 0,
+    "tables": 0
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KCS_32_20_30_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KCS_32_20_30_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KCS_32_20_30_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KCS_32_20_30_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KCS_32_20_30_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KCS_32_20_30_part1.json"
+    }
+  ]
+}

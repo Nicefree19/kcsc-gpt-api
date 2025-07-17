@@ -1,0 +1,45 @@
+{
+  "id": "KDS 67 65 30",
+  "title": "해면간척 용배수 설계_수정",
+  "metadata": {
+    "quality_score": 100,
+    "keywords": [
+      "철근",
+      "콘크리트",
+      "용접",
+      "방수",
+      "내진"
+    ],
+    "references": [
+      "KDS"
+    ],
+    "equations": 19,
+    "tables": 13
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_67_65_30_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KDS_67_65_30_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KDS_67_65_30_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KDS_67_65_30_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_67_65_30_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_67_65_30_part1.json"
+    }
+  ]
+}

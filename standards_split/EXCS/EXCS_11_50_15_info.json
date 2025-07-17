@@ -1,0 +1,50 @@
+{
+  "id": "EXCS 11 50 15",
+  "title": "기성말뚝(전문)",
+  "metadata": {
+    "quality_score": 100,
+    "keywords": [
+      "압축강도",
+      "철근",
+      "콘크리트",
+      "시멘트",
+      "양생",
+      "앵커",
+      "용접",
+      "도장",
+      "품질시험"
+    ],
+    "references": [
+      "KCS",
+      "EXCS"
+    ],
+    "equations": 15,
+    "tables": 18
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "EXCS_11_50_15_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "EXCS_11_50_15_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "EXCS_11_50_15_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "EXCS_11_50_15_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "EXCS_11_50_15_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "EXCS_11_50_15_part1.json"
+    }
+  ]
+}

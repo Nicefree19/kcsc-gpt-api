@@ -1,0 +1,48 @@
+{
+  "id": "KDS 42 50 10",
+  "title": "소규모건축 목구조",
+  "metadata": {
+    "quality_score": 90,
+    "keywords": [
+      "압축강도",
+      "철근",
+      "콘크리트",
+      "시멘트",
+      "앵커",
+      "볼트",
+      "방수",
+      "단열"
+    ],
+    "references": [
+      "KDS"
+    ],
+    "equations": 0,
+    "tables": 114
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_42_50_10_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KDS_42_50_10_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KDS_42_50_10_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KDS_42_50_10_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_42_50_10_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_42_50_10_part1.json"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "id": "KCS 51 60 23",
+  "title": "KCS 51 60 23 하천 하상정리공사_수정",
+  "metadata": {
+    "quality_score": 90,
+    "keywords": [
+      "골재"
+    ],
+    "references": [
+      "KCS"
+    ],
+    "equations": 0,
+    "tables": 15
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KCS_51_60_23_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KCS_51_60_23_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KCS_51_60_23_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KCS_51_60_23_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KCS_51_60_23_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KCS_51_60_23_part1.json"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "id": "KCS 41 40 01",
+  "title": "KCS 41 40 01 방수공사일반_수정",
+  "metadata": {
+    "quality_score": 90,
+    "keywords": [
+      "철근",
+      "콘크리트",
+      "시멘트",
+      "배합",
+      "양생",
+      "거푸집",
+      "용접",
+      "방수",
+      "단열",
+      "품질시험"
+    ],
+    "references": [
+      "KCS"
+    ],
+    "equations": 0,
+    "tables": 6
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KCS_41_40_01_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KCS_41_40_01_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KCS_41_40_01_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KCS_41_40_01_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KCS_41_40_01_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KCS_41_40_01_part1.json"
+    }
+  ]
+}

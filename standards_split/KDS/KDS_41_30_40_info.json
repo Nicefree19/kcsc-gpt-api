@@ -1,0 +1,51 @@
+{
+  "id": "KDS 41 30 40",
+  "title": "냉간성형 스테인리스강 설계기준_수정",
+  "metadata": {
+    "quality_score": 100,
+    "keywords": [
+      "압축강도",
+      "인장강도",
+      "전단강도",
+      "휨강도",
+      "콘크리트",
+      "볼트",
+      "용접",
+      "도장",
+      "내진",
+      "안전계수"
+    ],
+    "references": [
+      "KCS",
+      "KDS"
+    ],
+    "equations": 339,
+    "tables": 37
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_41_30_40_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KDS_41_30_40_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KDS_41_30_40_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KDS_41_30_40_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_41_30_40_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_41_30_40_part1.json"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "KCS 47 20 40",
+  "title": "KCS 47 20 40 장대레일 설정 및 재설정_수정",
+  "metadata": {
+    "quality_score": 100,
+    "keywords": [
+      "콘크리트",
+      "볼트",
+      "용접"
+    ],
+    "references": [
+      "KCS"
+    ],
+    "equations": 7,
+    "tables": 11
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KCS_47_20_40_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KCS_47_20_40_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KCS_47_20_40_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KCS_47_20_40_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KCS_47_20_40_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KCS_47_20_40_part1.json"
+    }
+  ]
+}

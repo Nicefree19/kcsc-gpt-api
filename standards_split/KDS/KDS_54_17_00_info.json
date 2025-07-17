@@ -1,0 +1,46 @@
+{
+  "id": "KDS 54 17 00",
+  "title": "댐 내진설계(22.08)",
+  "metadata": {
+    "quality_score": 90,
+    "keywords": [
+      "압축강도",
+      "인장강도",
+      "전단강도",
+      "콘크리트",
+      "앵커",
+      "내진"
+    ],
+    "references": [
+      "KDS"
+    ],
+    "equations": 5,
+    "tables": 7
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_54_17_00_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KDS_54_17_00_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KDS_54_17_00_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KDS_54_17_00_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_54_17_00_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_54_17_00_part1.json"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "id": "KDS 24 14 22",
+  "title": "콘크리트교 설계기준(케이블교량)_수정",
+  "metadata": {
+    "quality_score": 100,
+    "keywords": [
+      "철근",
+      "콘크리트",
+      "시멘트",
+      "배합",
+      "양생",
+      "도장"
+    ],
+    "references": [
+      "KDS"
+    ],
+    "equations": 50,
+    "tables": 19
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_24_14_22_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KDS_24_14_22_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KDS_24_14_22_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KDS_24_14_22_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_24_14_22_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_24_14_22_part1.json"
+    }
+  ]
+}

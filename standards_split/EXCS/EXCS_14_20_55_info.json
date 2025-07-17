@@ -1,0 +1,56 @@
+{
+  "id": "EXCS 14 20 55",
+  "title": "프리캐스트 콘크리트(부대시설편)",
+  "metadata": {
+    "quality_score": 100,
+    "keywords": [
+      "압축강도",
+      "인장강도",
+      "슬럼프",
+      "공기량",
+      "철근",
+      "콘크리트",
+      "시멘트",
+      "골재",
+      "배합",
+      "양생",
+      "거푸집",
+      "동바리",
+      "앵커",
+      "볼트",
+      "용접"
+    ],
+    "references": [
+      "KCS",
+      "EXCS"
+    ],
+    "equations": 35,
+    "tables": 8
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "EXCS_14_20_55_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "EXCS_14_20_55_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "EXCS_14_20_55_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "EXCS_14_20_55_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "EXCS_14_20_55_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "EXCS_14_20_55_part1.json"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "id": "KDS 31 25 20",
+  "title": "환기설비_수정",
+  "metadata": {
+    "quality_score": 70,
+    "keywords": [
+      "공기량",
+      "단열"
+    ],
+    "references": [
+      "KCS",
+      "KDS"
+    ],
+    "equations": 5,
+    "tables": 6
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_31_25_20_section_scope.json"
+    },
+    {
+      "section": "quality",
+      "file": "KDS_31_25_20_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_31_25_20_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_31_25_20_part1.json"
+    }
+  ]
+}

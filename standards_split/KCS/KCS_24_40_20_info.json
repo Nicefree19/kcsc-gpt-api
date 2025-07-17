@@ -1,0 +1,51 @@
+{
+  "id": "KCS 24 40 20",
+  "title": "KCS 24 40 20 교면방수_수정",
+  "metadata": {
+    "quality_score": 90,
+    "keywords": [
+      "인장강도",
+      "전단강도",
+      "콘크리트",
+      "시멘트",
+      "골재",
+      "배합",
+      "양생",
+      "용접",
+      "도장",
+      "방수",
+      "품질시험"
+    ],
+    "references": [
+      "KCS"
+    ],
+    "equations": 0,
+    "tables": 24
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KCS_24_40_20_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KCS_24_40_20_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KCS_24_40_20_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KCS_24_40_20_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KCS_24_40_20_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KCS_24_40_20_part1.json"
+    }
+  ]
+}

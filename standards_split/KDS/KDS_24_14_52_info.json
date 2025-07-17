@@ -1,0 +1,50 @@
+{
+  "id": "KDS 24 14 52",
+  "title": "교량 하부구조 설계기준(케이블교량)_수정",
+  "metadata": {
+    "quality_score": 100,
+    "keywords": [
+      "압축강도",
+      "전단강도",
+      "휨강도",
+      "철근",
+      "콘크리트",
+      "시멘트",
+      "골재",
+      "앵커",
+      "용접",
+      "내진"
+    ],
+    "references": [
+      "KDS"
+    ],
+    "equations": 112,
+    "tables": 34
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_24_14_52_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KDS_24_14_52_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KDS_24_14_52_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KDS_24_14_52_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_24_14_52_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_24_14_52_part1.json"
+    }
+  ]
+}

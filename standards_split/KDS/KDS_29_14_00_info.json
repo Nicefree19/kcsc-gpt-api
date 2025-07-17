@@ -1,0 +1,51 @@
+{
+  "id": "KDS 29 14 00",
+  "title": "공동구 본체 설계_210512_수정",
+  "metadata": {
+    "quality_score": 100,
+    "keywords": [
+      "철근",
+      "콘크리트",
+      "시멘트",
+      "거푸집",
+      "앵커",
+      "볼트",
+      "용접",
+      "방수",
+      "단열",
+      "내진",
+      "내화"
+    ],
+    "references": [
+      "KDS"
+    ],
+    "equations": 31,
+    "tables": 31
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_29_14_00_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KDS_29_14_00_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KDS_29_14_00_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KDS_29_14_00_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_29_14_00_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_29_14_00_part1.json"
+    }
+  ]
+}

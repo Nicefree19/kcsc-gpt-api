@@ -1,0 +1,44 @@
+{
+  "id": "EXCS 10 10 30",
+  "title": "환경관리(전문)",
+  "metadata": {
+    "quality_score": 80,
+    "keywords": [
+      "콘크리트",
+      "골재",
+      "품질시험"
+    ],
+    "references": [
+      "KCS",
+      "EXCS"
+    ],
+    "equations": 0,
+    "tables": 0
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "EXCS_10_10_30_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "EXCS_10_10_30_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "EXCS_10_10_30_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "EXCS_10_10_30_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "EXCS_10_10_30_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "EXCS_10_10_30_part1.json"
+    }
+  ]
+}

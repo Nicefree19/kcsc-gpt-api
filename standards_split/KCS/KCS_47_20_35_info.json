@@ -1,0 +1,41 @@
+{
+  "id": "KCS 47 20 35",
+  "title": "KCS 47 20 35 레일용접공사_수정",
+  "metadata": {
+    "quality_score": 100,
+    "keywords": [
+      "용접"
+    ],
+    "references": [
+      "KCS"
+    ],
+    "equations": 28,
+    "tables": 56
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KCS_47_20_35_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KCS_47_20_35_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KCS_47_20_35_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KCS_47_20_35_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KCS_47_20_35_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KCS_47_20_35_part1.json"
+    }
+  ]
+}

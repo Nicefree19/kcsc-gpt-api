@@ -1,0 +1,55 @@
+{
+  "id": "KDS 24 14 20",
+  "title": "콘크리트교 설계기준(극한강도설계법)_수정",
+  "metadata": {
+    "quality_score": 100,
+    "keywords": [
+      "압축강도",
+      "인장강도",
+      "전단강도",
+      "휨강도",
+      "철근",
+      "콘크리트",
+      "시멘트",
+      "골재",
+      "배합",
+      "양생",
+      "거푸집",
+      "동바리",
+      "앵커",
+      "볼트",
+      "용접"
+    ],
+    "references": [
+      "KDS"
+    ],
+    "equations": 339,
+    "tables": 55
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_24_14_20_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KDS_24_14_20_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KDS_24_14_20_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KDS_24_14_20_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_24_14_20_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_24_14_20_part1.json"
+    }
+  ]
+}

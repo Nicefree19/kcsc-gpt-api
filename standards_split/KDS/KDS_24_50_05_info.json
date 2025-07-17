@@ -1,0 +1,46 @@
+{
+  "id": "KDS 24 50 05",
+  "title": "GFRP_보강근용_콘크리트교_설계기준",
+  "metadata": {
+    "quality_score": 100,
+    "keywords": [
+      "압축강도",
+      "인장강도",
+      "철근",
+      "콘크리트",
+      "내화"
+    ],
+    "references": [
+      "KCS",
+      "KDS"
+    ],
+    "equations": 72,
+    "tables": 19
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_24_50_05_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KDS_24_50_05_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KDS_24_50_05_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KDS_24_50_05_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_24_50_05_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_24_50_05_part1.json"
+    }
+  ]
+}

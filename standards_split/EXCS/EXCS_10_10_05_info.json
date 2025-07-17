@@ -1,0 +1,43 @@
+{
+  "id": "EXCS 10 10 05",
+  "title": "공사일반(전문)",
+  "metadata": {
+    "quality_score": 80,
+    "keywords": [
+      "골재",
+      "품질시험"
+    ],
+    "references": [
+      "KCS",
+      "EXCS"
+    ],
+    "equations": 0,
+    "tables": 2
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "EXCS_10_10_05_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "EXCS_10_10_05_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "EXCS_10_10_05_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "EXCS_10_10_05_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "EXCS_10_10_05_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "EXCS_10_10_05_part1.json"
+    }
+  ]
+}

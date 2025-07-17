@@ -1,0 +1,42 @@
+{
+  "id": "KDS 32 25 10",
+  "title": "간선 및 배선설비",
+  "metadata": {
+    "quality_score": 90,
+    "keywords": [
+      "용접",
+      "내진"
+    ],
+    "references": [
+      "KDS"
+    ],
+    "equations": 2,
+    "tables": 5
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_32_25_10_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KDS_32_25_10_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KDS_32_25_10_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KDS_32_25_10_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_32_25_10_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_32_25_10_part1.json"
+    }
+  ]
+}

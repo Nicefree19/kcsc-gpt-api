@@ -1,0 +1,53 @@
+{
+  "id": "KCS 41 40 14",
+  "title": "KCS 41 40 14 인공지반녹화 방수방근공사_수정",
+  "metadata": {
+    "quality_score": 90,
+    "keywords": [
+      "압축강도",
+      "인장강도",
+      "철근",
+      "콘크리트",
+      "시멘트",
+      "골재",
+      "양생",
+      "앵커",
+      "용접",
+      "방수",
+      "단열",
+      "내화",
+      "품질시험"
+    ],
+    "references": [
+      "KCS"
+    ],
+    "equations": 0,
+    "tables": 7
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KCS_41_40_14_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KCS_41_40_14_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KCS_41_40_14_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KCS_41_40_14_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KCS_41_40_14_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KCS_41_40_14_part1.json"
+    }
+  ]
+}

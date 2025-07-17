@@ -1,0 +1,46 @@
+{
+  "id": "KDS 41 12 00",
+  "title": "건축물 설계하중",
+  "metadata": {
+    "quality_score": 100,
+    "keywords": [
+      "철근",
+      "콘크리트",
+      "거푸집",
+      "동바리",
+      "도장",
+      "내진"
+    ],
+    "references": [
+      "KDS"
+    ],
+    "equations": 401,
+    "tables": 187
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_41_12_00_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KDS_41_12_00_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KDS_41_12_00_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KDS_41_12_00_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_41_12_00_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_41_12_00_part1.json"
+    }
+  ]
+}

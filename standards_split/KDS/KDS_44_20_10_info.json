@@ -1,0 +1,42 @@
+{
+  "id": "KDS 44 20 10",
+  "title": "선형설계_수정",
+  "metadata": {
+    "quality_score": 100,
+    "keywords": [
+      "콘크리트",
+      "시멘트"
+    ],
+    "references": [
+      "KDS"
+    ],
+    "equations": 47,
+    "tables": 66
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_44_20_10_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KDS_44_20_10_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KDS_44_20_10_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KDS_44_20_10_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_44_20_10_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_44_20_10_part1.json"
+    }
+  ]
+}

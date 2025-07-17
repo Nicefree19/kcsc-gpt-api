@@ -1,0 +1,49 @@
+{
+  "id": "EXCS 41 51 03",
+  "title": "바닥공사(부대시설편)",
+  "metadata": {
+    "quality_score": 80,
+    "keywords": [
+      "콘크리트",
+      "시멘트",
+      "배합",
+      "용접",
+      "도장",
+      "방수",
+      "내화",
+      "품질시험"
+    ],
+    "references": [
+      "KCS",
+      "EXCS"
+    ],
+    "equations": 0,
+    "tables": 0
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "EXCS_41_51_03_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "EXCS_41_51_03_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "EXCS_41_51_03_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "EXCS_41_51_03_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "EXCS_41_51_03_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "EXCS_41_51_03_part1.json"
+    }
+  ]
+}

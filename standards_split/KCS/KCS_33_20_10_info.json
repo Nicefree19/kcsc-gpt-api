@@ -1,0 +1,45 @@
+{
+  "id": "KCS 33 20 10",
+  "title": "KCS 33 20 10 반입 및 공급설비공사",
+  "metadata": {
+    "quality_score": 80,
+    "keywords": [
+      "콘크리트",
+      "배합",
+      "볼트",
+      "용접",
+      "방수"
+    ],
+    "references": [
+      "KCS"
+    ],
+    "equations": 0,
+    "tables": 0
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KCS_33_20_10_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KCS_33_20_10_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KCS_33_20_10_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KCS_33_20_10_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KCS_33_20_10_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KCS_33_20_10_part1.json"
+    }
+  ]
+}

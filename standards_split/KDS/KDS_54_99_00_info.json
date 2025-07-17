@@ -1,0 +1,42 @@
+{
+  "id": "KDS 54 99 00",
+  "title": "댐 유지관리(22.08)",
+  "metadata": {
+    "quality_score": 80,
+    "keywords": [
+      "콘크리트",
+      "방수"
+    ],
+    "references": [
+      "KDS"
+    ],
+    "equations": 0,
+    "tables": 0
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_54_99_00_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KDS_54_99_00_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KDS_54_99_00_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KDS_54_99_00_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_54_99_00_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_54_99_00_part1.json"
+    }
+  ]
+}

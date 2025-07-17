@@ -1,0 +1,52 @@
+{
+  "id": "KDS 24 14 30",
+  "title": "강교 설계기준(허용응력설계법)_수정",
+  "metadata": {
+    "quality_score": 100,
+    "keywords": [
+      "압축강도",
+      "인장강도",
+      "철근",
+      "콘크리트",
+      "골재",
+      "양생",
+      "앵커",
+      "볼트",
+      "용접",
+      "도장",
+      "방수",
+      "내진"
+    ],
+    "references": [
+      "KDS"
+    ],
+    "equations": 376,
+    "tables": 247
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_24_14_30_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KDS_24_14_30_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KDS_24_14_30_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KDS_24_14_30_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_24_14_30_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_24_14_30_part1.json"
+    }
+  ]
+}

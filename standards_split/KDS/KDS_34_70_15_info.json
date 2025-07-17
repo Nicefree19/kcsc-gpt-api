@@ -1,0 +1,42 @@
+{
+  "id": "KDS 34 70 15",
+  "title": "자연친화형 빗물처리시설",
+  "metadata": {
+    "quality_score": 80,
+    "keywords": [
+      "콘크리트"
+    ],
+    "references": [
+      "KCS",
+      "KDS"
+    ],
+    "equations": 0,
+    "tables": 0
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_34_70_15_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KDS_34_70_15_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KDS_34_70_15_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KDS_34_70_15_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_34_70_15_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_34_70_15_part1.json"
+    }
+  ]
+}

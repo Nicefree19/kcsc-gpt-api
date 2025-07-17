@@ -1,0 +1,46 @@
+{
+  "id": "KDS 24 12 21",
+  "title": "교량 설계하중(한계상태설계법)_수정",
+  "metadata": {
+    "quality_score": 100,
+    "keywords": [
+      "철근",
+      "콘크리트",
+      "시멘트",
+      "골재",
+      "앵커",
+      "방수"
+    ],
+    "references": [
+      "KDS"
+    ],
+    "equations": 200,
+    "tables": 61
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_24_12_21_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KDS_24_12_21_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KDS_24_12_21_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KDS_24_12_21_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_24_12_21_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_24_12_21_part1.json"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "id": "KDS 11 70 25",
+  "title": "비탈면배수시설(2020.8)_수정",
+  "metadata": {
+    "quality_score": 75,
+    "keywords": [
+      "철근",
+      "콘크리트"
+    ],
+    "references": [
+      "KDS"
+    ],
+    "equations": 4,
+    "tables": 0
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_11_70_25_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KDS_11_70_25_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KDS_11_70_25_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KDS_11_70_25_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_11_70_25_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_11_70_25_part1.json"
+    }
+  ]
+}

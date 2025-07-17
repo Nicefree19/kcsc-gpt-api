@@ -1,0 +1,37 @@
+{
+  "id": "KDS 31 30 05",
+  "title": "위생설비 일반사항_수정",
+  "metadata": {
+    "quality_score": 70,
+    "keywords": [
+      "방수"
+    ],
+    "references": [
+      "KDS"
+    ],
+    "equations": 0,
+    "tables": 0
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_31_30_05_section_scope.json"
+    },
+    {
+      "section": "construction",
+      "file": "KDS_31_30_05_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KDS_31_30_05_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_31_30_05_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_31_30_05_part1.json"
+    }
+  ]
+}

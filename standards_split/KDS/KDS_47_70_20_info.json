@@ -1,0 +1,35 @@
+{
+  "id": "KDS 47 70 20",
+  "title": "건축계획_수정",
+  "metadata": {
+    "quality_score": 60,
+    "keywords": [
+      "방수",
+      "단열",
+      "내화"
+    ],
+    "references": [
+      "KDS"
+    ],
+    "equations": 0,
+    "tables": 0
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_47_70_20_section_scope.json"
+    },
+    {
+      "section": "construction",
+      "file": "KDS_47_70_20_section_construction.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_47_70_20_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_47_70_20_part1.json"
+    }
+  ]
+}

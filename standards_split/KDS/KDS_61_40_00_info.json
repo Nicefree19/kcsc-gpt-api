@@ -1,0 +1,46 @@
+{
+  "id": "KDS 61 40 00",
+  "title": "관로시설 설계기준(전문)",
+  "metadata": {
+    "quality_score": 100,
+    "keywords": [
+      "철근",
+      "콘크리트",
+      "시멘트",
+      "골재",
+      "볼트",
+      "방수"
+    ],
+    "references": [
+      "KDS"
+    ],
+    "equations": 11,
+    "tables": 21
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_61_40_00_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KDS_61_40_00_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KDS_61_40_00_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KDS_61_40_00_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_61_40_00_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_61_40_00_part1.json"
+    }
+  ]
+}

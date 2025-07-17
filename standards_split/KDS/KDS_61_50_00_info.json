@@ -1,0 +1,47 @@
+{
+  "id": "KDS 61 50 00",
+  "title": "수처리시설 설계기준(22.01)",
+  "metadata": {
+    "quality_score": 100,
+    "keywords": [
+      "공기량",
+      "철근",
+      "콘크리트",
+      "도장",
+      "방수",
+      "내진",
+      "내화"
+    ],
+    "references": [
+      "KDS"
+    ],
+    "equations": 7,
+    "tables": 6
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_61_50_00_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KDS_61_50_00_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KDS_61_50_00_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KDS_61_50_00_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_61_50_00_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_61_50_00_part1.json"
+    }
+  ]
+}

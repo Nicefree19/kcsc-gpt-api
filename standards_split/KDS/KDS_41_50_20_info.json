@@ -1,0 +1,47 @@
+{
+  "id": "KDS 41 50 20",
+  "title": "목구조 부재설계",
+  "metadata": {
+    "quality_score": 100,
+    "keywords": [
+      "전단강도",
+      "휨강도",
+      "콘크리트",
+      "골재",
+      "앵커",
+      "볼트",
+      "내진"
+    ],
+    "references": [
+      "KDS"
+    ],
+    "equations": 55,
+    "tables": 49
+  },
+  "parts": [
+    {
+      "section": "scope",
+      "file": "KDS_41_50_20_section_scope.json"
+    },
+    {
+      "section": "materials",
+      "file": "KDS_41_50_20_section_materials.json"
+    },
+    {
+      "section": "construction",
+      "file": "KDS_41_50_20_section_construction.json"
+    },
+    {
+      "section": "quality",
+      "file": "KDS_41_50_20_section_quality.json"
+    },
+    {
+      "section": "safety",
+      "file": "KDS_41_50_20_section_safety.json"
+    },
+    {
+      "part": 1,
+      "file": "KDS_41_50_20_part1.json"
+    }
+  ]
+}
