@@ -23,6 +23,7 @@ import re
 API_KEY = os.getenv("API_KEY", "your-secure-api-key-here")
 LOG_LEVEL = os.getenv("LOG_LEVEL", "INFO")
 SPLIT_DATA_PATH = os.getenv("SPLIT_DATA_PATH", "./gpts_data/standards_split")
+GPT_ACTIONS_MODE = os.getenv("GPT_ACTIONS_MODE", "false").lower() == "true"  # GPT Actions 모드
 
 # 로깅 설정
 logging.basicConfig(level=getattr(logging, LOG_LEVEL))
@@ -116,9 +117,16 @@ def normalize_code(code_str):
 
 
 async def verify_api_key(x_api_key: str = Header(None)):
-    if not x_api_key or x_api_key != API_KEY:
-        raise HTTPException(status_code=401, detail="Invalid API key")
-    return x_api_key
+    """API 키 검증 - GPT Actions 모드에서는 선택적"""
+    if GPT_ACTIONS_MODE:
+        # GPT Actions 모드에서는 API 키 검증을 스킵하거나 완화
+        logger.info(f"GPT Actions request with key: {x_api_key[:10]}..." if x_api_key else "No API key")
+        return x_api_key or "gpt-actions"
+    else:
+        # 일반 모드에서는 엄격한 검증
+        if not x_api_key or x_api_key != API_KEY:
+            raise HTTPException(status_code=401, detail="Invalid API key")
+        return x_api_key
 
 # 데이터 로드 함수
 @lru_cache()
@@ -168,7 +176,7 @@ def load_data():
 @app.on_event("startup")
 async def startup_event():
     load_data()
-    logger.info("API server v2 started (with v1 compatibility)")
+    logger.info(f"API server v2 started (GPT Actions Mode: {GPT_ACTIONS_MODE})")
 
 # 엔드포인트
 @app.get("/")
