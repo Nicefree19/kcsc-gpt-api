@@ -46,6 +46,26 @@ app.add_middleware(
 split_index = {}
 standards_cache = {}
 
+# 경로 설정
+def get_data_paths():
+    """데이터 파일 경로 자동 감지"""
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    
+    # 가능한 경로들
+    search_index_paths = [
+        os.path.join(current_dir, "search_index.json"),
+        "./search_index.json",
+        "search_index.json"
+    ]
+    
+    split_index_paths = [
+        os.path.join(current_dir, "standards_split", "split_index.json"),
+        "./standards_split/split_index.json",
+        "standards_split/split_index.json"
+    ]
+    
+    return search_index_paths, split_index_paths
+
 
 
 def normalize_code(code_str):
@@ -110,14 +130,29 @@ def load_split_data():
     global split_index, standards_cache
     
     try:
-        # 분할 인덱스 로드
-        index_path = "./standards_split/split_index.json"
-        if os.path.exists(index_path):
-            with open(index_path, 'r', encoding='utf-8') as f:
-                split_index = json.load(f)
-            logger.info(f"Loaded split index with {len(split_index.get('standards', {}))} standards")
-        else:
-            logger.error(f"Split index not found at {index_path}")
+        # 분할 인덱스 로드 - 절대경로 사용
+        current_dir = os.path.dirname(os.path.abspath(__file__))
+        index_path = os.path.join(current_dir, "standards_split", "split_index.json")
+        
+        # 대체 경로들 시도
+        possible_paths = [
+            index_path,
+            "./standards_split/split_index.json",
+            "standards_split/split_index.json",
+            os.path.join(current_dir, "..", "standards_split", "split_index.json")
+        ]
+        
+        loaded = False
+        for path in possible_paths:
+            if os.path.exists(path):
+                with open(path, 'r', encoding='utf-8') as f:
+                    split_index = json.load(f)
+                logger.info(f"✅ Split index loaded from {path}: {len(split_index.get('standards', {}))} standards")
+                loaded = True
+                break
+        
+        if not loaded:
+            logger.error(f"❌ Split index not found in any of: {possible_paths}")
             return False
         
         # 요약 파일들을 미리 로드 (메모리 효율성을 위해 요약만)
