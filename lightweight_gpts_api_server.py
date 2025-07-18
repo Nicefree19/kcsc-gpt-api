@@ -18,6 +18,8 @@ from datetime import datetime
 from functools import lru_cache
 import hashlib
 import re
+from typing import Iterator
+from fastapi.responses import StreamingResponse
 
 # 환경 변수
 API_KEY = os.getenv("API_KEY", "your-secure-api-key-here")
@@ -67,6 +69,8 @@ app.add_middleware(
 documents_cache = {}
 search_index = {}
 split_index = {}
+section_indexes = {}  # 섹션 인덱스 캐시
+topic_cache = {}  # 주제별 요약 캐시
 
 # Pydantic 모델
 class SearchRequest(BaseModel):
@@ -82,6 +86,38 @@ class SearchResult(BaseModel):
     relevance_score: float
     metadata: Optional[Dict[str, Any]] = None
     available: Optional[Dict[str, Any]] = None  # v2 feature: 사용 가능한 섹션/파트 정보
+
+# 청크 응답 모델
+class ChunkedResponse(BaseModel):
+    code: str
+    query: Optional[str] = None
+    total_chunks: int
+    current_chunk: int
+    chunks: List[Dict[str, Any]]
+    next_chunk: Optional[int] = None
+    completed: bool
+
+# 섹션 인덱스 모델
+class SectionIndex(BaseModel):
+    code: str
+    title: str
+    total_length: int
+    sections: List[Dict[str, Any]]
+    formulas: List[Dict[str, Any]]
+    tables: List[Dict[str, Any]]
+    quick_access: Dict[str, Any]
+
+# 주제별 요약 모델
+class TopicSummary(BaseModel):
+    code: str
+    topic: str
+    title: str
+    summary: str
+    key_points: List[str]
+    formulas: List[str]
+    tables: List[str]
+    generated_at: str
+    tokens: int
 
 # v2 추가 모델
 class StandardSummary(BaseModel):
@@ -642,6 +678,508 @@ async def _load_summary(code: str) -> Optional[Dict]:
             logger.error(f"Error loading summary for {code}: {e}")
     
     return None
+
+# === 대용량 문서 처리를 위한 새로운 엔드포인트 ===
+
+# 청크 처리 클래스
+class ChunkedDocumentProcessor:
+    """대용량 문서를 청크로 분할하여 처리"""
+    
+    def __init__(self, chunk_size: int = 1000):
+        self.chunk_size = chunk_size
+        
+    def estimate_tokens(self, text: str) -> int:
+        """간단한 토큰 추정"""
+        korean_chars = len([c for c in text if ord(c) >= 0xAC00 and ord(c) <= 0xD7A3])
+        other_chars = len(text) - korean_chars
+        return korean_chars * 2 + other_chars
+    
+    def chunk_document(self, content: str, chunk_tokens: int = 1000) -> Iterator[Dict[str, Any]]:
+        """문서를 토큰 크기별로 청크 분할"""
+        paragraphs = content.split('\n\n')
+        
+        current_chunk = []
+        current_tokens = 0
+        chunk_index = 0
+        
+        for para in paragraphs:
+            para_tokens = self.estimate_tokens(para)
+            
+            if current_tokens + para_tokens <= chunk_tokens:
+                current_chunk.append(para)
+                current_tokens += para_tokens
+            else:
+                if current_chunk:
+                    yield {
+                        'chunk_index': chunk_index,
+                        'content': '\n\n'.join(current_chunk),
+                        'tokens': current_tokens,
+                        'has_more': True
+                    }
+                    chunk_index += 1
+                
+                current_chunk = [para]
+                current_tokens = para_tokens
+        
+        if current_chunk:
+            yield {
+                'chunk_index': chunk_index,
+                'content': '\n\n'.join(current_chunk),
+                'tokens': current_tokens,
+                'has_more': False
+            }
+    
+    def create_smart_chunks(self, doc: Dict[str, Any], query: str = None) -> Iterator[Dict[str, Any]]:
+        """쿼리 기반 스마트 청킹"""
+        content = doc.get('content', '')
+        
+        if query:
+            relevant_sections = self._find_relevant_sections(content, query)
+            for i, section in enumerate(relevant_sections):
+                yield {
+                    'chunk_index': i,
+                    'relevance': 'high',
+                    'content': section['content'],
+                    'tokens': section['tokens'],
+                    'section_title': section.get('title', ''),
+                    'has_more': i < len(relevant_sections) - 1
+                }
+        else:
+            yield from self.chunk_document(content)
+    
+    def _find_relevant_sections(self, content: str, query: str) -> list:
+        """쿼리 관련 섹션 찾기"""
+        sections = []
+        query_lower = query.lower()
+        
+        parts = content.split('\n# ')
+        
+        for part in parts:
+            if any(keyword in part.lower() for keyword in query_lower.split()):
+                sections.append({
+                    'content': part[:2000],
+                    'tokens': self.estimate_tokens(part[:2000]),
+                    'title': part.split('\n')[0][:50]
+                })
+        
+        return sections[:5]
+
+# 청크 프로세서 인스턴스
+chunk_processor = ChunkedDocumentProcessor()
+
+# 1. 청크 기반 문서 반환
+@app.get("/api/v2/standard/{code}/chunked")
+async def get_chunked_document(
+    code: str,
+    chunk_size: int = Query(1000, description="청크당 최대 토큰"),
+    query: Optional[str] = Query(None, description="검색 쿼리"),
+    start_chunk: int = Query(0, description="시작 청크 인덱스"),
+    api_key: str = Depends(verify_api_key)
+):
+    """대용량 문서를 청크 단위로 반환"""
+    normalized = normalize_code(code)
+    
+    # 전체 문서 로드 시도
+    safe_code = normalized.replace(' ', '_')
+    category = normalized.split()[0] if ' ' in normalized else normalized[:3]
+    full_path = os.path.join(SPLIT_DATA_PATH, category, f"{safe_code}_full.json")
+    
+    if not os.path.exists(full_path):
+        # 요약본으로 폴백
+        summary_path = os.path.join(SPLIT_DATA_PATH, category, f"{safe_code}_summary.json")
+        if os.path.exists(summary_path):
+            with open(summary_path, 'r', encoding='utf-8') as f:
+                doc = json.load(f)
+            doc['content'] = doc.get('preview', '')
+        else:
+            raise HTTPException(404, f"Document {code} not found")
+    else:
+        with open(full_path, 'r', encoding='utf-8') as f:
+            doc = json.load(f)
+    
+    # 청크 생성
+    chunks = list(chunk_processor.create_smart_chunks(doc, query))
+    
+    # 페이지네이션
+    if start_chunk >= len(chunks):
+        return ChunkedResponse(
+            code=normalized,
+            query=query,
+            total_chunks=len(chunks),
+            current_chunk=start_chunk,
+            chunks=[],
+            completed=True
+        )
+    
+    page_chunks = chunks[start_chunk:start_chunk + 3]
+    
+    return ChunkedResponse(
+        code=normalized,
+        query=query,
+        total_chunks=len(chunks),
+        current_chunk=start_chunk,
+        chunks=page_chunks,
+        next_chunk=start_chunk + len(page_chunks) if start_chunk + len(page_chunks) < len(chunks) else None,
+        completed=start_chunk + len(page_chunks) >= len(chunks)
+    )
+
+# 2. 섹션 인덱스 반환
+@app.get("/api/v2/standard/{code}/section-index")
+async def get_section_index(
+    code: str,
+    api_key: str = Depends(verify_api_key)
+):
+    """문서의 섹션 인덱스 반환"""
+    normalized = normalize_code(code)
+    
+    # 캐시 확인
+    if normalized in section_indexes:
+        return section_indexes[normalized]
+    
+    # 섹션 인덱스 생성
+    safe_code = normalized.replace(' ', '_')
+    category = normalized.split()[0] if ' ' in normalized else normalized[:3]
+    full_path = os.path.join(SPLIT_DATA_PATH, category, f"{safe_code}_full.json")
+    
+    if not os.path.exists(full_path):
+        raise HTTPException(404, f"Document {code} not found")
+    
+    with open(full_path, 'r', encoding='utf-8') as f:
+        doc = json.load(f)
+    
+    content = doc.get('content', '')
+    sections = _extract_sections(content)
+    formulas = _extract_formulas(content)
+    tables = _extract_tables(content)
+    
+    index = SectionIndex(
+        code=normalized,
+        title=doc.get('title', ''),
+        total_length=len(content),
+        sections=sections,
+        formulas=formulas,
+        tables=tables,
+        quick_access={
+            'key_sections': [s for s in sections if any(
+                keyword in s['title'].lower() 
+                for keyword in ['정착', '이음', '길이', '계산', '요구사항']
+            )][:5],
+            'has_formulas': len(formulas) > 0,
+            'formula_count': len(formulas),
+            'has_tables': len(tables) > 0,
+            'table_count': len(tables)
+        }
+    )
+    
+    # 캐시 저장
+    section_indexes[normalized] = index
+    
+    return index
+
+# 3. 주제별 요약 반환
+@app.get("/api/v2/standard/{code}/topic/{topic}")
+async def get_topic_summary(
+    code: str,
+    topic: str,
+    api_key: str = Depends(verify_api_key)
+):
+    """주제별 요약 반환"""
+    normalized = normalize_code(code)
+    cache_key = f"{normalized}:{topic}"
+    
+    # 캐시 확인
+    if cache_key in topic_cache:
+        return topic_cache[cache_key]
+    
+    # 사전 정의된 주제
+    common_topics = {
+        '정착길이': {
+            'keywords': ['정착', '정착길이', '묻힘길이', 'anchorage'],
+            'sections': ['정착 및 이음', '철근의 정착', '인장철근']
+        },
+        '이음길이': {
+            'keywords': ['이음', '이음길이', '겹침이음', 'splice'],
+            'sections': ['이음', '철근의 이음', '겹침이음']
+        },
+        '피복두께': {
+            'keywords': ['피복', '피복두께', '최소피복두께'],
+            'sections': ['피복두께', '콘크리트 피복']
+        },
+        '전단': {
+            'keywords': ['전단', '전단력', '전단철근'],
+            'sections': ['전단설계', '전단보강']
+        },
+        '균열': {
+            'keywords': ['균열', '균열폭', '균열제어'],
+            'sections': ['균열제어', '사용성']
+        }
+    }
+    
+    if topic not in common_topics:
+        return {
+            "error": "Topic not found",
+            "available_topics": list(common_topics.keys())
+        }
+    
+    # 문서 로드
+    safe_code = normalized.replace(' ', '_')
+    category = normalized.split()[0] if ' ' in normalized else normalized[:3]
+    full_path = os.path.join(SPLIT_DATA_PATH, category, f"{safe_code}_full.json")
+    
+    if not os.path.exists(full_path):
+        # 요약본으로 시도
+        summary_path = os.path.join(SPLIT_DATA_PATH, category, f"{safe_code}_summary.json")
+        if os.path.exists(summary_path):
+            with open(summary_path, 'r', encoding='utf-8') as f:
+                doc = json.load(f)
+            content = doc.get('preview', '')
+        else:
+            raise HTTPException(404, f"Document {code} not found")
+    else:
+        with open(full_path, 'r', encoding='utf-8') as f:
+            doc = json.load(f)
+        content = doc.get('content', '')
+    
+    # 관련 내용 추출
+    topic_config = common_topics[topic]
+    relevant_content = _extract_relevant_content(
+        content, 
+        topic_config['keywords'],
+        topic_config.get('sections', [])
+    )
+    
+    # 요약 생성
+    summary = TopicSummary(
+        code=normalized,
+        topic=topic,
+        title=f"{doc.get('title', '')} - {topic}",
+        summary=_create_topic_summary(topic, relevant_content),
+        key_points=_extract_key_points(relevant_content),
+        formulas=_extract_topic_formulas(relevant_content),
+        tables=_extract_topic_tables(relevant_content),
+        generated_at=datetime.now().isoformat(),
+        tokens=len(relevant_content) // 3
+    )
+    
+    # 캐시 저장
+    topic_cache[cache_key] = summary
+    
+    return summary
+
+# 4. 스트리밍 응답
+@app.get("/api/v2/standard/{code}/stream")
+async def stream_document(
+    code: str,
+    chunk_tokens: int = Query(500, description="청크당 토큰"),
+    api_key: str = Depends(verify_api_key)
+):
+    """문서를 스트리밍으로 반환"""
+    normalized = normalize_code(code)
+    
+    safe_code = normalized.replace(' ', '_')
+    category = normalized.split()[0] if ' ' in normalized else normalized[:3]
+    full_path = os.path.join(SPLIT_DATA_PATH, category, f"{safe_code}_full.json")
+    
+    if not os.path.exists(full_path):
+        raise HTTPException(404, f"Document {code} not found")
+    
+    with open(full_path, 'r', encoding='utf-8') as f:
+        doc = json.load(f)
+    
+    def generate():
+        """스트리밍 생성기"""
+        for chunk in chunk_processor.chunk_document(doc.get('content', ''), chunk_tokens):
+            yield json.dumps(chunk, ensure_ascii=False) + "\n"
+    
+    return StreamingResponse(
+        generate(),
+        media_type="application/x-ndjson"
+    )
+
+# 헬퍼 함수들
+def _extract_sections(content: str) -> List[Dict[str, Any]]:
+    """섹션 추출"""
+    sections = []
+    pattern = r'^(\d+\.?\d*)\s+(.+?)$'
+    
+    lines = content.split('\n')
+    current_section = None
+    section_content = []
+    
+    for i, line in enumerate(lines):
+        match = re.match(pattern, line, re.MULTILINE)
+        if match:
+            if current_section:
+                sections.append({
+                    'id': current_section['id'],
+                    'title': current_section['title'],
+                    'start_line': current_section['start'],
+                    'end_line': i,
+                    'content_preview': '\n'.join(section_content[:5]),
+                    'tokens': len('\n'.join(section_content)) // 3
+                })
+            
+            current_section = {
+                'id': match.group(1),
+                'title': match.group(2),
+                'start': i
+            }
+            section_content = []
+        else:
+            section_content.append(line)
+    
+    if current_section:
+        sections.append({
+            'id': current_section['id'],
+            'title': current_section['title'],
+            'start_line': current_section['start'],
+            'end_line': len(lines),
+            'content_preview': '\n'.join(section_content[:5]),
+            'tokens': len('\n'.join(section_content)) // 3
+        })
+    
+    return sections[:20]
+
+def _extract_formulas(content: str) -> List[Dict[str, Any]]:
+    """수식 추출"""
+    formulas = []
+    
+    math_patterns = [
+        r'\$\$(.+?)\$\$',  # Display math
+        r'\$(.+?)\$',      # Inline math
+        r'\\begin\{equation\}(.+?)\\end\{equation\}',
+        r'식\s*\((\d+\.?\d*)\)',  # 한글 수식 번호
+    ]
+    
+    for pattern in math_patterns:
+        matches = re.finditer(pattern, content, re.DOTALL)
+        for match in matches:
+            formulas.append({
+                'formula': match.group(1) if len(match.groups()) > 0 else match.group(0),
+                'position': match.start(),
+                'context': content[max(0, match.start()-50):match.end()+50]
+            })
+    
+    return formulas[:20]
+
+def _extract_tables(content: str) -> List[Dict[str, Any]]:
+    """표 추출"""
+    tables = []
+    
+    table_patterns = [
+        r'표\s*(\d+\.?\d*)',
+        r'Table\s*(\d+\.?\d*)',
+        r'<표\s*(\d+\.?\d*)>',
+    ]
+    
+    for pattern in table_patterns:
+        matches = re.finditer(pattern, content)
+        for match in matches:
+            tables.append({
+                'table_id': match.group(1),
+                'position': match.start(),
+                'context': content[max(0, match.start()-100):match.start()+200]
+            })
+    
+    return tables[:20]
+
+def _extract_relevant_content(content: str, keywords: list, sections: list) -> str:
+    """관련 내용 추출"""
+    relevant_parts = []
+    lines = content.split('\n')
+    
+    for i, line in enumerate(lines):
+        line_lower = line.lower()
+        if any(kw.lower() in line_lower for kw in keywords):
+            start = max(0, i - 5)
+            end = min(len(lines), i + 10)
+            relevant_parts.append('\n'.join(lines[start:end]))
+    
+    return '\n\n---\n\n'.join(relevant_parts[:10])
+
+def _create_topic_summary(topic: str, content: str) -> str:
+    """주제별 요약 생성"""
+    templates = {
+        '정착길이': """철근의 정착길이는 철근이 콘크리트에 충분히 묻혀 있어 
+설계 응력을 안전하게 전달할 수 있는 최소 길이입니다. 
+기본 정착길이는 철근 직경, 콘크리트 강도, 철근 위치 등에 따라 결정됩니다.""",
+        
+        '이음길이': """철근의 이음길이는 두 철근이 겹쳐져 응력을 전달하는 데 
+필요한 최소 길이입니다. 이음길이는 정착길이보다 길게 설계되며, 
+철근 간격과 위치에 따라 보정계수가 적용됩니다.""",
+        
+        '피복두께': """콘크리트 피복두께는 철근 표면에서 콘크리트 표면까지의 
+최단거리로, 철근의 부식 방지와 내화성능 확보를 위해 필요합니다.""",
+        
+        '전단': """전단설계는 보와 슬래브에서 전단력에 저항하기 위한 
+철근 배치를 결정하는 과정입니다. 콘크리트의 전단강도와 
+전단철근의 기여를 고려하여 설계합니다.""",
+        
+        '균열': """균열제어는 콘크리트 구조물의 사용성을 확보하기 위해 
+균열폭을 제한하는 설계 과정입니다. 철근 간격과 피복두께가 
+주요 설계변수입니다."""
+    }
+    
+    base_summary = templates.get(topic, "관련 내용 요약")
+    
+    # 실제 내용에서 핵심 문장 추출
+    key_sentences = []
+    for line in content.split('\n'):
+        if len(line) > 20 and any(kw in line for kw in ['기준', '이상', '이하', 'mm']):
+            key_sentences.append(line.strip())
+    
+    if key_sentences:
+        base_summary += "\n\n주요 규정:\n" + '\n'.join(key_sentences[:3])
+    
+    return base_summary
+
+def _extract_key_points(content: str) -> List[str]:
+    """핵심 포인트 추출"""
+    key_points = []
+    
+    number_pattern = r'(\d+\.?\d*)\s*(mm|MPa|m|cm)'
+    
+    for line in content.split('\n'):
+        if re.search(number_pattern, line):
+            key_points.append(line.strip())
+    
+    return key_points[:5]
+
+def _extract_topic_formulas(content: str) -> List[str]:
+    """주제 관련 수식 추출"""
+    formulas = []
+    
+    formula_patterns = [
+        r'[lL]_?d\s*=',  # 정착길이
+        r'[lL]_?s\s*=',  # 이음길이
+        r'=\s*\d+\.?\d*\s*[×x]\s*d_?b',  # 직경 배수
+    ]
+    
+    for pattern in formula_patterns:
+        matches = re.finditer(pattern, content)
+        for match in matches:
+            line_start = content.rfind('\n', 0, match.start()) + 1
+            line_end = content.find('\n', match.end())
+            if line_end == -1:
+                line_end = len(content)
+            
+            formula_line = content[line_start:line_end].strip()
+            formulas.append(formula_line)
+    
+    return formulas[:3]
+
+def _extract_topic_tables(content: str) -> List[str]:
+    """주제 관련 표 추출"""
+    tables = []
+    
+    table_patterns = ['표', 'Table']
+    for pattern in table_patterns:
+        if pattern in content:
+            for line in content.split('\n'):
+                if pattern in line and len(line) < 100:
+                    tables.append(line.strip())
+    
+    return tables[:3]
 
 # OpenAPI 스키마 커스터마이징
 def custom_openapi():
