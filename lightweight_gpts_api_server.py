@@ -94,17 +94,20 @@ class StandardPart(BaseModel):
 # 의존성
 
 def normalize_code(code_str):
-    """코드를 표준 형식으로 정규화"""
+    """코드를 표준 형식으로 정규화 - 다양한 입력 형식 지원"""
     if not code_str:
         return code_str
-        
-    # 언더스코어나 하이픈을 공백으로 변경
-    normalized = code_str.replace('_', ' ').replace('-', ' ')
     
-    # 연속된 공백을 하나로
+    # 1. 대문자로 변환
+    normalized = code_str.upper().strip()
+    
+    # 2. 특수문자를 공백으로 변경
+    normalized = normalized.replace('_', ' ').replace('-', ' ').replace('.', ' ')
+    
+    # 3. 연속된 공백을 하나로
     normalized = re.sub(r'\s+', ' ', normalized).strip()
     
-    # 표준 형식 확인 (예: KDS 14 20 01)
+    # 4. 표준 형식 확인 (예: KDS 14 20 01)
     match = re.match(r'(KDS|KCS|EXCS|SMCS|LHCS)\s+(\d{1,2})\s+(\d{1,2})\s+(\d{1,2})', normalized)
     if match:
         prefix = match.group(1)
@@ -112,7 +115,21 @@ def normalize_code(code_str):
         level2 = match.group(3).zfill(2)
         level3 = match.group(4).zfill(2)
         return f"{prefix} {level1} {level2} {level3}"
-        
+    
+    # 5. 붙어있는 형식 처리 (예: KDS142001)
+    for prefix in ['KDS', 'KCS', 'EXCS', 'SMCS', 'LHCS']:
+        if normalized.startswith(prefix):
+            # 접두사 뒤의 숫자 추출
+            nums = normalized[len(prefix):].replace(' ', '')
+            if len(nums) == 6 and nums.isdigit():
+                return f"{prefix} {nums[0:2]} {nums[2:4]} {nums[4:6]}"
+            elif len(nums) >= 6:
+                # 숫자만 추출
+                digits = ''.join(c for c in nums if c.isdigit())
+                if len(digits) >= 6:
+                    return f"{prefix} {digits[0:2]} {digits[2:4]} {digits[4:6]}"
+    
+    # 6. 원본 반환 (정규화 실패 시)
     return normalized
 
 
@@ -335,10 +352,13 @@ async def get_standard_detail(
     api_key: str = Depends(verify_api_key)
 ):
     """표준 상세 조회"""
-    if code not in documents_cache:
-        raise HTTPException(status_code=404, detail=f"Standard {code} not found")
+    # 코드 정규화 적용
+    normalized_code = normalize_code(code)
     
-    doc = documents_cache[code]
+    if normalized_code not in documents_cache:
+        raise HTTPException(status_code=404, detail=f"Standard {normalized_code} not found")
+    
+    doc = documents_cache[normalized_code]
     
     return {
         "success": True,
@@ -402,9 +422,12 @@ async def get_standard_summary(
     api_key: str = Depends(verify_api_key)
 ):
     """표준 요약 정보 (v2)"""
-    summary = await _load_summary(code)
+    # 코드 정규화 적용
+    normalized_code = normalize_code(code)
+    
+    summary = await _load_summary(normalized_code)
     if not summary:
-        raise HTTPException(status_code=404, detail=f"Standard {code} not found")
+        raise HTTPException(status_code=404, detail=f"Standard {normalized_code} not found")
     
     return {
         "success": True,
