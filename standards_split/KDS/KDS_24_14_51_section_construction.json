@@ -2,5 +2,6 @@
   "id": "KDS 24 14 51",
   "title": "교량 하부구조 설계기준(한계상태설계법)_수정",
   "section": "construction",
-  "content": "3.8.7.1 앵커의 긴장(stressing)과 시험\n모든 앵커에 대해서 AASHTO LRFD Bridge Construction Specifications, Article 6.5.5, Testing and Stressing 규정에 따라 시험과 긴장(stressing)을 실시한다. 극한 하중을 결정하여 설계하중의 안정성을 검증하거나, 과도한 크리프가 발생하는 하중을 파악하기 위한 특별한 조건에서는 사전 재하시험을 실시하도록 규정할 수 있다."
+  "content": "3.8.7.1 앵커의 긴장(stressing)과 시험\n모든 앵커에 대해서 AASHTO LRFD Bridge Construction Specifications, Article 6.5.5, Testing and Stressing 규정에 따라 시험과 긴장(stressing)을 실시한다. 극한 하중을 결정하여 설계하중의 안정성을 검증하거나, 과도한 크리프가 발생하는 하중을 파악하기 위한 특별한 조건에서는 사전 재하시험을 실시하도록 규정할 수 있다.",
+  "standard_code": "KDS 24 14 51"
 }

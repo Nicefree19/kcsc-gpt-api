@@ -17,6 +17,7 @@ import logging
 from datetime import datetime
 from functools import lru_cache
 import hashlib
+import re
 
 # 환경 변수
 API_KEY = os.getenv("API_KEY", "your-secure-api-key-here")
@@ -90,6 +91,30 @@ class StandardPart(BaseModel):
     content: str
 
 # 의존성
+
+def normalize_code(code_str):
+    """코드를 표준 형식으로 정규화"""
+    if not code_str:
+        return code_str
+        
+    # 언더스코어나 하이픈을 공백으로 변경
+    normalized = code_str.replace('_', ' ').replace('-', ' ')
+    
+    # 연속된 공백을 하나로
+    normalized = re.sub(r'\s+', ' ', normalized).strip()
+    
+    # 표준 형식 확인 (예: KDS 14 20 01)
+    match = re.match(r'(KDS|KCS|EXCS|SMCS|LHCS)\s+(\d{1,2})\s+(\d{1,2})\s+(\d{1,2})', normalized)
+    if match:
+        prefix = match.group(1)
+        level1 = match.group(2).zfill(2)
+        level2 = match.group(3).zfill(2)
+        level3 = match.group(4).zfill(2)
+        return f"{prefix} {level1} {level2} {level3}"
+        
+    return normalized
+
+
 async def verify_api_key(x_api_key: str = Header(None)):
     if not x_api_key or x_api_key != API_KEY:
         raise HTTPException(status_code=401, detail="Invalid API key")
@@ -238,7 +263,7 @@ async def search_standards(
                 ))
     
     else:  # keyword search
-        query_lower = request.query.lower()
+        query_lower = normalize_code(request.query).lower()
         
         # v2 표준에서 검색
         for code, std_info in split_index.get('standards', {}).items():

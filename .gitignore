@@ -42,3 +42,22 @@ Thumbs.db
 .env
 .env.local
 .env.*.local
+
+# Large data files (>50MB)
+*.json
+!gpt_actions_schema*.json
+!FINAL_GPT_ACTIONS_SCHEMA.json
+!*_small.json
+!*_sample.json
+!search_index.json
+!split_index.json
+!openapi_schema.json
+
+# Specific large files
+kcsc_*.json
+standards_split/
+bfg.jar
+
+# Backup files
+*.backup*
+search_index.backup_*.json

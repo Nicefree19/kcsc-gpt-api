@@ -16,6 +16,7 @@ import logging
 from datetime import datetime
 from functools import lru_cache
 import glob
+import re
 
 # 환경 변수
 API_KEY = os.getenv("API_KEY", "kcsc-gpt-secure-key-2025")
@@ -44,6 +45,31 @@ app.add_middleware(
 # 전역 변수
 split_index = {}
 standards_cache = {}
+
+
+
+def normalize_code(code_str):
+    """코드를 표준 형식으로 정규화"""
+    if not code_str:
+        return code_str
+        
+    # 언더스코어나 하이픈을 공백으로 변경
+    normalized = code_str.replace('_', ' ').replace('-', ' ')
+    
+    # 연속된 공백을 하나로
+    normalized = re.sub(r'\s+', ' ', normalized).strip()
+    
+    # 표준 형식 확인 (예: KDS 14 20 01)
+    match = re.match(r'(KDS|KCS|EXCS|SMCS|LHCS)\s+(\d{1,2})\s+(\d{1,2})\s+(\d{1,2})', normalized.upper())
+    if match:
+        prefix = match.group(1)
+        level1 = match.group(2).zfill(2)
+        level2 = match.group(3).zfill(2)
+        level3 = match.group(4).zfill(2)
+        return f"{prefix} {level1} {level2} {level3}"
+        
+    return code_str  # 패턴에 맞지 않으면 원본 반환
+
 
 
 # Pydantic 모델
