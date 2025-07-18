@@ -53,9 +53,26 @@ Thumbs.db
 !split_index.json
 !openapi_schema.json
 
-# Specific large files
-kcsc_*.json
-standards_split/
+# 필수 인덱스 파일들 (반드시 포함)
+!standards_split/split_index.json
+!*_index.json
+!*_minimal.json
+
+# 작은 필수 데이터 파일 (10MB 이하)
+!kcsc_structure_minimal.json
+!kcsc_critical_codes.json
+
+# Specific large files (v1 format)
+kcsc_structure.json
+kcsc_civil.json
+kcsc_building.json
+kcsc_facility.json
+kcsc_excs.json
+
+# Split data directories (but keep index files)
+standards_split/**/*.json
+!standards_split/split_index.json
+!standards_split/**/index.json
 bfg.jar
 
 # Backup files

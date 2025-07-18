@@ -22,12 +22,25 @@ import re
 # 환경 변수
 API_KEY = os.getenv("API_KEY", "your-secure-api-key-here")
 LOG_LEVEL = os.getenv("LOG_LEVEL", "INFO")
-SPLIT_DATA_PATH = os.getenv("SPLIT_DATA_PATH", "./gpts_data/standards_split")
+# 현재 파일 기준 상대 경로로 설정
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+SPLIT_DATA_PATH = os.getenv("SPLIT_DATA_PATH", os.path.join(SCRIPT_DIR, "standards_split"))
 GPT_ACTIONS_MODE = os.getenv("GPT_ACTIONS_MODE", "false").lower() == "true"  # GPT Actions 모드
 
 # 로깅 설정
 logging.basicConfig(level=getattr(logging, LOG_LEVEL))
 logger = logging.getLogger(__name__)
+
+# FastAPI 2.0+ 방식으로 변경
+from contextlib import asynccontextmanager
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    # 시작 시 실행
+    load_data()
+    logger.info(f"API server v2 started (GPT Actions Mode: {GPT_ACTIONS_MODE})")
+    yield
+    # 종료 시 실행 (필요 시)
 
 # FastAPI 앱
 app = FastAPI(
@@ -37,7 +50,8 @@ app = FastAPI(
     servers=[
         {"url": "https://kcsc-gpt-api.onrender.com", "description": "Production Server"},
         {"url": "http://localhost:8000", "description": "Local Development Server"}
-    ]
+    ],
+    lifespan=lifespan
 )
 
 # CORS 설정
@@ -148,25 +162,48 @@ async def verify_api_key(x_api_key: str = Header(None)):
 # 데이터 로드 함수
 @lru_cache()
 def load_data():
-    """JSON 파일에서 데이터 로드 (v1 + v2 통합)"""
+    """향상된 데이터 로딩 with 자동 폴백"""
     global documents_cache, search_index, split_index
     
     try:
-        # 1. 검색 인덱스 로드
-        index_path = os.getenv("INDEX_PATH", "./gpts_data/search_index.json")
+        # 1. 검색 인덱스 로드 (필수)
+        # 현재 스크립트 디렉토리 기준으로 경로 설정
+        current_dir = os.path.dirname(os.path.abspath(__file__))
+        index_path = os.getenv("INDEX_PATH", os.path.join(current_dir, "search_index.json"))
         if os.path.exists(index_path):
             with open(index_path, 'r', encoding='utf-8') as f:
                 search_index = json.load(f)
-            logger.info("Loaded search index")
+            logger.info(f"✅ Search index loaded: {len(search_index.get('codes', []))} codes")
+        else:
+            logger.warning(f"⚠️ Search index not found at {index_path}")
         
         # 2. 분할 인덱스 로드 (v2)
+        # 이미 절대 경로로 설정되어 있음
         split_index_path = os.path.join(SPLIT_DATA_PATH, "split_index.json")
         if os.path.exists(split_index_path):
             with open(split_index_path, 'r', encoding='utf-8') as f:
                 split_index = json.load(f)
-            logger.info(f"Loaded split index with {len(split_index.get('standards', {}))} standards")
+            logger.info(f"✅ Split index loaded: {len(split_index.get('standards', {}))} standards")
+            
+            # 🔥 핵심 수정: split_index 기반으로 documents_cache 생성
+            for code, info in split_index.get('standards', {}).items():
+                normalized_code = normalize_code(code)
+                documents_cache[normalized_code] = {
+                    'id': normalized_code,
+                    'title': info.get('title', ''),
+                    'category': code.split()[0] if ' ' in code else code[:3],
+                    'content': {'full': f"[Split data] {info.get('title', '')}"},
+                    'metadata': {
+                        'has_parts': info.get('has_parts', False),
+                        'has_full': info.get('has_full', False),
+                        'sections': info.get('sections', []),
+                        'source': 'split_index'
+                    }
+                }
+        else:
+            logger.warning(f"⚠️ Split index not found at {split_index_path}")
         
-        # 3. 문서 데이터 로드 (v1 호환성)
+        # 3. 문서 데이터 로드 시도 (v1 호환성 - 있으면 좋고 없어도 됨)
         data_files = [
             "kcsc_structure.json",
             "kcsc_civil.json", 
@@ -175,25 +212,49 @@ def load_data():
             "kcsc_excs.json"
         ]
         
+        v1_loaded = 0
         for filename in data_files:
-            filepath = f"./gpts_data/{filename}"
+            filepath = os.path.join(current_dir, filename)
             if os.path.exists(filepath):
-                with open(filepath, 'r', encoding='utf-8') as f:
-                    data = json.load(f)
-                    for doc in data.get('documents', []):
-                        documents_cache[doc['id']] = doc
+                try:
+                    with open(filepath, 'r', encoding='utf-8') as f:
+                        data = json.load(f)
+                        for doc in data.get('documents', []):
+                            normalized_id = normalize_code(doc.get('id', ''))
+                            documents_cache[normalized_id] = doc
+                            v1_loaded += 1
+                except Exception as e:
+                    logger.error(f"Failed to load {filename}: {e}")
         
-        logger.info(f"Loaded {len(documents_cache)} full documents, {len(split_index.get('standards', {}))} split standards")
+        # 4. 🆘 긴급 폴백: 데이터가 없으면 search_index에서 생성
+        if len(documents_cache) == 0 and search_index and 'codes' in search_index:
+            logger.warning("🆘 No documents loaded, creating from search_index...")
+            for code_info in search_index['codes']:
+                code = normalize_code(code_info.get('code', ''))
+                documents_cache[code] = {
+                    'id': code,
+                    'title': code_info.get('title', code),
+                    'category': code.split()[0] if ' ' in code else code[:3],
+                    'content': {'full': code_info.get('title', '')},
+                    'metadata': {'source': 'search_index_fallback'}
+                }
+            logger.info(f"🆘 Created {len(documents_cache)} fallback entries")
+        
+        # 최종 로깅
+        logger.info(f"""
+        📊 Data Loading Summary:
+        - Documents loaded: {len(documents_cache)}
+        - Split standards: {len(split_index.get('standards', {}))}
+        - V1 documents: {v1_loaded}
+        - Status: {'✅ OK' if len(documents_cache) > 0 else '❌ CRITICAL'}
+        """)
         
     except Exception as e:
-        logger.error(f"Failed to load data: {e}")
-        raise
+        logger.error(f"💥 Critical error in load_data: {e}")
+        import traceback
+        logger.error(traceback.format_exc())
 
-# 시작 시 데이터 로드
-@app.on_event("startup")
-async def startup_event():
-    load_data()
-    logger.info(f"API server v2 started (GPT Actions Mode: {GPT_ACTIONS_MODE})")
+# 엔드포인트 시작
 
 # 엔드포인트
 @app.get("/")
@@ -207,11 +268,41 @@ async def root():
 
 @app.get("/health")
 async def health_check():
+    """향상된 헬스체크 with 상세 진단"""
+    status = "healthy"
+    issues = []
+    
+    # 문서 로딩 상태 체크
+    if len(documents_cache) == 0:
+        status = "critical"
+        issues.append("No documents loaded in cache")
+    elif len(documents_cache) < 100:
+        status = "degraded"
+        issues.append(f"Only {len(documents_cache)} documents loaded (expected more)")
+    
+    # 인덱스 상태 체크
+    if len(split_index.get('standards', {})) == 0:
+        issues.append("No split standards loaded")
+    
+    if len(search_index.get('codes', [])) == 0:
+        issues.append("No search index codes")
+    
     return {
-        "status": "healthy",
+        "status": status,
         "timestamp": datetime.now().isoformat(),
         "documents_loaded": len(documents_cache),
-        "standards_split": len(split_index.get('standards', {}))
+        "standards_split": len(split_index.get('standards', {})),
+        "search_index_codes": len(search_index.get('codes', [])),
+        "issues": issues,
+        "mode": "GPT_ACTIONS" if GPT_ACTIONS_MODE else "STANDARD",
+        "data_sources": {
+            "v1_files": any(doc.get('metadata', {}).get('source') != 'split_index' 
+                          for doc in documents_cache.values()),
+            "split_index": any(doc.get('metadata', {}).get('source') == 'split_index' 
+                              for doc in documents_cache.values()),
+            "fallback": any(doc.get('metadata', {}).get('source') == 'search_index_fallback' 
+                           for doc in documents_cache.values())
+        }
     }
 
 @app.post("/api/v1/search")
@@ -583,6 +674,237 @@ def custom_openapi():
     
     app.openapi_schema = openapi_schema
     return app.openapi_schema
+
+# ===== 경량화 엔드포인트 추가 =====
+
+def estimate_tokens(text: str) -> int:
+    """간단한 토큰 추정 (한글 2토큰, 영문 1토큰 기준)"""
+    if not text:
+        return 0
+    korean_chars = len(re.findall(r'[가-힣]', text))
+    other_chars = len(text) - korean_chars
+    return korean_chars * 2 + other_chars
+
+def create_micro_summary(doc: Dict) -> Dict:
+    """초경량 요약 생성 (50토큰 이하)"""
+    return {
+        "code": doc.get('id', ''),
+        "title": doc.get('title', '')[:50],
+        "tokens": 50,
+        "level": "micro"
+    }
+
+def create_mini_summary(doc: Dict, max_chars: int = 200) -> Dict:
+    """미니 요약 생성 (200토큰)"""
+    content = doc.get('content', {})
+    if isinstance(content, dict):
+        text = content.get('full', '')[:max_chars]
+    else:
+        text = str(content)[:max_chars]
+    
+    tokens = estimate_tokens(text)
+    
+    return {
+        "code": doc.get('id', ''),
+        "title": doc.get('title', ''),
+        "summary": text + ("..." if len(str(content)) > max_chars else ""),
+        "tokens": tokens,
+        "level": "mini"
+    }
+
+def extract_key_sections(doc: Dict, keywords: List[str], max_tokens: int = 1000) -> List[Dict]:
+    """키워드 관련 핵심 섹션 추출"""
+    sections = []
+    current_tokens = 0
+    
+    content = doc.get('content', {})
+    if isinstance(content, str):
+        # 간단한 섹션 분할 (문단 기준)
+        paragraphs = content.split('\n\n')
+        for i, para in enumerate(paragraphs):
+            # 키워드 포함 여부 확인
+            para_lower = para.lower()
+            if any(kw.lower() in para_lower for kw in keywords):
+                para_tokens = estimate_tokens(para)
+                if current_tokens + para_tokens <= max_tokens:
+                    sections.append({
+                        "section_id": f"para_{i}",
+                        "content": para[:500],
+                        "tokens": para_tokens
+                    })
+                    current_tokens += para_tokens
+                else:
+                    break
+    
+    return sections
+
+@app.get("/api/v2/lightweight/{code}")
+async def get_lightweight_response(
+    code: str,
+    max_tokens: int = Query(2000, description="Maximum tokens in response"),
+    level: str = Query("smart", description="Response level: micro, mini, smart"),
+    api_key: str = Depends(verify_api_key)
+):
+    """경량화된 응답 - GPT 토큰 제한 고려"""
+    normalized_code = normalize_code(code)
+    
+    # 기본 응답 구조
+    response = {
+        "success": True,
+        "code": normalized_code,
+        "max_tokens": max_tokens,
+        "tokens_used": 0
+    }
+    
+    # 문서 찾기 (캐시 우선, split_index 폴백)
+    doc = None
+    if normalized_code in documents_cache:
+        doc = documents_cache[normalized_code]
+    elif normalized_code in split_index.get('standards', {}):
+        # split_index에서 기본 정보 생성
+        std_info = split_index['standards'][normalized_code]
+        doc = {
+            'id': normalized_code,
+            'title': std_info.get('title', ''),
+            'content': {'full': f"[Split data available] {std_info.get('title', '')}"},
+            'metadata': std_info
+        }
+    
+    if not doc:
+        raise HTTPException(status_code=404, detail=f"Standard {normalized_code} not found")
+    
+    # 레벨별 응답 생성
+    if level == "micro":
+        response["data"] = create_micro_summary(doc)
+        response["tokens_used"] = 50
+    
+    elif level == "mini":
+        response["data"] = create_mini_summary(doc)
+        response["tokens_used"] = response["data"]["tokens"]
+    
+    else:  # smart (기본값)
+        # 단계별 컨텐츠 구성
+        contents = []
+        
+        # 1. 기본 요약 (필수)
+        mini = create_mini_summary(doc, max_chars=150)
+        contents.append(mini)
+        response["tokens_used"] += mini["tokens"]
+        
+        # 2. 메타데이터 정보 (여유 있으면)
+        if response["tokens_used"] < max_tokens - 100:
+            metadata = doc.get('metadata', {})
+            meta_info = {
+                "type": "metadata",
+                "category": metadata.get('category', ''),
+                "sections": metadata.get('sections', [])[:5],  # 최대 5개
+                "tokens": 100
+            }
+            contents.append(meta_info)
+            response["tokens_used"] += 100
+        
+        # 3. split 데이터 가용성 정보
+        if normalized_code in split_index.get('standards', {}):
+            std_info = split_index['standards'][normalized_code]
+            availability = {
+                "type": "availability",
+                "has_parts": std_info.get('has_parts', False),
+                "has_sections": bool(std_info.get('sections', [])),
+                "total_size_kb": std_info.get('size_kb', 0),
+                "tokens": 50
+            }
+            contents.append(availability)
+            response["tokens_used"] += 50
+        
+        response["data"] = {
+            "level": "smart",
+            "contents": contents,
+            "suggestions": {
+                "next_actions": [],
+                "available_depth": "full" if response["tokens_used"] < max_tokens * 0.5 else "limited"
+            }
+        }
+        
+        # 다음 액션 제안
+        if response["tokens_used"] < max_tokens * 0.3:
+            response["data"]["suggestions"]["next_actions"].append("더 상세한 정보 요청 가능")
+        if normalized_code in split_index.get('standards', {}):
+            response["data"]["suggestions"]["next_actions"].append("섹션별 상세 내용 조회 가능")
+    
+    response["data"]["navigation"] = {
+        "endpoints": {
+            "summary": f"/api/v1/standard/{normalized_code}/summary",
+            "sections": f"/api/v1/standard/{normalized_code}/section/{{section}}",
+            "parts": f"/api/v1/standard/{normalized_code}/part/{{part}}"
+        }
+    }
+    
+    return response
+
+@app.post("/api/v2/smart-search")
+async def smart_search(
+    query: str = Query(..., description="Search query"),
+    intent: Optional[str] = Query(None, description="Query intent: definition, calculation, requirement"),
+    max_results: int = Query(5, description="Maximum results"),
+    max_tokens_per_result: int = Query(500, description="Max tokens per result"),
+    api_key: str = Depends(verify_api_key)
+):
+    """스마트 검색 - 의도 기반 경량 응답"""
+    
+    # 의도 분석
+    detected_intent = intent
+    if not detected_intent:
+        # 간단한 의도 추측
+        query_lower = query.lower()
+        if any(word in query_lower for word in ['뭐야', '무엇', '정의', 'what']):
+            detected_intent = 'definition'
+        elif any(word in query_lower for word in ['계산', '공식', 'formula']):
+            detected_intent = 'calculation'
+        elif any(word in query_lower for word in ['기준', '규정', 'requirement']):
+            detected_intent = 'requirement'
+        else:
+            detected_intent = 'general'
+    
+    # 일반 검색 수행
+    results = []
+    query_normalized = normalize_code(query)
+    
+    # 코드 직접 매칭 시도
+    if query_normalized in documents_cache:
+        doc = documents_cache[query_normalized]
+        result = create_mini_summary(doc, max_chars=max_tokens_per_result // 4)
+        result['relevance'] = 1.0
+        result['match_type'] = 'exact_code'
+        results.append(result)
+    
+    # 키워드 검색
+    if len(results) < max_results:
+        query_lower = query.lower()
+        for code, doc in documents_cache.items():
+            if len(results) >= max_results:
+                break
+                
+            title = doc.get('title', '').lower()
+            if query_lower in title or query_lower in code.lower():
+                result = create_mini_summary(doc, max_chars=max_tokens_per_result // 4)
+                result['relevance'] = 0.7 if query_lower in title else 0.5
+                result['match_type'] = 'keyword'
+                results.append(result)
+    
+    # 결과 정렬
+    results.sort(key=lambda x: x.get('relevance', 0), reverse=True)
+    
+    return {
+        "success": True,
+        "query": query,
+        "intent": detected_intent,
+        "results": results[:max_results],
+        "total_results": len(results),
+        "suggestions": {
+            "refine_query": detected_intent == 'general',
+            "use_code_search": len(results) == 0
+        }
+    }
 
 # OpenAPI 스키마 설정
 app.openapi = custom_openapi
